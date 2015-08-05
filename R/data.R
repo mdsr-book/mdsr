@@ -28,5 +28,7 @@
 #' 
 "bbteams" 
 
+#' A modified version of CountryData
 
+"CountryData2"
 
