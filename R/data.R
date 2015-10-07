@@ -32,3 +32,5 @@
 
 "CountryData2"
 
+#' election statistics
+"electionStatistics"
