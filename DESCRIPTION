@@ -1,6 +1,6 @@
 Package: mdsr
 Title: Complement to forthcoming book *Modern Data Science with R*
-Version: 0.1.1.9004
+Version: 0.1.1.9005
 Authors@R: person("Ben", "Baumer", email = "ben.baumer@gmail.com",
                   role = c("aut", "cre"))
 Description: This package is a complement to forthcoming book *Modern Data 
@@ -8,11 +8,13 @@ Description: This package is a complement to forthcoming book *Modern Data
   complete exercise and reproduce examples from the text. 
 Depends: 
   R (>= 3.1.0),
+  mosaic,
   dplyr
 License: GPL (>2.0)
 LazyData: true
 Imports: 
   DBI,
   RMySQL
-Suggests: knitr
+Suggests: 
+  knitr
 VignetteBuilder: knitr

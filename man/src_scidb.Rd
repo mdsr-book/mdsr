@@ -2,12 +2,15 @@
 % Please edit documentation in R/scidb.R
 \name{src_scidb}
 \alias{dbConnect_scidb}
+\alias{mysql_scidb}
 \alias{src_scidb}
 \title{src_scidb}
 \usage{
 src_scidb(dbname, ...)
 
 dbConnect_scidb(dbname, ...)
+
+mysql_scidb(dbname, ...)
 }
 \arguments{
 \item{dbname}{the name of the database to which you want to connect}
@@ -18,11 +21,17 @@ dbConnect_scidb(dbname, ...)
 For \code{\link{src_mysql}}, a \code{\link[dplyr]{src_mysql}} object
 
 For \code{\link{dbConnect_scidb}}, a \code{\link[DBI]{DBIConnection-class}} object
+
+For \code{\link{mysql_scidb}}, a charcter vector of length 1 to be used
+as an \code{engine.ops} argument, or on the command line.
 }
 \description{
 Connect to the scidb server at Smith
 
-dbConnect_scidb
+Create a DBI connection to the scidb server at Smith
+
+Create a string of arguments for the scidb server at Smith to be used on the
+command line
 }
 \details{
 this is a public, read-only account. Any abuse will be considered a
@@ -33,10 +42,14 @@ dbAir <- src_scidb("airlines")
 dbAir
 dbAir <- dbConnect_scidb("airlines")
 dbAir
+library(knitr)
+opts_chunk$set(engine.opts = mysql_scidb("airlines"))
 }
 \seealso{
 \code{\link[dplyr]{src_mysql}}
 
 \code{\link[DBI]{DBIConnection-class}}
+
+\code{\link[knitr]{opts_chunk}}
 }
 
