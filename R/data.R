@@ -34,3 +34,26 @@
 
 #' election statistics
 "electionStatistics"
+
+#' Cuisines
+#' @format{
+#' A data frame with 531420 observations on the following 15 variables.
+#' \describe{
+#'  \item{\code{CAMIS}}{a character vector}
+#'  \item{\code{DBA}}{a character vector}
+#'  \item{\code{BORO}}{a numeric vector}
+#'  \item{\code{BUILDING}}{a character vector}
+#'  \item{\code{STREET}}{a character vector}
+#'  \item{\code{ZIPCODE}}{a character vector}
+#'  \item{\code{PHONE}}{a numeric vector}
+#'  \item{\code{CUISINECODE}}{a numeric vector}
+#'  \item{\code{INSPDATE}}{a POSIXct}
+#'  \item{\code{ACTION}}{a character vector}
+#'  \item{\code{VIOLCODE}}{a character vector}
+#'  \item{\code{SCORE}}{a numeric vector}
+#'  \item{\code{CURRENTGRADE}}{a character vector}
+#'  \item{\code{GRADEDATE}}{a POSIXct}
+#'  \item{\code{RECORDDATE}}{a POSIXct}
+#' }
+#' }
+"Cuisines"
