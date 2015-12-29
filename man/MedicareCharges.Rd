@@ -11,7 +11,7 @@ numeric vector: it should be a factor.} \item{totalDischarges}{a
 numeric vector} \item{aveCharges}{a numeric vector}
 \item{avePayments}{a numeric vector} }}
 \source{
-Data from the Centers for Medicare and Medicaid Services.  See
+Data from the Centers for Medicare and Medicaid Services.#'See
 \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}.
 }
 \usage{

@@ -16,7 +16,7 @@ postal code of the state in which the provider is located. (factor)}
 provider.} }}
 \source{
 Extracted from the highly repetitive table provided by the Centers
-for Medicare and Medicaid Services.  See
+for Medicare and Medicaid Services.#'See
 \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}
 }
 \usage{
@@ -31,7 +31,7 @@ This data table is related to \code{MedicareCharges} data.
 }
 \examples{
 
-head(DirectRecoveryGroups)
+head(MedicareProviders)
 
 }
 \keyword{datasets}

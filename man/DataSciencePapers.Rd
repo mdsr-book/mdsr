@@ -34,8 +34,5 @@ data(DataSciencePapers)
 str(DataSciencePapers)
 
 }
-\references{
-%% ~~ possibly secondary sources and usages ~~
-}
 \keyword{datasets}
 

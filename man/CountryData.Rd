@@ -6,7 +6,7 @@
 \alias{CountryData2}
 \title{Many variables on countries from the CIA factbook, 2014.}
 \format{A data frame on the following 76 variables for each of the Countries
-in the World. (256 countries are given.)  \describe{
+in the World. (256 countries are given.)#'\describe{
 \item{country}{Name of the country.} \item{area}{area (sq
 km), 2147} \item{pop}{number of people, 2119}
 \item{growth}{growth rate per year (\%),2002}
@@ -95,9 +95,9 @@ CountryData2
 }
 \description{
 The CIA Factbook has geographic, demographic, and economic data on a
-country-by-country basis.  In the description of the variables, the 4-digit
+country-by-country basis.#'In the description of the variables, the 4-digit
 number indicates the code used to specify that variable on the data and
-documentation web site.  For instance,
+documentation web site.#'For instance,
 \url{https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html}
 contains documentation for variable code 2153, network users.
 
@@ -106,7 +106,7 @@ A modified version of CountryData
 \details{
 These data were collected using the \code{CIAdata()} function.
 
-THE DOCUMENTATION NEEDS COMPLETING.  See the output of \code{CIAdata() and
+THE DOCUMENTATION NEEDS COMPLETING.#'See the output of \code{CIAdata() and
 Google "CIA Factbook NNNN"}, where NNNN is the 4-digit code used for
 indexing the data at the CIA.
 }
