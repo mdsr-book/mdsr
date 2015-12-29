@@ -148,21 +148,8 @@
 #' @format{
 #' A data frame with 531420 observations on the following 15 variables.
 #' \describe{
-#'  \item{\code{CAMIS}}{a character vector}
-#'  \item{\code{DBA}}{a character vector}
-#'  \item{\code{BORO}}{a numeric vector}
-#'  \item{\code{BUILDING}}{a character vector}
-#'  \item{\code{STREET}}{a character vector}
-#'  \item{\code{ZIPCODE}}{a character vector}
-#'  \item{\code{PHONE}}{a numeric vector}
-#'  \item{\code{CUISINECODE}}{a numeric vector}
-#'  \item{\code{INSPDATE}}{a POSIXct}
-#'  \item{\code{ACTION}}{a character vector}
-#'  \item{\code{VIOLCODE}}{a character vector}
-#'  \item{\code{SCORE}}{a numeric vector}
-#'  \item{\code{CURRENTGRADE}}{a character vector}
-#'  \item{\code{GRADEDATE}}{a POSIXct}
-#'  \item{\code{RECORDDATE}}{a POSIXct}
+#'  \item{\code{cuisine_code}}{a character vector}
+#'  \item{\code{cuisine_description}}{a character vector}
 #' }
 #' }
 "Cuisines"
@@ -172,21 +159,21 @@
 #' @format{
 #' A data frame with 531420 observations on the following 15 variables.
 #' \describe{
-#'  \item{\code{CAMIS}}{a character vector}
+#'  \item{\code{camis}}{a character vector}
 #'  \item{\code{DBA}}{a character vector}
-#'  \item{\code{BORO}}{a numeric vector}
-#'  \item{\code{BUILDING}}{a character vector}
-#'  \item{\code{STREET}}{a character vector}
-#'  \item{\code{ZIPCODE}}{a character vector}
-#'  \item{\code{PHONE}}{a numeric vector}
-#'  \item{\code{CUISINECODE}}{a numeric vector}
-#'  \item{\code{INSPDATE}}{a POSIXct}
-#'  \item{\code{ACTION}}{a character vector}
-#'  \item{\code{VIOLCODE}}{a character vector}
-#'  \item{\code{SCORE}}{a numeric vector}
-#'  \item{\code{CURRENTGRADE}}{a character vector}
-#'  \item{\code{GRADEDATE}}{a POSIXct}
-#'  \item{\code{RECORDDATE}}{a POSIXct}
+#'  \item{\code{boro}}{a numeric vector}
+#'  \item{\code{building}}{a character vector}
+#'  \item{\code{street}}{a character vector}
+#'  \item{\code{zip}}{a character vector}
+#'  \item{\code{phone}}{a numeric vector}
+#'  \item{\code{cuisine_code}}{a numeric vector}
+#'  \item{\code{inspection_date}}{a POSIXct}
+#'  \item{\code{action}}{a character vector}
+#'  \item{\code{violation_code}}{a character vector}
+#'  \item{\code{score}}{a numeric vector}
+#'  \item{\code{current_grade}}{a character vector}
+#'  \item{\code{grade_date}}{a POSIXct}
+#'  \item{\code{record_date}}{a POSIXct}
 #' }
 #' }
 "Restaurants"
@@ -195,9 +182,9 @@
 #' @docType data
 #' @format A data frame with 174 observations on the following 3 variables.
 #' \describe{
-#'    \item{\code{VIOLATIONCODE}}{a factor with levels \code{01A} \code{01B} \code{01C} \code{01D} \code{01E} \code{01F} \code{01G} \code{01H} \code{01I} \code{02A} \code{02B} \code{02C} \code{02D} \code{02E} \code{02F} \code{02G} \code{02H} \code{02I} \code{02J} \code{03A} \code{03B} \code{03C} \code{03D} \code{03E} \code{03F} \code{03G} \code{03H} \code{04A} \code{04B} \code{04C} \code{04D} \code{04E} \code{04F} \code{04G} \code{04H} \code{04I} \code{04J} \code{04K} \code{04L} \code{04M} \code{04N} \code{04O} \code{04P} \code{04Q} \code{05A} \code{05B} \code{05C} \code{05D} \code{05E} \code{05F} \code{05G} \code{05H} \code{05I} \code{05J} \code{06A} \code{06B} \code{06C} \code{06D} \code{06E} \code{06F} \code{06G} \code{06H} \code{06I} \code{07A} \code{07B} \code{07C} \code{07D} \code{07E} \code{07F} \code{07G} \code{07H} \code{07I} \code{08A} \code{08B} \code{08C} \code{08D} \code{08E} \code{08F} \code{08G} \code{08H} \code{08I} \code{08J} \code{08K} \code{08L} \code{08M} \code{09A} \code{09B} \code{09C} \code{09D} \code{09E} \code{09F} \code{09G} \code{09H} \code{10A} \code{10B} \code{10C} \code{10D} \code{10E} \code{10F} \code{10G} \code{10H} \code{10I} \code{10J} \code{10K} \code{10L} \code{10M} \code{11A} \code{11B} \code{11C} \code{11D} \code{12A} \code{12B} \code{12C} \code{12D} \code{12E} \code{12F} \code{12G} \code{12H} \code{13A} \code{13B} \code{13C} \code{13D} \code{13E} \code{14A} \code{14B} \code{14C} \code{14D} \code{14E} \code{15A} \code{15B} \code{15C} \code{15D} \code{15E} \code{15F} \code{15G} \code{15H} \code{15I} \code{15J} \code{15K} \code{15L} \code{15M} \code{15N} \code{15O} \code{15P} \code{15Q} \code{15R} \code{15S} \code{15T} \code{16A} \code{16B} \code{16C} \code{16D} \code{16E} \code{16F} \code{18A} \code{18B} \code{18C} \code{18D} \code{18E} \code{18F} \code{18G} \code{18H} \code{18I} \code{20A} \code{20B} \code{20C} \code{20D} \code{20E} \code{20F} \code{22A} \code{22B} \code{22C} \code{22E} \code{99B}}
-#'    \item{\code{CRITICALFLAG}}{a factor with levels \code{N} \code{Y}}
-#'    \item{\code{VIOLATIONDESC}}{a character vector}
+#'    \item{\code{violation_code}}{a factor with levels \code{01A} \code{01B} \code{01C} \code{01D} \code{01E} \code{01F} \code{01G} \code{01H} \code{01I} \code{02A} \code{02B} \code{02C} \code{02D} \code{02E} \code{02F} \code{02G} \code{02H} \code{02I} \code{02J} \code{03A} \code{03B} \code{03C} \code{03D} \code{03E} \code{03F} \code{03G} \code{03H} \code{04A} \code{04B} \code{04C} \code{04D} \code{04E} \code{04F} \code{04G} \code{04H} \code{04I} \code{04J} \code{04K} \code{04L} \code{04M} \code{04N} \code{04O} \code{04P} \code{04Q} \code{05A} \code{05B} \code{05C} \code{05D} \code{05E} \code{05F} \code{05G} \code{05H} \code{05I} \code{05J} \code{06A} \code{06B} \code{06C} \code{06D} \code{06E} \code{06F} \code{06G} \code{06H} \code{06I} \code{07A} \code{07B} \code{07C} \code{07D} \code{07E} \code{07F} \code{07G} \code{07H} \code{07I} \code{08A} \code{08B} \code{08C} \code{08D} \code{08E} \code{08F} \code{08G} \code{08H} \code{08I} \code{08J} \code{08K} \code{08L} \code{08M} \code{09A} \code{09B} \code{09C} \code{09D} \code{09E} \code{09F} \code{09G} \code{09H} \code{10A} \code{10B} \code{10C} \code{10D} \code{10E} \code{10F} \code{10G} \code{10H} \code{10I} \code{10J} \code{10K} \code{10L} \code{10M} \code{11A} \code{11B} \code{11C} \code{11D} \code{12A} \code{12B} \code{12C} \code{12D} \code{12E} \code{12F} \code{12G} \code{12H} \code{13A} \code{13B} \code{13C} \code{13D} \code{13E} \code{14A} \code{14B} \code{14C} \code{14D} \code{14E} \code{15A} \code{15B} \code{15C} \code{15D} \code{15E} \code{15F} \code{15G} \code{15H} \code{15I} \code{15J} \code{15K} \code{15L} \code{15M} \code{15N} \code{15O} \code{15P} \code{15Q} \code{15R} \code{15S} \code{15T} \code{16A} \code{16B} \code{16C} \code{16D} \code{16E} \code{16F} \code{18A} \code{18B} \code{18C} \code{18D} \code{18E} \code{18F} \code{18G} \code{18H} \code{18I} \code{20A} \code{20B} \code{20C} \code{20D} \code{20E} \code{20F} \code{22A} \code{22B} \code{22C} \code{22E} \code{99B}}
+#'    \item{\code{critical_flag}}{a factor with levels \code{N} \code{Y}}
+#'    \item{\code{violation_description}}{a character vector}
 #'  }
 "ViolationCodes"
 
