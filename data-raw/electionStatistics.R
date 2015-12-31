@@ -2,7 +2,7 @@ url <- "https://raw.githubusercontent.com/dtkaplan/DCF-2015/master/Book/Sections
 
 electionStatistics <- read.csv(url)
 
-electionStatistics <- as.tbl(read.csv("data-raw/electionStatistics.csv"))
+electionStatistics <- as.tbl(read.csv("inst/extdata/electionStatistics.csv"))
 
 save(electionStatistics, file = "data/electionStatistics.rda", compress = "xz")
 
@@ -12,7 +12,7 @@ url <- "https://raw.githubusercontent.com/dtkaplan/DCF-2015/master/Book/Sections
 
 cherry <- read.csv(url)
 
-cherry <- as.tbl(read.csv("data-raw/cherry.csv"))
+cherry <- as.tbl(read.csv("inst/extdata/cherry.csv"))
 
 save(cherry, file = "data/cherry.rda", compress = "xz")
 

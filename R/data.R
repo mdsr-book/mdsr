@@ -3,6 +3,7 @@
 #' A dataset containing information about Major League Baseball teams 
 #' from 2008-2013. 
 #' 
+#' @docType data
 #' @format A \code{\link{tbl_df}} object. 
 #' \describe{
 #'  \item{yearID}{season in which the team played}
@@ -136,13 +137,20 @@
 
 #' A modified version of CountryData
 #' @rdname CountryData
+#' @docType data
 "CountryData2"
 
 #' election statistics
+#' @docType data
 "electionStatistics"
 
 #' Cherry Blossom runs
+#' @docType data
 "cherry"
+
+#' Cancer
+#' @docType data
+"Cancer"
 
 #' Cuisines
 #' @format{
