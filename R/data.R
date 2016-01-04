@@ -275,8 +275,8 @@
 #' numeric vector: it should be a factor.} \item{totalDischarges}{a
 #' numeric vector} \item{aveCharges}{a numeric vector}
 #' \item{avePayments}{a numeric vector} }
-#' @source Data from the Centers for Medicare and Medicaid Services.#'See
-#' \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}.
+#' @source Data from the Centers for Medicare and Medicaid Services.
+#' See \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}.
 #' @keywords datasets
 #' @examples
 #' 
@@ -284,3 +284,12 @@
 #' 
 "MedicareCharges"
 
+#' Text of Macbeth
+#' 
+#' The entire text of Macbeth, stored in a character vector of length 1.
+#' 
+#' @name macbeth_raw
+#' @docType data
+#' @format A character vector of length 1
+#' @source Project Gutenberg, \url{http://www.gutenberg.org/cache/epub/1129/pg1129.txt}
+"macbeth_raw"
