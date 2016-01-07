@@ -168,23 +168,24 @@
 #' A data frame with 531420 observations on the following 15 variables.
 #' \describe{
 #'  \item{\code{camis}}{a character vector}
-#'  \item{\code{DBA}}{a character vector}
+#'  \item{\code{dba}}{a character vector}
 #'  \item{\code{boro}}{a numeric vector}
 #'  \item{\code{building}}{a character vector}
 #'  \item{\code{street}}{a character vector}
-#'  \item{\code{zip}}{a character vector}
+#'  \item{\code{zipcode}}{a character vector}
 #'  \item{\code{phone}}{a numeric vector}
-#'  \item{\code{cuisine_code}}{a numeric vector}
 #'  \item{\code{inspection_date}}{a POSIXct}
 #'  \item{\code{action}}{a character vector}
 #'  \item{\code{violation_code}}{a character vector}
 #'  \item{\code{score}}{a numeric vector}
-#'  \item{\code{current_grade}}{a character vector}
+#'  \item{\code{grade}}{a character vector}
 #'  \item{\code{grade_date}}{a POSIXct}
 #'  \item{\code{record_date}}{a POSIXct}
+#'  \item{\code{inspection_type}}{a character vector}
+#'  \item{\code{cuisine_code}}{a numeric vector}
 #' }
 #' }
-"Restaurants"
+"Violations"
 
 #' ViolationCodes
 #' @docType data
