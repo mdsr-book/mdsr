@@ -4,6 +4,8 @@
 url <- "https://data.cityofnewyork.us/api/views/xx67-kt59/rows.csv?accessType=DOWNLOAD"
 download.file(url, "data-raw/dohmh_nyc_violations.csv")
 
+require(readr)
+require(dplyr)
 violations <- readr::read_csv("data-raw/dohmh_nyc_violations.csv")
 # problems
 violations %>%
@@ -17,14 +19,16 @@ names(violations) <- names(violations) %>%
   gsub(" ", "_", x = .)
 
 # non-standard spellings?
+violations <- violations %>%
+  mutate(cuisine_description = ifelse(grepl("Coffee/Tea", cuisine_description), "Cafe/Coffee/Tea", cuisine_description))
 # Cafe/Coffee/Tea
 
 # set encoding for non-ASCII character
 tools::showNonASCII(violations$cuisine_description)
-x <- as.character(violations$cuisine_description)
-Encoding(x) <- "latin1"
-#y <- iconv(x, from = "latin1", to = "ASCII", sub = "e")
-violations$cuisine_description <- x
+# x <- as.character(violations$cuisine_description)
+# Encoding(x) <- "latin1"
+# y <- iconv(x, from = "latin1", to = "ASCII", sub = "e")
+# violations$cuisine_description <- x
 
 # note that other columns have UTF characters
 bad <- apply(violations, MARGIN = 2, tools::showNonASCII)
