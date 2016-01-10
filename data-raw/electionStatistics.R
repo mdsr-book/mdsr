@@ -1,20 +1,20 @@
 url <- "https://raw.githubusercontent.com/dtkaplan/DCF-2015/master/Book/Sections/Data/electionStatistics.csv"
 
-electionStatistics <- read.csv(url)
+Elections <- read.csv(url)
 
-electionStatistics <- as.tbl(read.csv("inst/extdata/electionStatistics.csv"))
+Elections <- as.tbl(read.csv("inst/extdata/electionStatistics.csv"))
 
-save(electionStatistics, file = "data/electionStatistics.rda", compress = "xz")
+save(Elections, file = "data/Elections.rda", compress = "xz")
 
 
 
 url <- "https://raw.githubusercontent.com/dtkaplan/DCF-2015/master/Book/Sections/Data/Cherry-Blossom-Longitudinal.csv"
 
-cherry <- read.csv(url)
+Cherry <- read.csv(url)
 
-cherry <- as.tbl(read.csv("inst/extdata/cherry.csv"))
+Cherry <- as.tbl(read.csv("inst/extdata/cherry.csv"))
 
-save(cherry, file = "data/cherry.rda", compress = "xz")
+save(Cherry, file = "data/Cherry.rda", compress = "xz")
 
 
 

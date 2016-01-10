@@ -41,11 +41,11 @@ lkup <- left_join(x = lkup, y = bbmsas, by = c("msaId" = "id"))
 #  https://en.wikipedia.org/wiki/Greater_Toronto_Area
 lkup[which(lkup$teamID == "TOR"), "metroPop"] <- 5583064
 
-bbteams <- ds %>%
+MLB_teams <- ds %>%
   left_join(lkup, by = c("teamID" = "teamID")) %>%
   select(yearID, teamID, lgID, W, L, WPct, attendance, 
          normAttend, payroll, metroPop, name) %>%
   tbl_df()
 
 # save the resulting data frame
-save(bbteams, file = "data/bbteams.rda", compress = "xz")
+save(MLB_teams, file = "data/MLB_teams.rda", compress = "xz")

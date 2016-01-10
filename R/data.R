@@ -27,7 +27,7 @@
 #' 
 #' @source The \code{\link[Lahman]{Teams}} data set and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
 #' 
-"bbteams" 
+"MLB_teams" 
 
 #' Many variables on countries from the CIA factbook, 2014.
 #' 
@@ -142,11 +142,11 @@
 
 #' election statistics
 #' @docType data
-"electionStatistics"
+"Elections"
 
 #' Cherry Blossom runs
 #' @docType data
-"cherry"
+"Cherry"
 
 #' Cancer
 #' @docType data
@@ -289,8 +289,7 @@
 #' 
 #' The entire text of Macbeth, stored in a character vector of length 1.
 #' 
-#' @name macbeth_raw
 #' @docType data
 #' @format A character vector of length 1
 #' @source Project Gutenberg, \url{http://www.gutenberg.org/cache/epub/1129/pg1129.txt}
-"macbeth_raw"
+"Macbeth_raw"
