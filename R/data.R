@@ -293,3 +293,11 @@
 #' @format A character vector of length 1
 #' @source Project Gutenberg, \url{http://www.gutenberg.org/cache/epub/1129/pg1129.txt}
 "Macbeth_raw"
+
+#' State SAT scores form 2010
+#' 
+#' SAT results by state for 2010
+#' 
+#' @docType data
+#' @format A data.frame with 50 rows and 9 variables. 
+"SAT_2010"
