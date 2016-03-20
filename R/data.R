@@ -152,7 +152,7 @@
 #' @docType data
 "Cancer"
 
-#' Cuisines
+#' NYC Health Violations Restaurant Cuisines
 #' @format{
 #' A data frame with 84 observations on the following 2 variables.
 #' \describe{
@@ -162,7 +162,7 @@
 #' }
 "Cuisines"
 
-#' Restaurants
+#' NYC Restaurant Health Violations
 #' @docType data
 #' @format{
 #' A data frame with 480,621 observations on the following 16 variables.
@@ -185,9 +185,10 @@
 #'  \item{\code{cuisine_code}}{cuisine code, see Cuisines}
 #' }
 #' }
+#' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/xx67-kt59}
 "Violations"
 
-#' ViolationCodes
+#' NYC Restaurant Health Violation Codes
 #' @docType data
 #' @format A data frame with 174 observations on the following 3 variables.
 #' \describe{
