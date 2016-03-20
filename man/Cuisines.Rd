@@ -3,9 +3,9 @@
 \docType{data}
 \name{Cuisines}
 \alias{Cuisines}
-\title{Cuisines}
+\title{NYC Health Violations Restaurant Cuisines}
 \format{{
-A data frame with 531420 observations on the following 15 variables.
+A data frame with 84 observations on the following 2 variables.
 \describe{
  \item{\code{cuisine_code}}{a character vector}
  \item{\code{cuisine_description}}{a character vector}
@@ -15,7 +15,7 @@ A data frame with 531420 observations on the following 15 variables.
 Cuisines
 }
 \description{
-Cuisines
+NYC Health Violations Restaurant Cuisines
 }
 \keyword{datasets}
 

@@ -3,33 +3,36 @@
 \docType{data}
 \name{Violations}
 \alias{Violations}
-\title{Restaurants}
+\title{NYC Restaurant Health Violations}
 \format{{
-A data frame with 531420 observations on the following 15 variables.
+A data frame with 480,621 observations on the following 16 variables.
 \describe{
- \item{\code{camis}}{a character vector}
- \item{\code{dba}}{a character vector}
- \item{\code{boro}}{a numeric vector}
- \item{\code{building}}{a character vector}
- \item{\code{street}}{a character vector}
- \item{\code{zipcode}}{a character vector}
- \item{\code{phone}}{a numeric vector}
- \item{\code{inspection_date}}{a POSIXct}
- \item{\code{action}}{a character vector}
- \item{\code{violation_code}}{a character vector}
- \item{\code{score}}{a numeric vector}
- \item{\code{grade}}{a character vector}
- \item{\code{grade_date}}{a POSIXct}
- \item{\code{record_date}}{a POSIXct}
- \item{\code{inspection_type}}{a character vector}
- \item{\code{cuisine_code}}{a numeric vector}
+ \item{\code{camis}}{unique identifier}
+ \item{\code{dba}}{full name doing business as}
+ \item{\code{boro}}{borough of New York}
+ \item{\code{building}}{building name}
+ \item{\code{street}}{street address}
+ \item{\code{zipcode}}{zipcode}
+ \item{\code{phone}}{phone number}
+ \item{\code{inspection_date}}{inspection date}
+ \item{\code{action}}{action taken}
+ \item{\code{violation_code}}{violation code, see ViolationCodes}
+ \item{\code{score}}{inspection score}
+ \item{\code{grade}}{inspection grade}
+ \item{\code{grade_date}}{grade date}
+ \item{\code{record_date}}{recording date}
+ \item{\code{inspection_type}}{inspect type}
+ \item{\code{cuisine_code}}{cuisine code, see Cuisines}
 }
 }}
+\source{
+NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/xx67-kt59}
+}
 \usage{
 Violations
 }
 \description{
-Restaurants
+NYC Restaurant Health Violations
 }
 \keyword{datasets}
 

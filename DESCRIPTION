@@ -1,8 +1,10 @@
 Package: mdsr
 Title: Complement to Forthcoming Book: Modern Data Science with R
-Version: 0.1.1.9015
-Authors@R: person("Ben", "Baumer", email = "ben.baumer@gmail.com",
-                  role = c("aut", "cre"))
+Version: 0.1.1.9016
+Authors@R: as.person(c(
+    "Ben Baumer <ben.baumer@gmail.com> [aut, cre]",
+    "Nicholas J. Horton <nhorton@amherst.edu> [aut]"
+  ))
 Description: A complement to the forthcoming book *Modern Data
     Science with R*. This package contains all of the data and code necessary to
     complete exercise and reproduce examples from the text.
