@@ -1,3 +1,4 @@
+library(Rd2roxygen)
 # CountryData
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/CountryData.rda", "data/CountryData.rda")
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/CountryData.Rd")), sep = "\n")
@@ -32,4 +33,8 @@ cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/D
 Cancer <- read.csv("inst/extdata/nciNetwork.csv")
 save(Cancer, file = "data/Cancer.rda", compress = "xz")
 download.file("https://github.com/DataComputing/DataComputing/raw/master/R/NetworkHelpers.R", "R/NetworkHelpers.R")
+
+# WorldCities
+download.file("https://github.com/DataComputing/DataComputing/raw/master/data/WorldCities.rda", "data/WorldCities.rda")
+cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/WorldCities.Rd")), sep = "\n")
 

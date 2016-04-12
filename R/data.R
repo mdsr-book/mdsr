@@ -302,3 +302,29 @@
 #' @docType data
 #' @format A data.frame with 50 rows and 9 variables. 
 "SAT_2010"
+
+#' Cities and their populations
+#' 
+#' A list of cities
+#' 
+#' 
+#' @name WorldCities
+#' @docType data
+#' @format A data frame with 23018 observations on the following 10 variables.
+#' \describe{ \item{list("code")}{The ISO (?) city code}
+#' \item{list("name")}{Name of the city} \item{list("latitude")}{location in
+#' degrees} \item{list("longitude")}{location in degrees}
+#' \item{list("country")}{Two letter country code}
+#' \item{list("countryRegion")}{A numerical region}
+#' \item{list("population")}{Population} \item{list("regionCode")}{ISO (?)
+#' Code} \item{list("region")}{Name of the region} \item{list("date")}{Date
+#' estimate made} }
+#' @references In Draft: We need a proper reference
+#' @source In Draft: Somewhere on the Internet.  We need a proper source.
+#' @keywords datasets
+#' @examples
+#' 
+#' data(WorldCities)
+#' ## maybe str(WorldCities) ; plot(WorldCities) ...
+#' 
+"WorldCities"
