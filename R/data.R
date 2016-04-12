@@ -328,3 +328,7 @@
 #' ## maybe str(WorldCities) ; plot(WorldCities) ...
 #' 
 "WorldCities"
+
+#' Votes from Scottish Parliament
+#' @docType data
+"Votes"

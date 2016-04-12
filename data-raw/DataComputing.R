@@ -38,3 +38,7 @@ download.file("https://github.com/DataComputing/DataComputing/raw/master/R/Netwo
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/WorldCities.rda", "data/WorldCities.rda")
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/WorldCities.Rd")), sep = "\n")
 
+# VotesS1-tally
+# download.file("https://raw.githubusercontent.com/dtkaplan/DCF-2015/master/Book/Sections/Data/VotesS1-tally.csv", "inst/extdata/VotesS1-tally.csv")
+Votes <- read.csv("inst/extdata/VotesS1-tally.csv")
+save(Votes, file = "data/Votes.rda", compress = "xz")
