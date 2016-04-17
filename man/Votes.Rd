@@ -4,7 +4,7 @@
 \name{Votes}
 \alias{Votes}
 \title{Votes from Scottish Parliament}
-\format{An object of class \code{data.frame} with 774 rows and 135 columns.}
+\format{An object of class \code{data.frame} with 103582 rows and 3 columns.}
 \usage{
 Votes
 }

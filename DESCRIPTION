@@ -1,6 +1,6 @@
 Package: mdsr
 Title: Complement to Forthcoming Book: Modern Data Science with R
-Version: 0.1.1.9018
+Version: 0.1.1.9020
 Authors@R: as.person(c(
     "Ben Baumer <ben.baumer@gmail.com> [aut, cre]",
     "Nicholas J. Horton <nhorton@amherst.edu> [aut]"

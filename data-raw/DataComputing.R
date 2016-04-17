@@ -40,5 +40,20 @@ cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/D
 
 # VotesS1-tally
 # download.file("https://raw.githubusercontent.com/dtkaplan/DCF-2015/master/Book/Sections/Data/VotesS1-tally.csv", "inst/extdata/VotesS1-tally.csv")
-Votes <- read.csv("inst/extdata/VotesS1-tally.csv")
+Votes <- read.csv("inst/extdata/VotesS1-tally.csv", skip = 1) %>%
+  rename(bill = VOTE) %>%
+  tidyr::gather(key = "name", value = "vote", -bill) %>%
+  mutate(name = gsub("\\.\\.", ", ", name)) %>%
+  mutate(name = gsub("\\.", " ", name))
+Parties <- read.csv("inst/extdata/VotesS1-tally.csv",
+                     header = FALSE, nrows = 2, row.names = 1, 
+                    stringsAsFactors = FALSE) %>%
+  t() %>%
+  as.data.frame() %>%
+  rename(party = PARTY, name = VOTE) %>%
+  mutate(party = as.character(party), name = as.character(name)) %>%
+  mutate(name = gsub("-", " ", name))
+# check to see that all names match
+setdiff(Parties$name, unique(Votes$name))
 save(Votes, file = "data/Votes.rda", compress = "xz")
+save(Parties, file = "data/Parties.rda", compress = "xz")

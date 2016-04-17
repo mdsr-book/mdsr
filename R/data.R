@@ -332,3 +332,4 @@
 #' Votes from Scottish Parliament
 #' @docType data
 "Votes"
+"Parties"
