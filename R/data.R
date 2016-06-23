@@ -295,12 +295,26 @@
 #' @source Project Gutenberg, \url{http://www.gutenberg.org/cache/epub/1129/pg1129.txt}
 "Macbeth_raw"
 
-#' State SAT scores form 2010
+#' State SAT scores from 2010
 #' 
 #' SAT results by state for 2010
 #' 
 #' @docType data
 #' @format A data.frame with 50 rows and 9 variables. 
+#'  \describe{
+#'  \item{\code{State}}{a factor with levels for each state}
+#'  \item{\code{Expenditure}}{average expenditure per student (in each state)}
+#'  \item{\code{Pupil.teacher.ratio}}{pupil to teacher ratio in that state}
+#'  \item{\code{salary}}{teacher salary (in 2010 US $)}
+#'  \item{\code{Read}}{state average Reading SAT score}
+#'  \item{\code{Math}}{state average Math SAT score}
+#'  \item{\code{Write}}{state average Writing SAT score}
+#'  \item{\code{Total}}{state average Total SAT score}
+#'  \item{\code{percentSAT}}{percent of students taking SAT in that state}
+#'}
+#' @details{
+#' See also the earlier mosaic::SAT dataset.
+}
 "SAT_2010"
 
 #' Cities and their populations
@@ -310,7 +324,7 @@
 #' 
 #' @name WorldCities
 #' @docType data
-#' @format A data frame with 23018 observations on the following 10 variables.
+#' @format A data frame with 23,018 observations on the following 10 variables.
 #' \describe{ \item{list("code")}{The ISO (?) city code}
 #' \item{list("name")}{Name of the city} \item{list("latitude")}{location in
 #' degrees} \item{list("longitude")}{location in degrees}
