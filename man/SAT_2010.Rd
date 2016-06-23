@@ -3,13 +3,27 @@
 \docType{data}
 \name{SAT_2010}
 \alias{SAT_2010}
-\title{State SAT scores form 2010}
-\format{A data.frame with 50 rows and 9 variables.}
+\title{State SAT scores from 2010}
+\format{A data.frame with 50 rows and 9 variables. 
+ \describe{
+ \item{\code{State}}{a factor with levels for each state}
+ \item{\code{Expenditure}}{average expenditure per student (in each state)}
+ \item{\code{Pupil.teacher.ratio}}{pupil to teacher ratio in that state}
+ \item{\code{salary}}{teacher salary (in 2010 US $)}
+ \item{\code{Read}}{state average Reading SAT score}
+ \item{\code{Math}}{state average Math SAT score}
+ \item{\code{Write}}{state average Writing SAT score}
+ \item{\code{Total}}{state average Total SAT score}
+ \item{\code{percentSAT}}{percent of students taking SAT in that state}
+}}
 \usage{
 SAT_2010
 }
 \description{
 SAT results by state for 2010
+}
+\details{
+See also the earlier \code{\link[mosaicData]{SAT}} dataset.
 }
 \keyword{datasets}
 

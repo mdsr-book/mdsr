@@ -2,11 +2,14 @@
 % Please edit documentation in R/data.R
 \docType{data}
 \name{Votes}
+\alias{Parties}
 \alias{Votes}
 \title{Votes from Scottish Parliament}
 \format{An object of class \code{data.frame} with 103582 rows and 3 columns.}
 \usage{
 Votes
+
+Parties
 }
 \description{
 Votes from Scottish Parliament

@@ -4,15 +4,18 @@
 \name{WorldCities}
 \alias{WorldCities}
 \title{Cities and their populations}
-\format{A data frame with 23018 observations on the following 10 variables.
-\describe{ \item{list("code")}{The ISO (?) city code}
-\item{list("name")}{Name of the city} \item{list("latitude")}{location in
-degrees} \item{list("longitude")}{location in degrees}
-\item{list("country")}{Two letter country code}
-\item{list("countryRegion")}{A numerical region}
-\item{list("population")}{Population} \item{list("regionCode")}{ISO (?)
-Code} \item{list("region")}{Name of the region} \item{list("date")}{Date
-estimate made} }}
+\format{A data frame with 23,018 observations on the following 10 variables.
+\describe{ 
+\item{code}{The ISO (?) city code}
+\item{name}{Name of the city} 
+\item{latitude}{location in degrees} 
+\item{longitude}{location in degrees}
+\item{country}{Two letter country code}
+\item{countryRegion}{A numerical region}
+\item{population}{Population} 
+\item{regionCode}{ISO (?) Code} 
+\item{region}{Name of the region} 
+\item{date}{Date estimate made} }}
 \source{
 In Draft: Somewhere on the Internet.  We need a proper source.
 }
