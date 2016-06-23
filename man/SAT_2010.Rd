@@ -6,15 +6,15 @@
 \title{State SAT scores from 2010}
 \format{A data.frame with 50 rows and 9 variables. 
  \describe{
- \item{\code{State}}{a factor with levels for each state}
- \item{\code{Expenditure}}{average expenditure per student (in each state)}
- \item{\code{Pupil.teacher.ratio}}{pupil to teacher ratio in that state}
+ \item{\code{state}}{a factor with levels for each state}
+ \item{\code{expenditure}}{average expenditure per student (in each state)}
+ \item{\code{pupil_teacher_ratio}}{pupil to teacher ratio in that state}
  \item{\code{salary}}{teacher salary (in 2010 US $)}
- \item{\code{Read}}{state average Reading SAT score}
- \item{\code{Math}}{state average Math SAT score}
- \item{\code{Write}}{state average Writing SAT score}
- \item{\code{Total}}{state average Total SAT score}
- \item{\code{percentSAT}}{percent of students taking SAT in that state}
+ \item{\code{read}}{state average Reading SAT score}
+ \item{\code{math}}{state average Math SAT score}
+ \item{\code{write}}{state average Writing SAT score}
+ \item{\code{total}}{state average Total SAT score}
+ \item{\code{sat_pct}}{percent of students taking SAT in that state}
 }}
 \usage{
 SAT_2010
