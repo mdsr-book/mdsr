@@ -24,6 +24,9 @@ save("CountryData2", file = "data/CountryData2.rda", compress = "xz")
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareCharges.rda", "data/MedicareCharges.rda")
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/MedicareCharges.Rd")), sep = "\n")
 
+# Minneapolis2013
+download.file("https://github.com/DataComputing/DataComputing/raw/master/data/Minneapolis2013.rda", "data/Minneapolis2013.rda")
+cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/Minneapolis2013.Rd")), sep = "\n")
 
 # MedicareProviders
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareProviders.rda", "data/MedicareProviders.rda")
