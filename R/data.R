@@ -389,3 +389,32 @@
 #' str(Minneapolis2013)
 #' 
 "Minneapolis2013"
+
+#' Birds captured and released at Ordway, complete and uncleaned
+#' 
+#' The historical record of birds captured and released at the Katharine Ordway
+#' Natural History Study Area, a 278-acre preserve in Inver Grove Heights,
+#' Minnesota, owned and managed by Macalester College.
+#' 
+#' There are many extraneous levels of variables such as species.  Part of the
+#' purpose of this data set is to teach about data cleaning.
+#' 
+#' A translation table for cleaning the species names is in
+#' \code{OrdwaySpecies}.r
+#' 
+#' @name OrdwayBirds
+#' @docType data
+#' @format A data frame with 15829 observations on the bird's species, size,
+#' date found, and band number.
+#' 
+#' Timestamp indicates when the data were entered into an electronic record,
+#' not anything about the bird being described.
+#' @references %% ~~ possibly secondary sources and usages ~~
+#' @source Jerald Dosch, Dept. of Biology, Macalester College: the manager of
+#' the Study Area.
+#' @keywords datasets
+#' @examples
+#' 
+#' data(OrdwayBirdsOrig)
+#' 
+"OrdwayBirds"
