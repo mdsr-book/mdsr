@@ -20,6 +20,8 @@ make_babynames_dist <- function() {
     filter(year + x == 2014) %>%
     select(year, sex, age_today, alive_prob, life_exp)
   
+  # Unfortunately, the actuarial tables only contain entries for people born each decade, not each year. Following FiveThirtyEight's lead we will linearly interpolate the missing values using the \func{approx} function. 
+  
   years <- min(actuarial$year):max(actuarial$year)
   men <- actuarial %>%
     filter(sex == "M") %>%
@@ -33,6 +35,8 @@ make_babynames_dist <- function() {
   actuarial_interp <- actuarial_interp %>%
     rename(year = x, alive_prob = y) %>%
     mutate(sex = c(rep("M", length(years)), rep("F", length(years))))
+  
+  # Finally, we will construct the data set that we need by joining the actuarial information with the baby names data. 
   
   BabynameDist <- babynames::babynames %>%
     inner_join(actuarial_interp, by = c("year", "sex")) %>%
