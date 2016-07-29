@@ -418,3 +418,12 @@
 #' data(OrdwayBirdsOrig)
 #' 
 "OrdwayBirds"
+
+#' Spatial data on Deaths and Pumps from 1854 London cholera outbreak
+#' @docType data
+#' @source \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
+"CholeraDeaths"
+
+#' @rdname CholeraDeaths
+#' @docType data
+"CholeraPumps"
