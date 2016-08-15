@@ -46,16 +46,17 @@
 #' in the World. (170 countries are given.)
 #' \describe{
 #' \item{country}{Name of the country} 
-#' \item{area}{area (sq km), 2147} 
-#' \item{educ}{education spending (\% of GDP), 2206}
-#' \item{gdp}{Gross Domestic Product ($), 2001}
-#' \item{net_users}{Fraction of Internet users (\% of population), 2153}
-#' \item{oil_prod}{Crude oil - production (bbl/day), 2241}
 #' \item{pop}{number of people, 2119}
+#' \item{area}{area (sq km), 2147} 
+#' \item{oil_prod}{Crude oil - production (bbl/day), 2241}
+#' \item{gdp}{Gross Domestic Product per capita ($/person), 2001}
+#' \item{educ}{education spending (\% of GDP), 2206}
 #' \item{roadways}{Roadways per unit area (km/sq km), 2085}
+#' \item{net_users}{Fraction of Internet users (\% of population), 2153}
 #' }
 #' @source From the CIA World Factbook,
 #' \url{https://www.cia.gov/library/publications/the-world-factbook/}
+#' @seealso \code{\link[mosaic]{CIAdata}}
 #' @references \url{https://github.com/factbook/factbook.csv}
 #' @keywords datasets
 #' @examples
