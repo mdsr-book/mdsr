@@ -5,7 +5,7 @@
 \alias{CIACountries}
 \title{Several variables on countries from the CIA factbook, 2014.}
 \format{A data frame with the following variables for each of the Countries
-in the World. (170 countries are given.)
+in the World. (236 countries are given.)
 \describe{
 \item{country}{Name of the country} 
 \item{pop}{number of people, 2119}

@@ -14,7 +14,7 @@ CIACountries <- mosaic::CIAdata(c("pop", "area", "oilProd", "GDPcapita",
          ) %>%
   rename(gdp = GDPcapita, oil_prod = oilProd) %>%
   select(-netUsers) %>%
-  na.omit()
+  filter(!is.na(pop), !is.na(area))
 
 filter(DataComputing::CountryData, country == "United States")
 filter(CIACountries, country == "United States")
