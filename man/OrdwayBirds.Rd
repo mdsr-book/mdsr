@@ -33,8 +33,5 @@ A translation table for cleaning the species names is in
 data(OrdwayBirdsOrig)
 
 }
-\references{
-%% ~~ possibly secondary sources and usages ~~
-}
 \keyword{datasets}
 

@@ -22,8 +22,8 @@
 #' dbAir
 
 src_scidb <- function(dbname, ...) {
-  src_mysql(dbname, host = "scidb.smith.edu", 
-            user = "mth292", password = "RememberPi")
+  dplyr::src_mysql(dbname, host = "scidb.smith.edu", 
+                   user = "mth292", password = "RememberPi")
 }
 
 #' Create a DBI connection to the scidb server at Smith
@@ -43,7 +43,7 @@ src_scidb <- function(dbname, ...) {
 #' dbAir
 
 dbConnect_scidb <- function(dbname, ...) {
-  dbConnect(MySQL(), dbname = dbname, host = "scidb.smith.edu", 
+  dbConnect(RMySQL::MySQL(), dbname = dbname, host = "scidb.smith.edu", 
             user = "mth292", password = "RememberPi")
 }
 

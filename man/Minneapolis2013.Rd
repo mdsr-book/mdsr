@@ -5,12 +5,15 @@
 \alias{Minneapolis2013}
 \title{Ballots in the 2013 Mayoral election in Minneapolis}
 \format{A data frame with 80101 observations on the following 5 variables.
-All are stored as character strings.  \describe{
-\item{list("Precinct")}{Precincts are sub-divisions within Wards}
-\item{list("First")}{The voter's first choice} \item{list("Second")}{The
-voter's second choice} \item{list("Third")}{The voter's third choice}
-\item{list("Ward")}{The city is divided spatially into districts or 'wards'.
-These are further subdivided into precincts } }}
+All are stored as character strings.  
+\describe{
+ \item{Precinct}{Precincts are sub-divisions within Wards}
+ \item{First}{The voter's first choice} 
+ \item{Second}{The voter's second choice}
+ \item{Third}{The voter's third choice}
+ \item{Ward}{The city is divided spatially into districts or 'wards'.
+These are further subdivided into precincts } 
+}}
 \source{
 Ballot data from the Minneapolis city government:
 http://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx
