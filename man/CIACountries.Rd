@@ -12,6 +12,7 @@ in the World. (170 countries are given.)
 \item{educ}{education spending (\% of GDP), 2206}
 \item{gdp}{Gross Domestic Product ($), 2001}
 \item{net_users}{Fraction of Internet users (\% of population), 2153}
+\item{oil_prod}{Crude oil - production (bbl/day), 2241}
 \item{pop}{number of people, 2119}
 \item{roadways}{Roadways per unit area (km/sq km), 2085}
 }}

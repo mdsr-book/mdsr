@@ -3,7 +3,7 @@
 
 # readr::read_csv("https://raw.githubusercontent.com/factbook/factbook.csv/master/categories.csv")
 
-codes <- c("area" = 2147, "pop" = 2119, "gdp" = 2004, "educ" = 2206, "roadways" = 2085, "net_users" = 2153)
+codes <- c("area" = 2147, "pop" = 2119, "oil_prod" = 2241, "gdp" = 2004, "educ" = 2206, "roadways" = 2085, "net_users" = 2153)
 url <- paste0("https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_", codes, ".txt")
 
 files <- lapply(url, read.fwf, widths = c(-7, 50, 40), stringsAsFactors = FALSE) %>%
@@ -25,7 +25,7 @@ CIACountries <- files %>%
          ) %>%
   na.omit()
 
-# filter(CountryData2, country == "United States")
+filter(DataComputing::CountryData, country == "United States")
 filter(CIACountries, country == "United States")
 
 save(CIACountries, file = "data/CIACountries.rda")
