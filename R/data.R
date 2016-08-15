@@ -40,12 +40,12 @@
 #' \url{https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html}
 #' contains documentation for variable code 2153, network users.
 #' 
-#' @name Countries
+#' @name CIACountries
 #' @docType data
-#' @format A data frame on the following variables for each of the Countries
+#' @format A data frame with the following variables for each of the Countries
 #' in the World. (170 countries are given.)
 #' \describe{
-#' \item{country}{Name of the country.} 
+#' \item{country}{Name of the country} 
 #' \item{area}{area (sq km), 2147} 
 #' \item{educ}{education spending (\% of GDP), 2206}
 #' \item{gdp}{Gross Domestic Product ($), 2001}
@@ -54,14 +54,15 @@
 #' \item{roadways}{Roadways per unit area (km/sq km), 2085}
 #' }
 #' @source From the CIA World Factbook,
-#' \url{https://www.cia.gov/library/publications/the-world-factbook/} 
+#' \url{https://www.cia.gov/library/publications/the-world-factbook/}
+#' @references \url{https://github.com/factbook/factbook.csv}
 #' @keywords datasets
 #' @examples
 #' 
-#' data(Countries)
-#' glimpse(Countries)
+#' data(CIACountries)
+#' glimpse(CIACountries)
 #' 
-"Countries"
+"CIACountries"
 
 #' election statistics
 #' @docType data

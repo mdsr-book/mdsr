@@ -12,7 +12,7 @@ names(files) <- names(codes)
 lengths <- sapply(files, nrow)
 # hack for numeric data
 files[["educ"]]$V2 <- as.character(files[["educ"]]$V2)
-Countries <- files %>% 
+CIACountries <- files %>% 
   bind_rows() %>%
   rename(country = V1, value = V2) %>%
   mutate(country = trimws(country), value = tidyr::extract_numeric(value),
@@ -25,7 +25,7 @@ Countries <- files %>%
          ) %>%
   na.omit()
 
-filter(CountryData2, country == "United States")
-filter(Countries, country == "United States")
+# filter(CountryData2, country == "United States")
+filter(CIACountries, country == "United States")
 
-save(Countries, file = "data/Countries.rda")
+save(CIACountries, file = "data/CIACountries.rda")
