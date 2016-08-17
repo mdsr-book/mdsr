@@ -20,8 +20,19 @@ CountryData2 <- CountryData %>%
 
 save("CountryData2", file = "data/CountryData2.rda", compress = "xz")
 
+# MedicareProviders
+download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareProviders.rda", "data/MedicareProviders.rda")
+cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/MedicareProviders.Rd")), sep = "\n")
+
 # MedicareCharges
-download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareCharges.rda", "data/MedicareCharges.rda")
+download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareCharges.rda", "inst/extdata/MedicareCharges.RData")
+load("inst/extdata/MedicareCharges.RData")
+MedicareCharges <- MedicareCharges %>%
+  inner_join(MedicareProviders, by = "idProvider") %>%
+  group_by(drg, stateProvider) %>%
+  summarize(num_charges = n(), mean_charge = mean(aveCharges, na.rm = TRUE))
+save(MedicareCharges, file = "data/MedicareCharges.rda", compress = "xz")
+
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/MedicareCharges.Rd")), sep = "\n")
 
 # OrdwayBirds
@@ -31,10 +42,6 @@ cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/D
 # Minneapolis2013
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/Minneapolis2013.rda", "data/Minneapolis2013.rda")
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/Minneapolis2013.Rd")), sep = "\n")
-
-# MedicareProviders
-download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareProviders.rda", "data/MedicareProviders.rda")
-cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/MedicareProviders.Rd")), sep = "\n")
 
 # NCI for graph
 Cancer <- read.csv("inst/extdata/nciNetwork.csv")
