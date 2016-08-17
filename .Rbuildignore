@@ -5,4 +5,4 @@
 ^Makefile$
 ^.*\.html$
 ^.*\.Rmd$
-
+^.*\.csv
