@@ -38,6 +38,8 @@ cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/D
 # OrdwayBirds
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/OrdwayBirds.rda", "data/OrdwayBirds.rda")
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/OrdwayBirds.Rd")), sep = "\n")
+load("data/OrdwayBirds.rda")
+save(OrdwayBirds, file = "data/OrdwayBirds.rda", compress = "xz")
 
 # Minneapolis2013
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/Minneapolis2013.rda", "data/Minneapolis2013.rda")
