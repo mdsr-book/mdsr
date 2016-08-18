@@ -351,6 +351,8 @@
 
 #' Spatial data on Deaths and Pumps from 1854 London cholera outbreak
 #' @docType data
+#' @format An object of class \code{\link[sp]{SpatialPointsDataFrame}} 
+#' with 250 rows and 2 columns.
 #' @source \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
 "CholeraDeaths"
 
