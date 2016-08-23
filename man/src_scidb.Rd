@@ -26,15 +26,10 @@ For \code{\link{mysql_scidb}}, a charcter vector of length 1 to be used
 as an \code{engine.ops} argument, or on the command line.
 }
 \description{
-Connect to the scidb server at Smith
-
-Create a DBI connection to the scidb server at Smith
-
-Create a string of arguments for the scidb server at Smith to be used on the
-command line
+Connect to the scidb server at Smith College.
 }
 \details{
-this is a public, read-only account. Any abuse will be considered a 
+This is a public, read-only account. Any abuse will be considered a 
 hostile act.
 }
 \examples{
@@ -45,8 +40,9 @@ dbAir
 dbAir <- dbConnect_scidb("airlines")
 dbAir
 
-library(knitr)
-opts_chunk$set(engine.opts = mysql_scidb("airlines"))
+if (require(knitr)) {
+  opts_chunk$set(engine.opts = mysql_scidb("airlines"))
+}
 }
 \seealso{
 \code{\link[dplyr]{src_mysql}}

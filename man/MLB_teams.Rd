@@ -14,16 +14,17 @@
  \item{WPct}{winning percentage}
  \item{attendance}{number of fans in attendance}
  \item{normAttend}{number of fans in attendance, relative to the team with
-#'the highest attendance in this sample (the 2008 New York Yankees)}
+ the highest attendance in this sample (the 2008 New York Yankees)}
  \item{payroll}{the sum of the salaries of the players on each team. Note
-#'that this number is only an estimate of the actual team payroll -- and may
-#'not even be a very good one. Salaries are accumulated from \code{\link[Lahman]{Salaries}}}
+ that this number is only an estimate of the actual team payroll -- and may
+ not even be a very good one. Salaries are accumulated from \code{\link[Lahman]{Salaries}}}
  \item{metroPop}{the size of the team's home city's metropolitan population, according
-#'to Wikipedia and the 2010 US Census}
+ to Wikipedia and the 2010 US Census}
  \item{name}{the full name of the team}
 }}
 \source{
-The \code{\link[Lahman]{Teams}} data set and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
+The \code{\link[Lahman]{Teams}} table from \code{\link{Lahman}} 
+and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
 }
 \usage{
 MLB_teams

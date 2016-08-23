@@ -14,18 +14,19 @@
 #'  \item{WPct}{winning percentage}
 #'  \item{attendance}{number of fans in attendance}
 #'  \item{normAttend}{number of fans in attendance, relative to the team with
-#'#'the highest attendance in this sample (the 2008 New York Yankees)}
+#'  the highest attendance in this sample (the 2008 New York Yankees)}
 #'  \item{payroll}{the sum of the salaries of the players on each team. Note
-#'#'that this number is only an estimate of the actual team payroll -- and may
-#'#'not even be a very good one. Salaries are accumulated from \code{\link[Lahman]{Salaries}}}
+#'  that this number is only an estimate of the actual team payroll -- and may
+#'  not even be a very good one. Salaries are accumulated from \code{\link[Lahman]{Salaries}}}
 #'  \item{metroPop}{the size of the team's home city's metropolitan population, according
-#'#'to Wikipedia and the 2010 US Census}
+#'  to Wikipedia and the 2010 US Census}
 #'  \item{name}{the full name of the team}
 #' }
 #' 
 #' @seealso \code{\link[Lahman]{Teams}}
 #' 
-#' @source The \code{\link[Lahman]{Teams}} data set and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
+#' @source The \code{\link[Lahman]{Teams}} table from \code{\link{Lahman}} 
+#' and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
 #' 
 "MLB_teams" 
 
@@ -66,8 +67,20 @@
 #' 
 "CIACountries"
 
-#' election statistics
+#' Election Statistics
 #' @docType data
+#' @format An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) 
+#' with 117 rows and 13 columns.
+#' \describe{
+#' \item{Ward}{Name of the country} 
+#' \item{Precinct}{number of people, 2119}
+#' \item{Registered.Voters.at.7am}{area (sq km), 2147} 
+#' \item{Voters.Registering.at.Polls}{Crude oil - production (bbl/day), 2241}
+#' \item{gdp}{Gross Domestic Product per capita ($/person), 2001}
+#' \item{educ}{education spending (\% of GDP), 2206}
+#' \item{roadways}{Roadways per unit area (km/sq km), 2085}
+#' \item{net_users}{Fraction of Internet users (\% of population), 2153}
+#' }
 "Elections"
 
 #' Cherry Blossom runs

@@ -1,11 +1,10 @@
 #' src_scidb
-#' 
-#' @description Connect to the scidb server at Smith
+#' @description Connect to the scidb server at Smith College.
 #' 
 #' @param dbname the name of the database to which you want to connect
 #' @param ... arguments passed to \code{\link[dplyr]{src_mysql}} or \code{\link[DBI]{dbConnect}}
 #' 
-#' @details this is a public, read-only account. Any abuse will be considered a 
+#' @details This is a public, read-only account. Any abuse will be considered a 
 #' hostile act. 
 #' 
 #' @return For \code{\link{src_mysql}}, a \code{\link[dplyr]{src_mysql}} object
@@ -26,8 +25,6 @@ src_scidb <- function(dbname, ...) {
                    user = "mth292", password = "RememberPi")
 }
 
-#' Create a DBI connection to the scidb server at Smith
-#' 
 #' @rdname src_scidb
 #' @export
 #'  
@@ -47,9 +44,6 @@ dbConnect_scidb <- function(dbname, ...) {
             user = "mth292", password = "RememberPi")
 }
 
-#' Create a string of arguments for the scidb server at Smith to be used on the
-#' command line
-#' 
 #' @rdname src_scidb
 #' @export
 #' 
@@ -59,8 +53,9 @@ dbConnect_scidb <- function(dbname, ...) {
 #' @seealso \code{\link[knitr]{opts_chunk}}
 #' @examples 
 #' 
-#' library(knitr)
-#' opts_chunk$set(engine.opts = mysql_scidb("airlines"))
+#' if (require(knitr)) {
+#'   opts_chunk$set(engine.opts = mysql_scidb("airlines"))
+#' }
 
 mysql_scidb <- function(dbname, ...) {
   paste("-h scidb.smith.edu -u mth292 -pRememberPi -t", dbname)
