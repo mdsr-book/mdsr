@@ -91,16 +91,6 @@
 #' @docType data
 "Cancer"
 
-#' NYC Health Violations Restaurant Cuisines
-#' @format{
-#' A data frame with 84 observations on the following 2 variables.
-#' \describe{
-#'  \item{\code{cuisine_code}}{a character vector}
-#'  \item{\code{cuisine_description}}{a character vector}
-#' }
-#' }
-"Cuisines"
-
 #' NYC Restaurant Health Violations
 #' @docType data
 #' @format{
@@ -115,19 +105,27 @@
 #'  \item{\code{phone}}{phone number}
 #'  \item{\code{inspection_date}}{inspection date}
 #'  \item{\code{action}}{action taken}
-#'  \item{\code{violation_code}}{violation code, see ViolationCodes}
+#'  \item{\code{violation_code}}{violation code, see \code{\link{ViolationCodes}}}
 #'  \item{\code{score}}{inspection score}
 #'  \item{\code{grade}}{inspection grade}
 #'  \item{\code{grade_date}}{grade date}
 #'  \item{\code{record_date}}{recording date}
 #'  \item{\code{inspection_type}}{inspect type}
-#'  \item{\code{cuisine_code}}{cuisine code, see Cuisines}
+#'  \item{\code{cuisine_code}}{cuisine code, see \code{\link{Cuisines}}}
 #' }
 #' }
+#' @seealso \code{\link{ViolationCodes}}, \code{\link{Cuisines}}
 #' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/xx67-kt59}
+#' @examples 
+#' data(Violations)
+#' Violations %>%
+#'   inner_join(Cuisines, by = "cuisine_code") %>%
+#'   filter(cuisine_description == "American") %>%
+#'   arrange(grade_date) %>%
+#'   head() 
 "Violations"
 
-#' NYC Restaurant Health Violation Codes
+#' @rdname Violations
 #' @docType data
 #' @format A data frame with 174 observations on the following 3 variables.
 #' \describe{
@@ -136,6 +134,18 @@
 #'    \item{\code{violation_description}}{violation description}
 #'  }
 "ViolationCodes"
+
+#' @rdname Violations
+#' @docType data
+#' @format{
+#' A data frame with 84 observations on the following 2 variables.
+#' \describe{
+#'  \item{\code{cuisine_code}}{a character vector}
+#'  \item{\code{cuisine_description}}{a character vector}
+#' }
+#' }
+"Cuisines"
+
 
 #' Data Science Papers from arXiv.org
 #' 

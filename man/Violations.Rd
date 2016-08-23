@@ -2,6 +2,8 @@
 % Please edit documentation in R/data.R
 \docType{data}
 \name{Violations}
+\alias{Cuisines}
+\alias{ViolationCodes}
 \alias{Violations}
 \title{NYC Restaurant Health Violations}
 \format{{
@@ -16,13 +18,13 @@ A data frame with 480,621 observations on the following 16 variables.
  \item{\code{phone}}{phone number}
  \item{\code{inspection_date}}{inspection date}
  \item{\code{action}}{action taken}
- \item{\code{violation_code}}{violation code, see ViolationCodes}
+ \item{\code{violation_code}}{violation code, see \code{\link{ViolationCodes}}}
  \item{\code{score}}{inspection score}
  \item{\code{grade}}{inspection grade}
  \item{\code{grade_date}}{grade date}
  \item{\code{record_date}}{recording date}
  \item{\code{inspection_type}}{inspect type}
- \item{\code{cuisine_code}}{cuisine code, see Cuisines}
+ \item{\code{cuisine_code}}{cuisine code, see \code{\link{Cuisines}}}
 }
 }}
 \source{
@@ -30,9 +32,24 @@ NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Res
 }
 \usage{
 Violations
+
+ViolationCodes
+
+Cuisines
 }
 \description{
 NYC Restaurant Health Violations
+}
+\examples{
+data(Violations)
+Violations \%>\%
+  inner_join(Cuisines, by = "cuisine_code") \%>\%
+  filter(cuisine_description == "American") \%>\%
+  arrange(grade_date) \%>\%
+  head() 
+}
+\seealso{
+\code{\link{ViolationCodes}}, \code{\link{Cuisines}}
 }
 \keyword{datasets}
 
