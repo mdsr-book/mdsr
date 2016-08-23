@@ -4,7 +4,7 @@
 \name{MedicareCharges}
 \alias{MedicareCharges}
 \title{Charges to and Payments from Medicare}
-\format{A data frame with 163065 observations on the following 5 variables.
+\format{A data frame with 5,025 observations on the following 4 variables.
 \describe{ 
  \item{drg}{Code for the Direct Recovery Group: a
 character string that looks like a number.} 
@@ -29,11 +29,16 @@ These data are part of a set with \code{DirectRecoveryGroups}, which gives a
 description of the medical procedure associated with each DRG, and
 \code{MedicareProviders}, which translates \code{idProvider} into a name,
 address, state, Zip, etc..
+
+These data have been pre-aggregated by state.
 }
 \examples{
 
 data(MedicareCharges)
 
+}
+\seealso{
+\code{\link{MedicareProviders}}
 }
 \keyword{datasets}
 

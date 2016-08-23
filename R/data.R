@@ -142,7 +142,6 @@
 #' @description Papers matching the search string "Data Science" on arXiv.org in December,
 #' 2015
 #' 
-#' 
 #' @name DataSciencePapers
 #' @docType data
 #' @format A data frame with 95 observations on the following 15 variables.
@@ -178,22 +177,29 @@
 #' @name MedicareProviders
 #' @docType data
 #' @format A data frame with 3337 observations on the following 7 variables.
-#' \describe{ \item{idProvider}{a unique number assigned to each
-#' provider} \item{nameProvider}{Name of the provider. (text string)}
-#' \item{addressProvider}{Street address of the provider. (text
-#' string)} \item{cityProvider}{The name of the city in which the
-#' provider is located. (factor)} \item{stateProvider}{The two-letter
+#' \describe{ 
+#'  \item{idProvider}{a unique number assigned to each
+#' provider} 
+#'  \item{nameProvider}{Name of the provider. (text string)}
+#'  \item{addressProvider}{Street address of the provider. (text
+#' string)} 
+#'  \item{cityProvider}{The name of the city in which the
+#' provider is located. (factor)} 
+#'  \item{stateProvider}{The two-letter
 #' postal code of the state in which the provider is located. (factor)}
-#' \item{zipProvider}{The provider's ZIP code. (factor)}
-#' \item{referralRegion}{An identifier for the region serviced by the
-#' provider.} }
+#'  \item{zipProvider}{The provider's ZIP code. (factor)}
+#'  \item{referralRegion}{An identifier for the region serviced by the
+#' provider.} 
+#' }
 #' @source Extracted from the highly repetitive table provided by the Centers
-#' for Medicare and Medicaid Services.#'See
+#' for Medicare and Medicaid Services.
+#' See
 #' \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}
 #' @keywords datasets
+#' @seealso \code{\link{MedicareCharges}}
 #' @examples
 #' 
-#' head(MedicareProviders)
+#' data(MedicareProviders)
 #' 
 "MedicareProviders"
 
@@ -208,9 +214,11 @@
 #' \code{MedicareProviders}, which translates \code{idProvider} into a name,
 #' address, state, Zip, etc..
 #' 
+#' These data have been pre-aggregated by state.
+#' 
 #' @name MedicareCharges
 #' @docType data
-#' @format A data frame with 163065 observations on the following 5 variables.
+#' @format A data frame with 5,025 observations on the following 4 variables.
 #' \describe{ 
 #'  \item{drg}{Code for the Direct Recovery Group: a
 #' character string that looks like a number.} 
@@ -221,6 +229,7 @@
 #' @source Data from the Centers for Medicare and Medicaid Services.
 #' See \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}.
 #' @keywords datasets
+#' @seealso \code{\link{MedicareProviders}}
 #' @examples
 #' 
 #' data(MedicareCharges)
@@ -254,6 +263,7 @@
 #'  \item{\code{sat_pct}}{percent of students taking SAT in that state}
 #' }
 #' @details See also the earlier \code{\link[mosaicData]{SAT}} dataset.
+#' @seealso \code{\link[mosaicData]{SAT}}
 "SAT_2010"
 
 #' Cities and their populations
@@ -281,7 +291,6 @@
 #' @examples
 #' 
 #' data(WorldCities)
-#' ## maybe str(WorldCities) ; plot(WorldCities) ...
 #' 
 "WorldCities"
 
@@ -293,10 +302,10 @@
 
 #' Ballots in the 2013 Mayoral election in Minneapolis
 #' 
-#' The choices marked on each (valid) ballot for the election, which was run
+#' @description The choices marked on each (valid) ballot for the election, which was run
 #' using a rank-choice, instant runoff system.
 #' 
-#' Ballot information for the 2013 Minneapolis Mayoral election, which was run
+#' @details Ballot information for the 2013 Minneapolis Mayoral election, which was run
 #' as a rank-choice election.  In rank-choice, a voter can indicate first,
 #' second, and third choices.  If a voter's first choice is eliminated (by
 #' being last in the count across voters), the second choice is promoted to
@@ -306,7 +315,7 @@
 #' 
 #' @name Minneapolis2013
 #' @docType data
-#' @format A data frame with 80101 observations on the following 5 variables.
+#' @format A data frame with 80,101 observations on the following 5 variables.
 #' All are stored as character strings.  
 #' \describe{
 #'  \item{Precinct}{Precincts are sub-divisions within Wards}
@@ -317,21 +326,19 @@
 #' These are further subdivided into precincts } 
 #' }
 #' @references Description of ranked-choice voting:
-#' http://vote.minneapolismn.gov/rcv/index.htm
+#' \url{http://vote.minneapolismn.gov/rcv/index.htm}
 #' 
 #' A Minnesota Public Radio story about the election ballot tallying process:
-#' http://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers
+#' \url{http://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers}
 #' 
 #' The Wikipedia article about the election:
-#' http://en.wikipedia.org/wiki/Minneapolis_mayoral_election,_2013
+#' \url{http://en.wikipedia.org/wiki/Minneapolis_mayoral_election,_2013}
 #' @source Ballot data from the Minneapolis city government:
-#' http://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx
+#' \url{http://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx}
 #' @keywords datasets
 #' @examples
 #' 
 #' data(Minneapolis2013)
-#' str(Minneapolis2013)
-#' 
 "Minneapolis2013"
 
 #' Birds captured and released at Ordway, complete and uncleaned
@@ -344,11 +351,11 @@
 #' purpose of this data set is to teach about data cleaning.
 #' 
 #' A translation table for cleaning the species names is in
-#' \code{OrdwaySpecies}.r
+#' \code{\link[DataComputing]{OrdwaySpecies}}.
 #' 
 #' @name OrdwayBirds
 #' @docType data
-#' @format A data frame with 15829 observations on the bird's species, size,
+#' @format A data frame with 15,829 observations on the bird's species, size,
 #' date found, and band number.
 #' 
 #' Timestamp indicates when the data were entered into an electronic record,
@@ -358,7 +365,7 @@
 #' @keywords datasets
 #' @examples
 #' 
-#' data(OrdwayBirdsOrig)
+#' data(OrdwayBirds)
 #' 
 "OrdwayBirds"
 

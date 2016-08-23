@@ -28,7 +28,6 @@ A list of cities
 \examples{
 
 data(WorldCities)
-## maybe str(WorldCities) ; plot(WorldCities) ...
 
 }
 \references{

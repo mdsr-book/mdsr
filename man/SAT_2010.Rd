@@ -25,5 +25,8 @@ SAT results by state for 2010
 \details{
 See also the earlier \code{\link[mosaicData]{SAT}} dataset.
 }
+\seealso{
+\code{\link[mosaicData]{SAT}}
+}
 \keyword{datasets}
 

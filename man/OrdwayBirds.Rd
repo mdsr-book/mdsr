@@ -4,7 +4,7 @@
 \name{OrdwayBirds}
 \alias{OrdwayBirds}
 \title{Birds captured and released at Ordway, complete and uncleaned}
-\format{A data frame with 15829 observations on the bird's species, size,
+\format{A data frame with 15,829 observations on the bird's species, size,
 date found, and band number.
 
 Timestamp indicates when the data were entered into an electronic record,
@@ -26,11 +26,11 @@ There are many extraneous levels of variables such as species.  Part of the
 purpose of this data set is to teach about data cleaning.
 
 A translation table for cleaning the species names is in
-\code{OrdwaySpecies}.r
+\code{\link[DataComputing]{OrdwaySpecies}}.
 }
 \examples{
 
-data(OrdwayBirdsOrig)
+data(OrdwayBirds)
 
 }
 \keyword{datasets}

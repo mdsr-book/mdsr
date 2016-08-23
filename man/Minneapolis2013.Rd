@@ -4,7 +4,7 @@
 \name{Minneapolis2013}
 \alias{Minneapolis2013}
 \title{Ballots in the 2013 Mayoral election in Minneapolis}
-\format{A data frame with 80101 observations on the following 5 variables.
+\format{A data frame with 80,101 observations on the following 5 variables.
 All are stored as character strings.  
 \describe{
  \item{Precinct}{Precincts are sub-divisions within Wards}
@@ -16,7 +16,7 @@ These are further subdivided into precincts }
 }}
 \source{
 Ballot data from the Minneapolis city government:
-http://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx
+\url{http://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx}
 }
 \usage{
 Minneapolis2013
@@ -37,18 +37,16 @@ votes.
 \examples{
 
 data(Minneapolis2013)
-str(Minneapolis2013)
-
 }
 \references{
 Description of ranked-choice voting:
-http://vote.minneapolismn.gov/rcv/index.htm
+\url{http://vote.minneapolismn.gov/rcv/index.htm}
 
 A Minnesota Public Radio story about the election ballot tallying process:
-http://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers
+\url{http://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers}
 
 The Wikipedia article about the election:
-http://en.wikipedia.org/wiki/Minneapolis_mayoral_election,_2013
+\url{http://en.wikipedia.org/wiki/Minneapolis_mayoral_election,_2013}
 }
 \keyword{datasets}
 

@@ -5,18 +5,24 @@
 \alias{MedicareProviders}
 \title{Medicare Providers}
 \format{A data frame with 3337 observations on the following 7 variables.
-\describe{ \item{idProvider}{a unique number assigned to each
-provider} \item{nameProvider}{Name of the provider. (text string)}
-\item{addressProvider}{Street address of the provider. (text
-string)} \item{cityProvider}{The name of the city in which the
-provider is located. (factor)} \item{stateProvider}{The two-letter
+\describe{ 
+ \item{idProvider}{a unique number assigned to each
+provider} 
+ \item{nameProvider}{Name of the provider. (text string)}
+ \item{addressProvider}{Street address of the provider. (text
+string)} 
+ \item{cityProvider}{The name of the city in which the
+provider is located. (factor)} 
+ \item{stateProvider}{The two-letter
 postal code of the state in which the provider is located. (factor)}
-\item{zipProvider}{The provider's ZIP code. (factor)}
-\item{referralRegion}{An identifier for the region serviced by the
-provider.} }}
+ \item{zipProvider}{The provider's ZIP code. (factor)}
+ \item{referralRegion}{An identifier for the region serviced by the
+provider.} 
+}}
 \source{
 Extracted from the highly repetitive table provided by the Centers
-for Medicare and Medicaid Services.#'See
+for Medicare and Medicaid Services.
+See
 \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}
 }
 \usage{
@@ -31,8 +37,11 @@ This data table is related to \code{MedicareCharges} data.
 }
 \examples{
 
-head(MedicareProviders)
+data(MedicareProviders)
 
+}
+\seealso{
+\code{\link{MedicareCharges}}
 }
 \keyword{datasets}
 
