@@ -23,7 +23,7 @@
  \item{name}{the full name of the team}
 }}
 \source{
-The \code{\link[Lahman]{Teams}} table from \code{\link{Lahman}} 
+The \code{\link[Lahman]{Teams}} table from \code{\link[Lahman]{Lahman-package}} 
 and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
 }
 \usage{

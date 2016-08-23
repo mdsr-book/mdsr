@@ -24,9 +24,6 @@ Minnesota, owned and managed by Macalester College.
 \details{
 There are many extraneous levels of variables such as species.  Part of the
 purpose of this data set is to teach about data cleaning.
-
-A translation table for cleaning the species names is in
-\code{\link[DataComputing]{OrdwaySpecies}}.
 }
 \examples{
 

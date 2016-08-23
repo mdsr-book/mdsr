@@ -25,7 +25,7 @@
 #' 
 #' @seealso \code{\link[Lahman]{Teams}}
 #' 
-#' @source The \code{\link[Lahman]{Teams}} table from \code{\link{Lahman}} 
+#' @source The \code{\link[Lahman]{Teams}} table from \code{\link[Lahman]{Lahman-package}} 
 #' and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
 #' 
 "MLB_teams" 
@@ -350,9 +350,6 @@
 #' There are many extraneous levels of variables such as species.  Part of the
 #' purpose of this data set is to teach about data cleaning.
 #' 
-#' A translation table for cleaning the species names is in
-#' \code{\link[DataComputing]{OrdwaySpecies}}.
-#' 
 #' @name OrdwayBirds
 #' @docType data
 #' @format A data frame with 15,829 observations on the bird's species, size,
@@ -369,13 +366,20 @@
 #' 
 "OrdwayBirds"
 
-#' Spatial data on Deaths and Pumps from 1854 London cholera outbreak
+#' Deaths and Pumps from 1854 London cholera outbreak
 #' @docType data
 #' @format An object of class \code{\link[sp]{SpatialPointsDataFrame}} 
-#' with 250 rows and 2 columns.
+#' whose data attribute has 250 rows and 2 columns.
+#' @details Both spatial objects are projected in EPSG:27700, aka the British
+#' National Grid.
 #' @source \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
+#' @examples 
+#' if (require(sp)) {
+#'   plot(CholeraDeaths)
+#' }
 "CholeraDeaths"
 
 #' @rdname CholeraDeaths
+#' @format An object of class \code{\link[sp]{SpatialPointsDataFrame}}.
 #' @docType data
 "CholeraPumps"

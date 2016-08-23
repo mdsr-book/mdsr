@@ -4,9 +4,9 @@
 \name{CholeraDeaths}
 \alias{CholeraDeaths}
 \alias{CholeraPumps}
-\title{Spatial data on Deaths and Pumps from 1854 London cholera outbreak}
+\title{Deaths and Pumps from 1854 London cholera outbreak}
 \format{An object of class \code{\link[sp]{SpatialPointsDataFrame}} 
-with 250 rows and 2 columns.}
+whose data attribute has 250 rows and 2 columns.}
 \source{
 \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
 }
@@ -16,7 +16,16 @@ CholeraDeaths
 CholeraPumps
 }
 \description{
-Spatial data on Deaths and Pumps from 1854 London cholera outbreak
+Deaths and Pumps from 1854 London cholera outbreak
+}
+\details{
+Both spatial objects are projected in EPSG:27700, aka the British
+National Grid.
+}
+\examples{
+if (require(sp)) {
+  plot(CholeraDeaths)
+}
 }
 \keyword{datasets}
 
