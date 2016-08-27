@@ -12,7 +12,7 @@ All are stored as character strings.
  \item{Second}{The voter's second choice}
  \item{Third}{The voter's third choice}
  \item{Ward}{The city is divided spatially into districts or 'wards'.
-These are further subdivided into precincts } 
+These are further subdivided into precincts. } 
 }}
 \source{
 Ballot data from the Minneapolis city government:

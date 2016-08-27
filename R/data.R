@@ -328,7 +328,28 @@
 
 #' Votes from Scottish Parliament
 #' @docType data
+#' @description Votes recorded on each ballot by each member of the Scottish Parliament in 
+#' 2008 along with information about party affiliation.
+#' @format \code{Votes} is a data.frame with 103582 rows and 3 variables. 
+#'  \describe{
+#'  \item{\code{bill}}{an identifier for the bill}
+#'  \item{\code{name}}{the name of the member of parliament}
+#'  \item{\code{vote}}{1 means a vote for, -1 a vote against. 0 is an abstention.}
+#'  }
+#'  \code{Parties} is a data.frame with 134 rows, one for each member of parliament, and 2 variables. 
+#'  \describe{
+#'  \item{\code{party}}{the name of the political party the member belongs to}
+#'  \item{\code{name}}{the name of the member of parliament}
+#'  }
+#'  
+#' @details Almost all of the members of parliament belongs to a political party. This table
+#' identifies that party.These data were provided by Caroline Ettinger and form part of her
+#' senior honor's project at Macalester College. Prof. Andrew Beveridge supervised the
+#' thesis. Ms. Ettinger used the vote data to explore how to extract the party association
+#' of members purely from voting records. The \code{Parties} data was used to evaluate
+#' the success of methods.
 "Votes"
+
 #' @rdname Votes
 "Parties"
 
@@ -355,7 +376,7 @@
 #'  \item{Second}{The voter's second choice}
 #'  \item{Third}{The voter's third choice}
 #'  \item{Ward}{The city is divided spatially into districts or 'wards'.
-#' These are further subdivided into precincts } 
+#' These are further subdivided into precincts. } 
 #' }
 #' @references Description of ranked-choice voting:
 #' \url{http://vote.minneapolismn.gov/rcv/index.htm}
