@@ -13,7 +13,7 @@ Description: A complement to the forthcoming book *Modern Data
 Depends:
     R (>= 3.2.0),
     mosaic
-License: GPL (>2.0)
+License: CC0
 LazyData: true
 Imports:
     babynames,
@@ -30,3 +30,5 @@ Suggests:
     sp
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1
+URL: http://github.com/beanumber/mdsr
+BugReports: https://github.com/beanumber/mdsr/issues
