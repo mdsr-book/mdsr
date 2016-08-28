@@ -343,7 +343,7 @@
 #'  }
 #'  
 #' @details Almost all of the members of parliament belongs to a political party. This table
-#' identifies that party.These data were provided by Caroline Ettinger and form part of her
+#' identifies that party. These data were provided by Caroline Ettinger and form part of her
 #' senior honor's project at Macalester College. Prof. Andrew Beveridge supervised the
 #' thesis. Ms. Ettinger used the vote data to explore how to extract the party association
 #' of members purely from voting records. The \code{Parties} data was used to evaluate

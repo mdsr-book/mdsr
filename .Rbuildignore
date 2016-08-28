@@ -7,3 +7,4 @@
 ^.*\.Rmd$
 ^.*\.csv
 ^.*\.RData
+^cran-comments\.md$
