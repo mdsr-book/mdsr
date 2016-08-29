@@ -2,11 +2,11 @@ Package: mdsr
 Title: Complement to Forthcoming Book: Modern Data Science with R
 Version: 0.1.3
 Date: 2016-08-23
-Authors@R: as.person(c(
-    "Ben Baumer <ben.baumer@gmail.com> [aut, cre]",
-    "Nicholas J. Horton <nhorton@amherst.edu> [aut]",
-    "Daniel T. Kaplan <kaplan@macalester.edu> [aut]"
-  ))
+Authors@R: c(
+    person("Ben", "Baumer", email = "ben.baumer@gmail.com",
+      role = c("aut", "cre")),
+    person("Nicholas", "Horton", email = "nhorton@amherst.edu", role = "aut"),
+    person("Daniel", "Kaplan", email = "kaplan@macalester.edu", role = "aut"))
 Description: A complement to the forthcoming book *Modern Data
     Science with R*. This package contains all of the data and code necessary to
     complete exercises and reproduce examples from the text.
@@ -28,7 +28,6 @@ Suggests:
     macleish,
     lubridate,
     sp
-VignetteBuilder: knitr
 RoxygenNote: 5.0.1
 URL: http://github.com/beanumber/mdsr
 BugReports: https://github.com/beanumber/mdsr/issues

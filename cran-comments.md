@@ -15,6 +15,8 @@
     data   5.3Mb
 * We plead for mercy with respect to the package size. The data sets included
 are used in the corresponding book, and are necessary for reproducibility. 
+* Fixed call to `person()` in DESCRIPTION
+* Removed vignette builder from DESCRIPTION
 
 
 ## Reverse dependencies
