@@ -17,6 +17,7 @@
 are used in the corresponding book, and are necessary for reproducibility. 
 * Fixed call to `person()` in DESCRIPTION
 * Removed vignette builder from DESCRIPTION
+* Revised title and added URL and ISBN
 
 
 ## Reverse dependencies
