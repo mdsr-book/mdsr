@@ -1,6 +1,7 @@
 # mdsr 0.1.4
 
 * Added CRAN badge after release.
+* Added `etl_NCI60()` function
 
 # mdsr 0.1.3
 

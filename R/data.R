@@ -436,3 +436,28 @@
 #' @format An object of class \code{\link[sp]{SpatialPointsDataFrame}}.
 #' @docType data
 "CholeraPumps"
+
+#' Gene expression in cancer.
+#' 
+#' The data come from a National Cancer Institute study of gene expression in
+#' cell lines drawn from various sorts of cancer.
+#' 
+#' The expression data, \code{NCI60} is a dataframe of 41078 gene probes (rows)
+#' and 60 cell lines (columns).  The first column, \code{Probe} gives the name
+#' of the Agilent microarray probe.  Each of the remaining columns is named for
+#' a cell line.  The value is the log-2 expression associated with that probe
+#' for the cell line.
+#' 
+#' \code{\link{Cancer}} gives information about each cell line.
+#' 
+#' @docType data
+#' @format See the description
+#' @seealso \code{\link{Cancer}}
+#' @references Staunton et al. (\url{http://www.pnas.org/content/98/19/10787.full})
+#' D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
+#' \url{http://discover.nci.nih.gov/host/2000_systematic_abstract.jsp}
+#' @examples
+#' 
+#' data(NCI60_tiny) 
+#' 
+"NCI60_tiny"
