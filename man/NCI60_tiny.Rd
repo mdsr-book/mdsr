@@ -2,18 +2,21 @@
 % Please edit documentation in R/data.R
 \docType{data}
 \name{NCI60_tiny}
+\alias{Cancer}
 \alias{NCI60_tiny}
-\title{Gene expression in cancer.}
+\title{Gene expression in cancer}
 \format{See the description}
 \usage{
 NCI60_tiny
+
+Cancer
 }
 \description{
 The data come from a National Cancer Institute study of gene expression in
 cell lines drawn from various sorts of cancer.
 }
 \details{
-The expression data, \code{NCI60} is a dataframe of 41078 gene probes (rows)
+The expression data, \code{NCI60} is a dataframe of 41,078 gene probes (rows)
 and 60 cell lines (columns).  The first column, \code{Probe} gives the name
 of the Agilent microarray probe.  Each of the remaining columns is named for
 a cell line.  The value is the log-2 expression associated with that probe
@@ -28,8 +31,9 @@ data(NCI60_tiny)
 }
 \references{
 Staunton et al. (\url{http://www.pnas.org/content/98/19/10787.full})
+
 D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
-\url{http://discover.nci.nih.gov/host/2000_systematic_abstract.jsp}
+(\url{http://discover.nci.nih.gov/host/2000_systematic_abstract.jsp})
 }
 \seealso{
 \code{\link{Cancer}}

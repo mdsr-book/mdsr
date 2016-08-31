@@ -1,16 +1,18 @@
 
 #' Load the NCI60 data from GitHub
 #' 
+#' @importFrom utils download.file
 #' @export
 #' @examples 
 #' 
 #' NCI60 <- etl_NCI60()
 
 etl_NCI60 <- function() {
+  NCI60 <- data.frame()
   dir <- tempdir()
   lcl <- file.path(dir, "NCI60.rda")
-  download.file("https://github.com/beanumber/mdsr/raw/master/data-raw/NCI60.rda", 
+  utils::download.file("https://github.com/beanumber/mdsr/blob/master/data-raw/NCI60.rda?raw=true", 
                 destfile = lcl)
   load(lcl)
-  return(as.tbl(NCI60))
+  return(dplyr::as.tbl(NCI60))
 }
