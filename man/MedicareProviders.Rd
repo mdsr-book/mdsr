@@ -44,4 +44,3 @@ data(MedicareProviders)
 \code{\link{MedicareCharges}}
 }
 \keyword{datasets}
-

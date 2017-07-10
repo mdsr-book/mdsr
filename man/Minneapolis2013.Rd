@@ -49,4 +49,3 @@ The Wikipedia article about the election:
 \url{http://en.wikipedia.org/wiki/Minneapolis_mayoral_election,_2013}
 }
 \keyword{datasets}
-

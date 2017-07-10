@@ -2,9 +2,9 @@
 % Please edit documentation in R/data.R
 \docType{data}
 \name{Violations}
-\alias{Cuisines}
-\alias{ViolationCodes}
 \alias{Violations}
+\alias{ViolationCodes}
+\alias{Cuisines}
 \title{NYC Restaurant Health Violations}
 \format{{
 A data frame with 480,621 observations on the following 16 variables.
@@ -52,4 +52,3 @@ Violations \%>\%
 \code{\link{ViolationCodes}}, \code{\link{Cuisines}}
 }
 \keyword{datasets}
-

@@ -2,6 +2,7 @@
 
 * Added CRAN badge after release.
 * Added `etl_NCI60()` function
+* Migrated to `dbplyr`
 
 # mdsr 0.1.3
 

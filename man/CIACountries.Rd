@@ -46,4 +46,3 @@ glimpse(CIACountries)
 \code{\link[mosaic]{CIAdata}}
 }
 \keyword{datasets}
-

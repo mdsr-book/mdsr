@@ -15,4 +15,3 @@ Macbeth_raw
 The entire text of Macbeth, stored in a character vector of length 1.
 }
 \keyword{datasets}
-

@@ -31,4 +31,3 @@ data(OrdwayBirds)
 
 }
 \keyword{datasets}
-

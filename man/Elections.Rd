@@ -23,4 +23,3 @@ Elections
 Election Statistics
 }
 \keyword{datasets}
-

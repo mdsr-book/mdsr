@@ -1,7 +1,7 @@
 Package: mdsr
 Title: Complement to 'Modern Data Science with R'
-Version: 0.1.3.9001
-Date: 2016-08-23
+Version: 0.1.4
+Date: 2017-07-10
 Authors@R: c(
     person("Ben", "Baumer", email = "ben.baumer@gmail.com",
       role = c("aut", "cre")),
@@ -21,6 +21,7 @@ LazyData: true
 Imports:
     babynames,
     DBI,
+    dbplyr,
     dplyr,
     ggplot2,
     RMySQL
@@ -31,6 +32,6 @@ Suggests:
     macleish,
     lubridate,
     sp
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 URL: http://github.com/beanumber/mdsr
 BugReports: https://github.com/beanumber/mdsr/issues

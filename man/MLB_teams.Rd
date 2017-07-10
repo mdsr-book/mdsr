@@ -37,4 +37,3 @@ from 2008-2013.
 \code{\link[Lahman]{Teams}}
 }
 \keyword{datasets}
-

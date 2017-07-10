@@ -2,8 +2,8 @@
 % Please edit documentation in R/data.R
 \docType{data}
 \name{NCI60_tiny}
-\alias{Cancer}
 \alias{NCI60_tiny}
+\alias{Cancer}
 \title{Gene expression in cancer}
 \format{See the description}
 \usage{
@@ -39,4 +39,3 @@ D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
 \code{\link{Cancer}}
 }
 \keyword{datasets}
-

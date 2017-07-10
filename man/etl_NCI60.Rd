@@ -13,4 +13,3 @@ Load the NCI60 data from GitHub
 
 NCI60 <- etl_NCI60()
 }
-

@@ -29,4 +29,3 @@ See also the earlier \code{\link[mosaicData]{SAT}} dataset.
 \code{\link[mosaicData]{SAT}}
 }
 \keyword{datasets}
-

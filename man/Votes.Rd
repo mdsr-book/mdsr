@@ -2,8 +2,8 @@
 % Please edit documentation in R/data.R
 \docType{data}
 \name{Votes}
-\alias{Parties}
 \alias{Votes}
+\alias{Parties}
 \title{Votes from Scottish Parliament}
 \format{\code{Votes} is a data.frame with 103582 rows and 3 variables. 
  \describe{
@@ -34,4 +34,3 @@ of members purely from voting records. The \code{Parties} data was used to evalu
 the success of methods.
 }
 \keyword{datasets}
-

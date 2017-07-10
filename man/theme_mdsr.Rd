@@ -21,4 +21,3 @@ p <- ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) +
 p + theme_grey()
 p + theme_mdsr()
 }
-

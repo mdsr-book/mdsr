@@ -34,4 +34,3 @@ data(WorldCities)
 In Draft: We need a proper reference
 }
 \keyword{datasets}
-
