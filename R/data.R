@@ -58,7 +58,7 @@
 #' @source From the CIA World Factbook,
 #' \url{https://www.cia.gov/library/publications/the-world-factbook/}
 #' @seealso \code{\link[mosaic]{CIAdata}}
-#' @references \url{https://github.com/factbook/factbook.csv}
+#' @references \url{https://github.com/factbook/factbook/blob/master/data/categories.csv}
 #' @keywords datasets
 #' @examples
 #' 
