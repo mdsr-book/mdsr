@@ -4,7 +4,7 @@
 #' 
 #' @inheritParams ggplot2::theme_grey
 #' @importFrom ggplot2 theme theme_grey element_text element_line element_rect rel %+replace%
-#' @import mosaic
+#' @importFrom mosaic theme_map
 #' @export
 #' @examples 
 #' 

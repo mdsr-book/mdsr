@@ -5,7 +5,9 @@
 #' @export
 #' @examples 
 #' 
+#' \dontrun{
 #' NCI60 <- etl_NCI60()
+#' }
 
 etl_NCI60 <- function() {
   NCI60 <- data.frame()
