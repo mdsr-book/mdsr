@@ -46,7 +46,7 @@ dbConnect_scidb <- function(dbname, ...) {
 #' @rdname src_scidb
 #' @export
 #' 
-#' @return For \code{\link{mysql_scidb}}, a charcter vector of length 1 to be used
+#' @return For \code{\link{mysql_scidb}}, a character vector of length 1 to be used
 #' as an \code{engine.ops} argument, or on the command line. 
 #' 
 #' @seealso \code{\link[knitr]{opts_chunk}}
