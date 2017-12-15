@@ -1,5 +1,6 @@
-core <- c("tidyverse", "mosaic")
+#' @importFrom tidyverse tidyverse_conflicts
 
+core <- c("tidyverse", "mosaic")
 
 # tidyverse:::tidyverse_attach()
 mdsr_attach <- function() {
@@ -18,6 +19,8 @@ mdsr_attach <- function() {
     return()
   
   mdsr_attach()
+  
+  x <- tidyverse::tidyverse_conflicts()
 }
 
 is_attached <- function(x) {

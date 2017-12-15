@@ -22,7 +22,7 @@ For \code{\link{src_scidb}}, a \code{\link[dplyr]{src_dbi}} object
 
 For \code{\link{dbConnect_scidb}}, a \code{\link[DBI]{DBIConnection-class}} object
 
-For \code{\link{mysql_scidb}}, a charcter vector of length 1 to be used
+For \code{\link{mysql_scidb}}, a character vector of length 1 to be used
 as an \code{engine.ops} argument, or on the command line.
 }
 \description{
