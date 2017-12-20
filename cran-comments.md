@@ -16,6 +16,9 @@
 * We plead for mercy with respect to the package size. The data sets included
 are used in the corresponding book, and are necessary for reproducibility. 
 
+* There is [one outstanding issue](https://github.com/beanumber/mdsr/issues/28)
+but it only affects old releases of Windows. I haven't been able to reproduce it. 
+
 ## Reverse dependencies
 
 There are no reverse dependencies.
