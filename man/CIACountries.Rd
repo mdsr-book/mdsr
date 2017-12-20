@@ -3,7 +3,7 @@
 \docType{data}
 \name{CIACountries}
 \alias{CIACountries}
-\title{Several variables on countries from the CIA factbook, 2014.}
+\title{Several variables on countries from the CIA Factbook, 2014.}
 \format{A data frame with the following variables for each of the Countries
 in the World. (236 countries are given.)
 \describe{

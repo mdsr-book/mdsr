@@ -1,7 +1,6 @@
 # Sample .travis.yml for R projects
 
 language: r
-cache: packages
 r:
   - oldrel
   - release
@@ -18,11 +17,3 @@ apt_packages:
 r_binary_packages:
  - rgdal
  - rgeos
-
-r_packages:
-  - devtools
-
-# Install the bleeding edge version of a package from github (eg to pick
-# up a not-yet-released bugfix)
-# r_github_packages:
-#  - beanumber/etl

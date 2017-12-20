@@ -1,5 +1,6 @@
 mdsr 0.1.5
 
+* Fixed [#27](https://github.com/beanumber/mdsr/issues/27): non-ASCII characters
 * Fixed [#26](https://github.com/beanumber/mdsr/issues/26): Namespace import from `tidyverse` not imported from
 
 mdsr 0.1.4

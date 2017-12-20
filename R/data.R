@@ -30,7 +30,7 @@
 #' 
 "MLB_teams" 
 
-#' Several variables on countries from the CIA factbook, 2014.
+#' Several variables on countries from the CIA Factbook, 2014.
 #' 
 #' The CIA Factbook has geographic, demographic, and economic data on a
 #' country-by-country basis.
