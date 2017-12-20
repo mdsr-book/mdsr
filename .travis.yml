@@ -8,11 +8,17 @@ r:
 warnings_are_errors: true
 sudo: required
 
-# r_binary_packages:
-#  - KernSmooth
-#  - Hmisc
-#  - lattice
-#  - dplyr
+before_install:
+  - sudo apt-get install --yes libudunits2-dev libproj-dev libgeos-dev libgdal-dev
+
+r_binary_packages:
+# - dplyr
+# - DBI
+# - RSQLite
+# - RMySQL
+# - RPostgreSQL
+ - rgdal
+ - rgeos
  
 # Install the bleeding edge version of a package from github (eg to pick
 # up a not-yet-released bugfix)
