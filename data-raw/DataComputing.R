@@ -32,8 +32,14 @@ save(Minneapolis2013, file = "data/Minneapolis2013.rda", compress = "xz")
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/WorldCities.rda", "data/WorldCities.rda")
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/WorldCities.Rd")), sep = "\n")
 load("data/WorldCities.rda")
-Encoding(WorldCities$name) <- "latin1"
-WorldCities$name <- iconv(WorldCities$name, from = "latin1", to = "UTF-8")
+showNonASCII(WorldCities$name)
+x <- WorldCities$name
+Encoding(x) <- "latin1"
+y <- iconv(x, from = "latin1", to = "ASCII", sub = "")
+showNonASCII(y)
+# z <- stringi::stri_trans_general(WorldCities$name, "latin-ascii")
+# showNonASCII(z)
+WorldCities$name <- y
 save(WorldCities, file = "data/WorldCities.rda", compress = "xz")
 
 # NCI60 -- 5 MB file so put it in a different place

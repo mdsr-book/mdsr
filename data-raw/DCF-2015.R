@@ -26,7 +26,7 @@ Votes <- read.csv("inst/extdata/VotesS1-tally.csv", skip = 1) %>%
   mutate(name = gsub("\\.\\.", ", ", name)) %>%
   mutate(name = gsub("\\.", " ", name))
 Encoding(levels(Votes$bill)) <- "latin1"
-levels(Votes$bill) <- iconv(levels(Votes$bill), from = "latin1", to = "UTF-8")
+levels(Votes$bill) <- iconv(levels(Votes$bill), from = "latin1", to = "ASCII", "")
 Parties <- read.csv("inst/extdata/VotesS1-tally.csv",
                     header = FALSE, nrows = 2, row.names = 1, 
                     stringsAsFactors = FALSE) %>%
@@ -37,6 +37,7 @@ Parties <- read.csv("inst/extdata/VotesS1-tally.csv",
   mutate(name = gsub("-", " ", name))
 # check to see that all names match
 setdiff(Parties$name, unique(Votes$name))
+lapply(Votes, showNonASCII)
 save(Votes, file = "data/Votes.rda", compress = "xz")
 save(Parties, file = "data/Parties.rda", compress = "xz")
 
