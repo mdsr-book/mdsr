@@ -8,18 +8,19 @@ r:
 warnings_are_errors: true
 sudo: required
 
-before_install:
-  - sudo apt-get install --yes libudunits2-dev libproj-dev libgeos-dev libgdal-dev
+apt_packages:
+  - libudunits2-dev 
+  - libproj-dev 
+  - libgeos-dev 
+  - libgdal-dev
 
 r_binary_packages:
-# - dplyr
-# - DBI
-# - RSQLite
-# - RMySQL
-# - RPostgreSQL
  - rgdal
  - rgeos
- 
+
+r_packages:
+  - devtools
+
 # Install the bleeding edge version of a package from github (eg to pick
 # up a not-yet-released bugfix)
 # r_github_packages:
