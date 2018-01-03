@@ -14,13 +14,10 @@ apt_packages:
   - libgeos-dev 
   - libgdal-dev
 
-r_binary_packages:
-  - rgdal
-  - rgeos
+#r_binary_packages:
+#  - rgdal
+#  - rgeos
 
 r_packages:
   - devtools
   - Rcpp
-
-r_github_packages:
-  - beanumber/macleish
