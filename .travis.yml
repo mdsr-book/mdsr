@@ -17,3 +17,7 @@ apt_packages:
 r_binary_packages:
  - rgdal
  - rgeos
+
+r_packages:
+  - devtools
+  - Rcpp
