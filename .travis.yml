@@ -15,9 +15,12 @@ apt_packages:
   - libgdal-dev
 
 r_binary_packages:
- - rgdal
- - rgeos
+  - rgdal
+  - rgeos
 
 r_packages:
   - devtools
   - Rcpp
+
+r_github_packages:
+  - beanumber/macleish
