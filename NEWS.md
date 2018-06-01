@@ -1,5 +1,6 @@
 mdsr 0.1.6
 
+* Added tests
 * Removed `tidyverse` dependency [#31](https://github.com/beanumber/mdsr/issues/31)
 
 mdsr 0.1.5
