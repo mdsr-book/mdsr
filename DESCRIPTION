@@ -25,8 +25,7 @@ Imports:
     dplyr,
     ggplot2,
     mosaic,
-    RMySQL,
-    tidyverse
+    RMySQL
 Suggests:
     knitr,
     Lahman,

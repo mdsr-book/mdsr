@@ -1,3 +1,7 @@
+mdsr 0.1.6
+
+* Removed `tidyverse` dependency [#31](https://github.com/beanumber/mdsr/issues/31)
+
 mdsr 0.1.5
 
 * Fixed [#27](https://github.com/beanumber/mdsr/issues/27): non-ASCII characters
