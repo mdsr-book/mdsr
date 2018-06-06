@@ -8,11 +8,15 @@ r:
 warnings_are_errors: true
 sudo: required
 
-apt_packages:
-  - libudunits2-dev 
-  - libproj-dev 
-  - libgeos-dev 
-  - libgdal-dev
+addons:
+  apt:
+    sources:
+      - sourceline: 'ppa:ubuntugis/ubuntugis-unstable'
+    packages:
+      - libudunits2-dev
+      - libproj-dev
+      - libgeos-dev
+      - libgdal-dev
 
 #r_binary_packages:
 #  - rgdal
