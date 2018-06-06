@@ -1,5 +1,6 @@
 mdsr 0.1.6
 
+* `scidb` functions now point to AWS RDS instance
 * Added tests
 * Removed `tidyverse` dependency [#31](https://github.com/beanumber/mdsr/issues/31)
 

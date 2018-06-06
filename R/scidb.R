@@ -39,8 +39,9 @@ src_scidb <- function(dbname, ...) {
 #' dbAir
 
 dbConnect_scidb <- function(dbname, ...) {
-  DBI::dbConnect(RMySQL::MySQL(), dbname = dbname, host = "scidb.smith.edu", 
-            user = "mth292", password = "RememberPi")
+  DBI::dbConnect(RMySQL::MySQL(), dbname = dbname, 
+                 host = "mdsr.cdc7tgkkqd0n.us-east-1.rds.amazonaws.com", 
+                 user = "mdsr_public", password = "ImhsmflMDSwR")
 }
 
 #' @rdname src_scidb
@@ -57,5 +58,5 @@ dbConnect_scidb <- function(dbname, ...) {
 #' }
 
 mysql_scidb <- function(dbname, ...) {
-  paste("-h scidb.smith.edu -u mth292 -pRememberPi -t", dbname)
+  paste("-h mdsr.cdc7tgkkqd0n.us-east-1.rds.amazonaws.com -u mdsr_public -pImhsmflMDSwR -t", dbname)
 }

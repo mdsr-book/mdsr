@@ -1,8 +1,8 @@
 ## Test environments
 
 * local OS X install, R 3.4.3
-* local ubuntu 16.04.2 install, R 3.4.3
-* ubuntu 14.04.5 (on travis-ci), R 3.3.3, 3.4.2, 3.5.0
+* local ubuntu 16.04.2 install, R 3.4.4
+* ubuntu 14.04.5 (on travis-ci), R 3.3.3, 3.5.0, unstable
 * win-builder (devel and release)
 
 ## R CMD check results
