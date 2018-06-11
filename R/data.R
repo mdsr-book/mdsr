@@ -403,6 +403,35 @@
 #' @docType data
 #' @format A data frame with 15,829 observations on the bird's species, size,
 #' date found, and band number.
+#' \describe{
+#'   \item{\code{bogus}}{a character vector}
+#'   \item{\code{Timestamp}}{Timestamp indicates when the data were entered into an electronic record,
+#' not anything about the bird being described}
+#'   \item{\code{Year}}{a character vector}
+#'   \item{\code{Day}}{a character vector}
+#'   \item{\code{Month}}{a character vector}
+#'  \item{\code{CaptureTime}}{a character vector}
+#'  \item{\code{SpeciesName}}{a character vector}
+#'  \item{\code{Sex}}{a character vector}
+#'  \item{\code{Age}}{a character vector}
+#'  \item{\code{BandNumber}}{a character vector}
+#'  \item{\code{TrapID}}{a character vector}
+#'  \item{\code{Weather}}{a character vector}
+#'  \item{\code{BandingReport}}{a character vector}
+#'  \item{\code{RecaptureYN}}{a character vector}
+#'  \item{\code{RecaptureMonth}}{a character vector}
+#'  \item{\code{RecaptureDay}}{a character vector}
+#'  \item{\code{Condition}}{a character vector}
+#'  \item{\code{Release}}{a character vector}
+#'  \item{\code{Comments}}{a character vector}
+#'  \item{\code{DataEntryPerson}}{a character vector}
+#'  \item{\code{Weight}}{a character vector}
+#'  \item{\code{WingChord}}{a character vector}
+#'  \item{\code{Temperature}}{a character vector}
+#'  \item{\code{RecaptureOriginal}}{a character vector}
+#'  \item{\code{RecapturePrevious}}{a character vector}
+#'  \item{\code{TailLength}}{a character vector}
+#'  }
 #' 
 #' Timestamp indicates when the data were entered into an electronic record,
 #' not anything about the bird being described.
