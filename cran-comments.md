@@ -15,6 +15,7 @@
     data   5.4Mb
 * We plead for mercy with respect to the package size. The data sets included
 are used in the corresponding book, and are necessary for reproducibility. 
+* We removed the problematic `tidyverse` dependency
 
 
 ## Reverse dependencies
