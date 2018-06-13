@@ -1,7 +1,7 @@
 Package: mdsr
 Title: Complement to 'Modern Data Science with R'
-Version: 0.1.5.9004
-Date: 2018-06-06
+Version: 0.1.6
+Date: 2018-06-13
 Authors@R: c(
     person("Ben", "Baumer", email = "ben.baumer@gmail.com",
       role = c("aut", "cre")),
