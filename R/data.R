@@ -133,7 +133,7 @@
 #' }
 #' }
 #' @seealso \code{\link{ViolationCodes}}, \code{\link{Cuisines}}
-#' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/xx67-kt59}
+#' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j}
 #' @examples 
 #' data(Violations)
 #' Violations %>%
@@ -270,7 +270,7 @@
 #' 
 #' @docType data
 #' @format A character vector of length 1
-#' @source Project Gutenberg, \url{http://www.gutenberg.org/cache/epub/1129/pg1129.txt}
+#' @source Project Gutenberg, \url{http://www.gutenberg.org/ebooks/1129}
 "Macbeth_raw"
 
 #' State SAT scores from 2010

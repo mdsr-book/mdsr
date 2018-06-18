@@ -6,7 +6,7 @@
 \title{Text of Macbeth}
 \format{A character vector of length 1}
 \source{
-Project Gutenberg, \url{http://www.gutenberg.org/cache/epub/1129/pg1129.txt}
+Project Gutenberg, \url{http://www.gutenberg.org/ebooks/1129}
 }
 \usage{
 Macbeth_raw
