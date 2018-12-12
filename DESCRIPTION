@@ -23,6 +23,7 @@ Imports:
     dbplyr,
     downloader,
     dplyr,
+    fs,
     ggplot2,
     mosaic,
     RMySQL

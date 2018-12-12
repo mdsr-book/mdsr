@@ -6,6 +6,15 @@
 \usage{
 Rnw2Rmd(path, new_path = NULL)
 }
+\arguments{
+\item{path}{A character vector of one or more paths.}
+
+\item{new_path}{New file path. If \code{new_path} is existing directory, the file
+will be moved into that directory; otherwise it will be moved/renamed to
+the full path.
+
+Should either be the same length as \code{path}, or a single directory.}
+}
 \description{
 Convert Rnw to Rmd
 }
