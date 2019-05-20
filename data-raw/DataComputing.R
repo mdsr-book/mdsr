@@ -6,8 +6,8 @@ download.file("https://github.com/DataComputing/DataComputing/raw/master/data/Me
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/MedicareProviders.Rd")), sep = "\n")
 
 # MedicareCharges
-download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareCharges.rda", "inst/extdata/MedicareCharges.RData")
-load("inst/extdata/MedicareCharges.RData")
+download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareCharges.rda", "data-raw/MedicareCharges.RData")
+load("data-raw/MedicareCharges.RData")
 MedicareCharges <- MedicareCharges %>%
   inner_join(MedicareProviders, by = "idProvider") %>%
   group_by(drg, stateProvider) %>%
