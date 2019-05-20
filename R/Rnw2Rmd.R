@@ -2,7 +2,6 @@ globalVariables(c("."))
 
 #' Convert Rnw to Rmd
 #' @inheritParams fs::file_move
-#' @importFrom fs fs_path
 #' @export
 
 # inspiration

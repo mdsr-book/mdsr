@@ -3,8 +3,7 @@
 #' @description Graphical themes used in MDSR book
 #' 
 #' @inheritParams ggplot2::theme_grey
-#' @importFrom ggplot2 theme theme_grey element_text element_line element_rect rel %+replace%
-#' @importFrom mosaic theme_map
+#' @importFrom ggplot2 %+replace%
 #' @export
 #' @examples 
 #' 

@@ -1,3 +1,7 @@
+mdsr 0.1.7
+
+* added Connections pane interface to DB Server [#35](https://github.com/beanumber/mdsr/issues/35)
+
 mdsr 0.1.6
 
 * improved documentation [#18](https://github.com/beanumber/mdsr/issues/18)

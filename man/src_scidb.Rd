@@ -36,7 +36,6 @@ hostile act.
 
 dbAir <- src_scidb("airlines")
 dbAir
-
 dbAir <- dbConnect_scidb("airlines")
 dbAir
 

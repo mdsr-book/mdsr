@@ -1,18 +1,11 @@
 #' src_scidb
 #' @description Connect to the scidb server at Smith College.
-#' 
 #' @param dbname the name of the database to which you want to connect
 #' @param ... arguments passed to \code{\link[dplyr]{src_mysql}} or \code{\link[DBI]{dbConnect}}
-#' 
 #' @details This is a public, read-only account. Any abuse will be considered a 
 #' hostile act. 
-#' 
 #' @return For \code{\link{src_scidb}}, a \code{\link[dplyr]{src_dbi}} object
-#' 
 #' @seealso \code{\link[dbplyr]{src_dbi}}
-#' 
-#' @importFrom dbplyr src_dbi
-#' @importFrom RMySQL MySQL
 #' @export
 #' 
 #' @examples 
@@ -26,15 +19,10 @@ src_scidb <- function(dbname, ...) {
 
 #' @rdname src_scidb
 #' @export
-#'  
-#' @importFrom DBI dbConnect
-#' @importFrom RMySQL MySQL
-#' 
 #' @return For \code{\link{dbConnect_scidb}}, a \code{\link[DBI]{DBIConnection-class}} object
 #' 
 #' @seealso \code{\link[DBI]{DBIConnection-class}}
 #' @examples 
-#' 
 #' dbAir <- dbConnect_scidb("airlines")
 #' dbAir
 
@@ -49,7 +37,6 @@ dbConnect_scidb <- function(dbname, ...) {
 #' 
 #' @return For \code{\link{mysql_scidb}}, a character vector of length 1 to be used
 #' as an \code{engine.ops} argument, or on the command line. 
-#' 
 #' @seealso \code{\link[knitr]{opts_chunk}}
 #' @examples 
 #' 

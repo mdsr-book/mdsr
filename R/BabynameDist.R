@@ -1,7 +1,6 @@
 #' Wrangle babynames data
-#' @importFrom dplyr mutate_ select_ bind_rows rename_ inner_join %>%
+#' @import dplyr
 #' @import babynames
-#' @importFrom stats approx
 #' @export
 #' @return a \code{\link[dplyr]{tbl_df}} similar to \code{\link[babynames]{babynames}}
 #' with a column for the estimated number of people alive in 2014.

@@ -1,7 +1,7 @@
 Package: mdsr
 Title: Complement to 'Modern Data Science with R'
-Version: 0.1.6.9000
-Date: 2018-06-13
+Version: 0.1.6.9002
+Date: 2019-06-01
 Authors@R: c(
     person("Ben", "Baumer", email = "ben.baumer@gmail.com",
       role = c("aut", "cre")),
@@ -36,5 +36,6 @@ Suggests:
     sp,
     testthat
 RoxygenNote: 6.1.1
+Encoding: UTF-8
 URL: http://github.com/beanumber/mdsr
 BugReports: https://github.com/beanumber/mdsr/issues
