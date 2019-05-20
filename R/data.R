@@ -37,9 +37,6 @@
 #' In the description of the variables, the 4-digit
 #' number indicates the code used to specify that variable on the data and
 #' documentation web site.
-#' For instance,
-#' \url{https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html}
-#' contains documentation for variable code 2153, network users.
 #' 
 #' @name CIACountries
 #' @docType data
