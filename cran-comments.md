@@ -1,8 +1,8 @@
 ## Test environments
 
-* local OS X install, R 3.4.3
+* local OS X install, R 3.6.0
 * local ubuntu 16.04.2 install, R 3.4.4
-* ubuntu 14.04.5 (on travis-ci), R 3.4.4, 3.5.0, unstable
+* ubuntu 14.04.5 (on travis-ci), oldrel, release, devel
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -15,7 +15,8 @@
     data   5.4Mb
 * We plead for mercy with respect to the package size. The data sets included
 are used in the corresponding book, and are necessary for reproducibility. 
-* We fixed the problem with the Amazon Web Services instance that was refusing connections.
+* We fixed the problem with the Amazon Web Services instance that was refusing 
+  connections. We hope that you will reinstate this package. 
 
 
 ## Reverse dependencies
