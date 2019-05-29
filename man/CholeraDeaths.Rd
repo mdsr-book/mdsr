@@ -5,7 +5,7 @@
 \alias{CholeraDeaths}
 \alias{CholeraPumps}
 \title{Deaths and Pumps from 1854 London cholera outbreak}
-\format{An object of class \code{\link[sp]{SpatialPointsDataFrame}} 
+\format{An object of class \code{\link[sf]{sf}} 
 whose data attribute has 250 rows and 2 columns.}
 \source{
 \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
@@ -23,8 +23,8 @@ Both spatial objects are projected in EPSG:27700, aka the British
 National Grid.
 }
 \examples{
-if (require(sp)) {
-  plot(CholeraDeaths)
+if (require(sf)) {
+  plot(st_geometry(CholeraDeaths))
 }
 }
 \keyword{datasets}
