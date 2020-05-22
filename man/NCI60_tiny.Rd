@@ -5,7 +5,8 @@
 \alias{NCI60_tiny}
 \alias{Cancer}
 \title{Gene expression in cancer}
-\format{The expression data, \code{NCI60_tiny} is a dataframe of 41,078 gene probes (rows)
+\format{
+The expression data, \code{NCI60_tiny} is a dataframe of 41,078 gene probes (rows)
 and 60 cell lines (columns).  The first column, \code{Probe} gives the name
 of the Agilent microarray probe.  Each of the remaining columns is named for
 a cell line.  The value is the log-2 expression associated with that probe
@@ -21,7 +22,10 @@ For \code{Cancer}:
 \item{cellLine}{a character vector giving the name of another cell line}
 \item{correlation}{the correlation between the two cell lines. 
 See \code{\link{cor}}}
-}}
+}
+
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1770 rows and 3 columns.
+}
 \usage{
 NCI60_tiny
 

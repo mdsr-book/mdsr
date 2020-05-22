@@ -4,7 +4,8 @@
 \name{MLB_teams}
 \alias{MLB_teams}
 \title{Data about recent major league baseball teams}
-\format{A \code{\link{tbl_df}} object. 
+\format{
+A \code{\link{tbl_df}} object. 
 \describe{
  \item{yearID}{season in which the team played}
  \item{teamID}{the team's three character identifier}
@@ -21,7 +22,8 @@
  \item{metroPop}{the size of the team's home city's metropolitan population, according
  to Wikipedia and the 2010 US Census}
  \item{name}{the full name of the team}
-}}
+}
+}
 \source{
 The \code{\link[Lahman]{Teams}} table from \code{\link[Lahman]{Lahman-package}} 
 and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}

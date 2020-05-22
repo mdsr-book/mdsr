@@ -4,7 +4,8 @@
 \name{Cherry}
 \alias{Cherry}
 \title{Cherry Blossom runs}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) 
+\format{
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) 
 with 41,248 rows and 8 columns. Each row refers to an individual runner in one race of the 
 Cherry Blossom Ten Miler. The data cover the years 1999 to 2008. All of the runners listed ran
 at least two of the races in that period, some ran many more than that. 
@@ -19,7 +20,8 @@ at least two of the races in that period, some ran many more than that.
   \item{previous}{integer specifying how many times previous to this race the runner had participated in the years 1999 to 2008.}
   \item{nruns}{integer giving the total number of times that runner participated in the years from 1999 to 2008. The smallest is 2, the largest is 10.}
   \item{nruns}{integer giving the total number of times that runner participated in the years from 1999 to 2008. The smallest is 2, the largest is 10.}
-}}
+}
+}
 \usage{
 Cherry
 }

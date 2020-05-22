@@ -5,7 +5,8 @@
 \alias{Votes}
 \alias{Parties}
 \title{Votes from Scottish Parliament}
-\format{\code{Votes} is a data.frame with 103582 rows and 3 variables. 
+\format{
+\code{Votes} is a data.frame with 103582 rows and 3 variables. 
  \describe{
  \item{\code{bill}}{an identifier for the bill}
  \item{\code{name}}{the name of the member of parliament}
@@ -15,7 +16,10 @@
  \describe{
  \item{\code{party}}{the name of the political party the member belongs to}
  \item{\code{name}}{the name of the member of parliament}
- }}
+ }
+
+An object of class \code{data.frame} with 134 rows and 2 columns.
+}
 \usage{
 Votes
 

@@ -8,3 +8,4 @@
 ^.*\.csv
 ^.*\.RData
 ^cran-comments\.md$
+^CRAN-RELEASE$

@@ -4,7 +4,8 @@
 \name{CIACountries}
 \alias{CIACountries}
 \title{Several variables on countries from the CIA Factbook, 2014.}
-\format{A data frame with the following variables for each of the Countries
+\format{
+A data frame with the following variables for each of the Countries
 in the World. (236 countries are given.)
 \describe{
 \item{country}{Name of the country} 
@@ -15,7 +16,8 @@ in the World. (236 countries are given.)
 \item{educ}{education spending (\% of GDP), 2206}
 \item{roadways}{Roadways per unit area (km/sq km), 2085}
 \item{net_users}{Fraction of Internet users (\% of population), 2153}
-}}
+}
+}
 \source{
 From the CIA World Factbook,
 \url{https://www.cia.gov/library/publications/the-world-factbook/}

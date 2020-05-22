@@ -4,7 +4,8 @@
 \name{OrdwayBirds}
 \alias{OrdwayBirds}
 \title{Birds captured and released at Ordway, complete and uncleaned}
-\format{A data frame with 15,829 observations on the bird's species, size,
+\format{
+A data frame with 15,829 observations on the bird's species, size,
 date found, and band number.
 \describe{
   \item{\code{bogus}}{a character vector}
@@ -37,7 +38,8 @@ not anything about the bird being described}
  }
 
 Timestamp indicates when the data were entered into an electronic record,
-not anything about the bird being described.}
+not anything about the bird being described.
+}
 \source{
 Jerald Dosch, Dept. of Biology, Macalester College: the manager of
 the Study Area.
