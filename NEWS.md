@@ -1,3 +1,7 @@
+mdsr 0.1.8
+
+* Removed deprecated versions of `dplyr` functions.
+
 mdsr 0.1.7
 
 * added Connections pane interface to DB Server [#35](https://github.com/beanumber/mdsr/issues/35)

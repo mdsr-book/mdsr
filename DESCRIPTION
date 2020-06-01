@@ -1,6 +1,6 @@
 Package: mdsr
 Title: Complement to 'Modern Data Science with R'
-Version: 0.1.7.9001
+Version: 0.1.7.9002
 Date: 2019-05-20
 Authors@R: c(
     person("Ben", "Baumer", email = "ben.baumer@gmail.com",
@@ -28,10 +28,12 @@ Imports:
     htmlwidgets,
     mosaic,
     RMySQL,
+    tibble,
     webshot
 Suggests:
     knitr,
     Lahman,
+    leaflet,
     etl,
     macleish,
     lubridate,

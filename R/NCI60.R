@@ -15,5 +15,5 @@ etl_NCI60 <- function() {
     destfile = lcl
   )
   load(lcl)
-  return(dplyr::as.tbl(NCI60))
+  return(tibble::as_tibble(NCI60))
 }
