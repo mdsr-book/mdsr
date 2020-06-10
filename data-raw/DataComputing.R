@@ -1,5 +1,5 @@
 library(Rd2roxygen)
-library(mosaic)
+library(tidyverse)
 
 # MedicareProviders
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareProviders.rda", "data/MedicareProviders.rda")
@@ -9,10 +9,11 @@ cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/D
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/MedicareCharges.rda", "data-raw/MedicareCharges.RData")
 load("data-raw/MedicareCharges.RData")
 MedicareCharges <- MedicareCharges %>%
-  inner_join(MedicareProviders, by = "idProvider") %>%
+  inner_join(mdsr::MedicareProviders, by = "idProvider") %>%
   group_by(drg, stateProvider) %>%
-  summarize(num_charges = n(), mean_charge = mean(aveCharges, na.rm = TRUE))
-save(MedicareCharges, file = "data/MedicareCharges.rda", compress = "xz")
+  summarize(num_charges = n(), mean_charge = mean(aveCharges, na.rm = TRUE)) %>%
+  ungroup()
+usethis::use_data(MedicareCharges, overwrite = TRUE)
 
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/MedicareCharges.Rd")), sep = "\n")
 
