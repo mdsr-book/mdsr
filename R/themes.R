@@ -26,3 +26,19 @@ theme_mdsr <- function(base_size = 12, base_family = "Bookman") {
       strip.background = ggplot2::element_rect(fill = "grey80", colour = "grey50", size = 0.2)
     )
 }
+
+#' Custom skimmer
+#' @export
+#' @inheritParams skimr::skim
+#' @examples
+#' skim(faithful)
+
+skim <- skimr::skim_with(
+  base = skimr::sfl(
+    n = length,
+    missing = skimr::n_missing
+  ), 
+  numeric = skimr::sfl(
+    hist = NULL
+  )
+)

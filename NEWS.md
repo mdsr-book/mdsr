@@ -1,6 +1,7 @@
 mdsr 0.1.8
 
 * Removed deprecated versions of `dplyr` functions.
+* Added `skim()`
 
 mdsr 0.1.7
 
