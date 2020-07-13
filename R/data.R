@@ -58,9 +58,7 @@
 #' @references \url{https://github.com/factbook/factbook/blob/master/data/categories.csv}
 #' @keywords datasets
 #' @examples
-#' 
-#' data(CIACountries)
-#' glimpse(CIACountries)
+#' str(CIACountries)
 #' 
 "CIACountries"
 
@@ -133,11 +131,13 @@
 #' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j}
 #' @examples 
 #' data(Violations)
-#' Violations %>%
-#'   inner_join(Cuisines, by = "cuisine_code") %>%
-#'   filter(cuisine_description == "American") %>%
-#'   arrange(grade_date) %>%
-#'   head() 
+#' if (require(dplyr)) {
+#'   Violations %>%
+#'     inner_join(Cuisines, by = "cuisine_code") %>%
+#'     filter(cuisine_description == "American") %>%
+#'     arrange(grade_date) %>%
+#'     head()
+#'  }
 "Violations"
 
 #' @rdname Violations

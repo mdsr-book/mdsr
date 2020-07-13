@@ -1,7 +1,6 @@
 Package: mdsr
 Title: Complement to 'Modern Data Science with R'
-Version: 0.1.7.9004
-Date: 2019-05-20
+Version: 0.1.7.9005
 Authors@R: c(
     person("Ben", "Baumer", email = "ben.baumer@gmail.com",
       role = c("aut", "cre")),
@@ -27,9 +26,13 @@ Imports:
     ggplot2,
     htmlwidgets,
     mosaic,
+    purrr,
+    rlang,
     RMySQL,
     skimr,
     tibble,
+    tidyr,
+    tidyselect,
     webshot
 Suggests:
     knitr,
@@ -40,7 +43,7 @@ Suggests:
     lubridate,
     sf,
     testthat
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Encoding: UTF-8
 URL: http://github.com/beanumber/mdsr
 BugReports: https://github.com/beanumber/mdsr/issues

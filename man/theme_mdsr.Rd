@@ -7,7 +7,7 @@
 theme_mdsr(base_size = 12, base_family = "Bookman")
 }
 \arguments{
-\item{base_size}{base font size}
+\item{base_size}{base font size, given in pts.}
 
 \item{base_family}{base font family}
 }
@@ -15,9 +15,10 @@ theme_mdsr(base_size = 12, base_family = "Bookman")
 Graphical themes used in MDSR book
 }
 \examples{
-
-p <- ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) + 
-  geom_point() + facet_wrap(~ am) + geom_smooth()
-p + theme_grey()
-p + theme_mdsr()
+if (require(ggplot2)) {
+  p <- ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) + 
+    geom_point() + facet_wrap(~ am) + geom_smooth()
+  p + theme_grey()
+  p + theme_mdsr()
+ }
 }

@@ -33,9 +33,7 @@ number indicates the code used to specify that variable on the data and
 documentation web site.
 }
 \examples{
-
-data(CIACountries)
-glimpse(CIACountries)
+str(CIACountries)
 
 }
 \references{

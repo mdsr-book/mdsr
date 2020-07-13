@@ -6,11 +6,12 @@
 #' @importFrom ggplot2 %+replace%
 #' @export
 #' @examples 
-#' 
-#' p <- ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) + 
-#'   geom_point() + facet_wrap(~ am) + geom_smooth()
-#' p + theme_grey()
-#' p + theme_mdsr()
+#' if (require(ggplot2)) {
+#'   p <- ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) + 
+#'     geom_point() + facet_wrap(~ am) + geom_smooth()
+#'   p + theme_grey()
+#'   p + theme_mdsr()
+#'  }
 
 theme_mdsr <- function(base_size = 12, base_family = "Bookman") {
   m <- mosaic::theme_map()
@@ -29,6 +30,7 @@ theme_mdsr <- function(base_size = 12, base_family = "Bookman") {
 
 #' Custom skimmer
 #' @export
+#' @importFrom skimr skim_with
 #' @inheritParams skimr::skim
 #' @examples
 #' skim(faithful)

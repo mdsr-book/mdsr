@@ -8,9 +8,10 @@ globalVariables(c("x", "lx", "ex", "year", "sex", "age_today", "alive_prob", "li
 #' @examples 
 #' 
 #' BabynameDist <- make_babynames_dist()
-#' BabynameDist %>%
-#'   filter(name == "Benjamin")
-#' 
+#' if (require(dplyr)) {
+#'   BabynameDist %>%
+#'     filter(name == "Benjamin")
+#' }
 
 make_babynames_dist <- function() {
   actuarial <- babynames::lifetables %>%
