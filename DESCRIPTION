@@ -2,8 +2,11 @@ Package: mdsr
 Title: Complement to 'Modern Data Science with R'
 Version: 0.1.7.9006
 Authors@R: c(
-    person("Ben", "Baumer", email = "ben.baumer@gmail.com",
-      role = c("aut", "cre")),
+    person("Benjamin S.", "Baumer", 
+      email = "ben.baumer@gmail.com",
+      role = c("aut", "cre"), 
+      comment = c(ORCID = "0000-0002-3279-0516")
+    ),
     person("Nicholas", "Horton", email = "nhorton@amherst.edu", role = "aut"),
     person("Daniel", "Kaplan", email = "kaplan@macalester.edu", role = "aut"))
 Description: A complement to *Modern Data

@@ -30,17 +30,21 @@ theme_mdsr <- function(base_size = 12, base_family = "Bookman") {
 
 #' Custom skimmer
 #' @export
-#' @importFrom skimr skim_with
+#' @importFrom skimr skim
 #' @inheritParams skimr::skim
 #' @examples
 #' skim(faithful)
 
-skim <- skimr::skim_with(
-  base = skimr::sfl(
-    n = length,
-    missing = skimr::n_missing
-  ), 
-  numeric = skimr::sfl(
-    hist = NULL
+skim <- function(data, ...) {
+  my_skim <- skimr::skim_with(
+    base = skimr::sfl(
+      n = length,
+      missing = skimr::n_missing
+    ), 
+    numeric = skimr::sfl(
+      hist = NULL
+    )
   )
-)
+  my_skim(data, ...) %>%
+    skimr::yank("numeric")
+}
