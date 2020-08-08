@@ -4,9 +4,11 @@
 \name{Macbeth_raw}
 \alias{Macbeth_raw}
 \title{Text of Macbeth}
-\format{A character vector of length 1}
+\format{
+A character vector of length 1
+}
 \source{
-Project Gutenberg, \url{http://www.gutenberg.org/cache/epub/1129/pg1129.txt}
+Project Gutenberg, \url{http://www.gutenberg.org/ebooks/1129}
 }
 \usage{
 Macbeth_raw
@@ -15,4 +17,3 @@ Macbeth_raw
 The entire text of Macbeth, stored in a character vector of length 1.
 }
 \keyword{datasets}
-

@@ -4,7 +4,8 @@
 \name{MedicareProviders}
 \alias{MedicareProviders}
 \title{Medicare Providers}
-\format{A data frame with 3337 observations on the following 7 variables.
+\format{
+A data frame with 3337 observations on the following 7 variables.
 \describe{ 
  \item{idProvider}{a unique number assigned to each
 provider} 
@@ -18,7 +19,8 @@ postal code of the state in which the provider is located. (factor)}
  \item{zipProvider}{The provider's ZIP code. (factor)}
  \item{referralRegion}{An identifier for the region serviced by the
 provider.} 
-}}
+}
+}
 \source{
 Extracted from the highly repetitive table provided by the Centers
 for Medicare and Medicaid Services.
@@ -44,4 +46,3 @@ data(MedicareProviders)
 \code{\link{MedicareCharges}}
 }
 \keyword{datasets}
-

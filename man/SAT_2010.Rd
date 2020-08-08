@@ -4,7 +4,8 @@
 \name{SAT_2010}
 \alias{SAT_2010}
 \title{State SAT scores from 2010}
-\format{A data.frame with 50 rows and 9 variables. 
+\format{
+A data.frame with 50 rows and 9 variables. 
  \describe{
  \item{\code{state}}{a factor with levels for each state}
  \item{\code{expenditure}}{average expenditure per student (in each state)}
@@ -15,7 +16,8 @@
  \item{\code{write}}{state average Writing SAT score}
  \item{\code{total}}{state average Total SAT score}
  \item{\code{sat_pct}}{percent of students taking SAT in that state}
-}}
+}
+}
 \usage{
 SAT_2010
 }
@@ -29,4 +31,3 @@ See also the earlier \code{\link[mosaicData]{SAT}} dataset.
 \code{\link[mosaicData]{SAT}}
 }
 \keyword{datasets}
-

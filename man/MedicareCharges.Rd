@@ -4,14 +4,16 @@
 \name{MedicareCharges}
 \alias{MedicareCharges}
 \title{Charges to and Payments from Medicare}
-\format{A data frame with 5,025 observations on the following 4 variables.
+\format{
+A data frame with 5,025 observations on the following 4 variables.
 \describe{ 
  \item{drg}{Code for the Direct Recovery Group: a
 character string that looks like a number.} 
  \item{stateProvider}{the state providing the care.} 
  \item{num_charges}{the total number of charges.}
  \item{mean_charge}{the average charge for each \code{drg} across each state}
- }}
+ }
+}
 \source{
 Data from the Centers for Medicare and Medicaid Services.
 See \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}.
@@ -41,4 +43,3 @@ data(MedicareCharges)
 \code{\link{MedicareProviders}}
 }
 \keyword{datasets}
-

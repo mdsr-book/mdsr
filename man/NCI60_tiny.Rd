@@ -2,10 +2,30 @@
 % Please edit documentation in R/data.R
 \docType{data}
 \name{NCI60_tiny}
-\alias{Cancer}
 \alias{NCI60_tiny}
+\alias{Cancer}
 \title{Gene expression in cancer}
-\format{See the description}
+\format{
+The expression data, \code{NCI60_tiny} is a dataframe of 41,078 gene probes (rows)
+and 60 cell lines (columns).  The first column, \code{Probe} gives the name
+of the Agilent microarray probe.  Each of the remaining columns is named for
+a cell line.  The value is the log-2 expression associated with that probe
+for the cell line.
+
+\describe{
+\item{Probe}{the name of the Agilent microarray probe}
+}
+
+For \code{Cancer}:
+\describe{
+\item{otherCellLine}{a character vector giving the name of one cell line}
+\item{cellLine}{a character vector giving the name of another cell line}
+\item{correlation}{the correlation between the two cell lines. 
+See \code{\link{cor}}}
+}
+
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1770 rows and 3 columns.
+}
 \usage{
 NCI60_tiny
 
@@ -16,12 +36,6 @@ The data come from a National Cancer Institute study of gene expression in
 cell lines drawn from various sorts of cancer.
 }
 \details{
-The expression data, \code{NCI60} is a dataframe of 41,078 gene probes (rows)
-and 60 cell lines (columns).  The first column, \code{Probe} gives the name
-of the Agilent microarray probe.  Each of the remaining columns is named for
-a cell line.  The value is the log-2 expression associated with that probe
-for the cell line.
-
 \code{\link{Cancer}} gives information about each cell line.
 }
 \examples{
@@ -39,4 +53,3 @@ D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
 \code{\link{Cancer}}
 }
 \keyword{datasets}
-

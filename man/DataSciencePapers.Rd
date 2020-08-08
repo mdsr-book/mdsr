@@ -4,7 +4,8 @@
 \name{DataSciencePapers}
 \alias{DataSciencePapers}
 \title{Data Science Papers from arXiv.org}
-\format{A data frame with 95 observations on the following 15 variables.
+\format{
+A data frame with 95 observations on the following 15 variables.
 \describe{ \item{id}{unique arXiv.org identifier for the paper}
 \item{submitted}{date submitted} \item{updated}{date last
 updated} \item{title}{title of the paper}
@@ -17,7 +18,8 @@ updated} \item{title}{title of the paper}
 \item{comment}{commentary} \item{journal_ref}{reference to
 the journal (if published)} \item{doi}{digital object identifier}
 \item{primary_category}{arXiv.org primary category}
-\item{categories}{arXiv.org categories} }}
+\item{categories}{arXiv.org categories} }
+}
 \source{
 \url{arxiv.org}
 }
@@ -35,4 +37,3 @@ str(DataSciencePapers)
 
 }
 \keyword{datasets}
-

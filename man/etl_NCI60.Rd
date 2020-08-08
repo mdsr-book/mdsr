@@ -11,6 +11,7 @@ Load the NCI60 data from GitHub
 }
 \examples{
 
+\dontrun{
 NCI60 <- etl_NCI60()
 }
-
+}

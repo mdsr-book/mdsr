@@ -4,7 +4,8 @@
 \name{Elections}
 \alias{Elections}
 \title{Election Statistics}
-\format{An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) 
+\format{
+An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) 
 with 117 rows and 13 columns.
 \describe{
 \item{Ward}{Name of the country} 
@@ -15,7 +16,8 @@ with 117 rows and 13 columns.
 \item{educ}{education spending (\% of GDP), 2206}
 \item{roadways}{Roadways per unit area (km/sq km), 2085}
 \item{net_users}{Fraction of Internet users (\% of population), 2153}
-}}
+}
+}
 \usage{
 Elections
 }
@@ -23,4 +25,3 @@ Elections
 Election Statistics
 }
 \keyword{datasets}
-

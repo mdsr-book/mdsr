@@ -2,11 +2,12 @@
 % Please edit documentation in R/data.R
 \docType{data}
 \name{Violations}
-\alias{Cuisines}
-\alias{ViolationCodes}
 \alias{Violations}
+\alias{ViolationCodes}
+\alias{Cuisines}
 \title{NYC Restaurant Health Violations}
-\format{{
+\format{
+{
 A data frame with 480,621 observations on the following 16 variables.
 \describe{
  \item{\code{camis}}{unique identifier}
@@ -26,9 +27,25 @@ A data frame with 480,621 observations on the following 16 variables.
  \item{\code{inspection_type}}{inspect type}
  \item{\code{cuisine_code}}{cuisine code, see \code{\link{Cuisines}}}
 }
-}}
+}
+
+A data frame with 174 observations on the following 3 variables.
+\describe{
+   \item{\code{violation_code}}{a factor with many levels}
+   \item{\code{critical_flag}}{is violation critical: a factor with levels \code{N} \code{Y}}
+   \item{\code{violation_description}}{violation description}
+ }
+
+{
+A data frame with 84 observations on the following 2 variables.
+\describe{
+ \item{\code{cuisine_code}}{a character vector}
+ \item{\code{cuisine_description}}{a character vector}
+}
+}
+}
 \source{
-NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/xx67-kt59}
+NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j}
 }
 \usage{
 Violations
@@ -42,14 +59,15 @@ NYC Restaurant Health Violations
 }
 \examples{
 data(Violations)
-Violations \%>\%
-  inner_join(Cuisines, by = "cuisine_code") \%>\%
-  filter(cuisine_description == "American") \%>\%
-  arrange(grade_date) \%>\%
-  head() 
+if (require(dplyr)) {
+  Violations \%>\%
+    inner_join(Cuisines, by = "cuisine_code") \%>\%
+    filter(cuisine_description == "American") \%>\%
+    arrange(grade_date) \%>\%
+    head()
+ }
 }
 \seealso{
 \code{\link{ViolationCodes}}, \code{\link{Cuisines}}
 }
 \keyword{datasets}
-

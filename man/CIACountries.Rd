@@ -3,8 +3,9 @@
 \docType{data}
 \name{CIACountries}
 \alias{CIACountries}
-\title{Several variables on countries from the CIA factbook, 2014.}
-\format{A data frame with the following variables for each of the Countries
+\title{Several variables on countries from the CIA Factbook, 2014.}
+\format{
+A data frame with the following variables for each of the Countries
 in the World. (236 countries are given.)
 \describe{
 \item{country}{Name of the country} 
@@ -15,7 +16,8 @@ in the World. (236 countries are given.)
 \item{educ}{education spending (\% of GDP), 2206}
 \item{roadways}{Roadways per unit area (km/sq km), 2085}
 \item{net_users}{Fraction of Internet users (\% of population), 2153}
-}}
+}
+}
 \source{
 From the CIA World Factbook,
 \url{https://www.cia.gov/library/publications/the-world-factbook/}
@@ -29,21 +31,15 @@ country-by-country basis.
 In the description of the variables, the 4-digit
 number indicates the code used to specify that variable on the data and
 documentation web site.
-For instance,
-\url{https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html}
-contains documentation for variable code 2153, network users.
 }
 \examples{
-
-data(CIACountries)
-glimpse(CIACountries)
+str(CIACountries)
 
 }
 \references{
-\url{https://github.com/factbook/factbook.csv}
+\url{https://github.com/factbook/factbook/blob/master/data/categories.csv}
 }
 \seealso{
 \code{\link[mosaic]{CIAdata}}
 }
 \keyword{datasets}
-

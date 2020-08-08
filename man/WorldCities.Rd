@@ -4,7 +4,8 @@
 \name{WorldCities}
 \alias{WorldCities}
 \title{Cities and their populations}
-\format{A data frame with 23,018 observations on the following 10 variables.
+\format{
+A data frame with 23,018 observations on the following 10 variables.
 \describe{ 
 \item{code}{The ISO (?) city code}
 \item{name}{Name of the city} 
@@ -15,7 +16,8 @@
 \item{population}{Population} 
 \item{regionCode}{ISO (?) Code} 
 \item{region}{Name of the region} 
-\item{date}{Date estimate made} }}
+\item{date}{Date estimate made} }
+}
 \source{
 In Draft: Somewhere on the Internet.  We need a proper source.
 }
@@ -34,4 +36,3 @@ data(WorldCities)
 In Draft: We need a proper reference
 }
 \keyword{datasets}
-

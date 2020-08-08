@@ -30,16 +30,13 @@
 #' 
 "MLB_teams" 
 
-#' Several variables on countries from the CIA factbook, 2014.
+#' Several variables on countries from the CIA Factbook, 2014.
 #' 
 #' The CIA Factbook has geographic, demographic, and economic data on a
 #' country-by-country basis.
 #' In the description of the variables, the 4-digit
 #' number indicates the code used to specify that variable on the data and
 #' documentation web site.
-#' For instance,
-#' \url{https://www.cia.gov/library/publications/the-world-factbook/fields/2153.html}
-#' contains documentation for variable code 2153, network users.
 #' 
 #' @name CIACountries
 #' @docType data
@@ -58,12 +55,10 @@
 #' @source From the CIA World Factbook,
 #' \url{https://www.cia.gov/library/publications/the-world-factbook/}
 #' @seealso \code{\link[mosaic]{CIAdata}}
-#' @references \url{https://github.com/factbook/factbook.csv}
+#' @references \url{https://github.com/factbook/factbook/blob/master/data/categories.csv}
 #' @keywords datasets
 #' @examples
-#' 
-#' data(CIACountries)
-#' glimpse(CIACountries)
+#' str(CIACountries)
 #' 
 "CIACountries"
 
@@ -133,14 +128,16 @@
 #' }
 #' }
 #' @seealso \code{\link{ViolationCodes}}, \code{\link{Cuisines}}
-#' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/xx67-kt59}
+#' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j}
 #' @examples 
 #' data(Violations)
-#' Violations %>%
-#'   inner_join(Cuisines, by = "cuisine_code") %>%
-#'   filter(cuisine_description == "American") %>%
-#'   arrange(grade_date) %>%
-#'   head() 
+#' if (require(dplyr)) {
+#'   Violations %>%
+#'     inner_join(Cuisines, by = "cuisine_code") %>%
+#'     filter(cuisine_description == "American") %>%
+#'     arrange(grade_date) %>%
+#'     head()
+#'  }
 "Violations"
 
 #' @rdname Violations
@@ -271,7 +268,7 @@
 #' 
 #' @docType data
 #' @format A character vector of length 1
-#' @source Project Gutenberg, \url{http://www.gutenberg.org/cache/epub/1129/pg1129.txt}
+#' @source Project Gutenberg, \url{http://www.gutenberg.org/ebooks/1129}
 "Macbeth_raw"
 
 #' State SAT scores from 2010
@@ -404,6 +401,35 @@
 #' @docType data
 #' @format A data frame with 15,829 observations on the bird's species, size,
 #' date found, and band number.
+#' \describe{
+#'   \item{\code{bogus}}{a character vector}
+#'   \item{\code{Timestamp}}{Timestamp indicates when the data were entered into an electronic record,
+#' not anything about the bird being described}
+#'   \item{\code{Year}}{a character vector}
+#'   \item{\code{Day}}{a character vector}
+#'   \item{\code{Month}}{a character vector}
+#'  \item{\code{CaptureTime}}{a character vector}
+#'  \item{\code{SpeciesName}}{a character vector}
+#'  \item{\code{Sex}}{a character vector}
+#'  \item{\code{Age}}{a character vector}
+#'  \item{\code{BandNumber}}{a character vector}
+#'  \item{\code{TrapID}}{a character vector}
+#'  \item{\code{Weather}}{a character vector}
+#'  \item{\code{BandingReport}}{a character vector}
+#'  \item{\code{RecaptureYN}}{a character vector}
+#'  \item{\code{RecaptureMonth}}{a character vector}
+#'  \item{\code{RecaptureDay}}{a character vector}
+#'  \item{\code{Condition}}{a character vector}
+#'  \item{\code{Release}}{a character vector}
+#'  \item{\code{Comments}}{a character vector}
+#'  \item{\code{DataEntryPerson}}{a character vector}
+#'  \item{\code{Weight}}{a character vector}
+#'  \item{\code{WingChord}}{a character vector}
+#'  \item{\code{Temperature}}{a character vector}
+#'  \item{\code{RecaptureOriginal}}{a character vector}
+#'  \item{\code{RecapturePrevious}}{a character vector}
+#'  \item{\code{TailLength}}{a character vector}
+#'  }
 #' 
 #' Timestamp indicates when the data were entered into an electronic record,
 #' not anything about the bird being described.
@@ -418,19 +444,19 @@
 
 #' Deaths and Pumps from 1854 London cholera outbreak
 #' @docType data
-#' @format An object of class \code{\link[sp]{SpatialPointsDataFrame}} 
+#' @format An object of class \code{\link[sf]{sf}} 
 #' whose data attribute has 250 rows and 2 columns.
 #' @details Both spatial objects are projected in EPSG:27700, aka the British
 #' National Grid.
 #' @source \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
 #' @examples 
-#' if (require(sp)) {
-#'   plot(CholeraDeaths)
+#' if (require(sf)) {
+#'   plot(st_geometry(CholeraDeaths))
 #' }
 "CholeraDeaths"
 
 #' @rdname CholeraDeaths
-#' @format An object of class \code{\link[sp]{SpatialPointsDataFrame}}.
+#' @format An object of class \code{\link[sf]{sf}}.
 #' @docType data
 "CholeraPumps"
 
@@ -439,16 +465,29 @@
 #' The data come from a National Cancer Institute study of gene expression in
 #' cell lines drawn from various sorts of cancer.
 #' 
-#' The expression data, \code{NCI60} is a dataframe of 41,078 gene probes (rows)
+#' 
+#' 
+#' \code{\link{Cancer}} gives information about each cell line.
+#' 
+#' @docType data
+#' @format The expression data, \code{NCI60_tiny} is a dataframe of 41,078 gene probes (rows)
 #' and 60 cell lines (columns).  The first column, \code{Probe} gives the name
 #' of the Agilent microarray probe.  Each of the remaining columns is named for
 #' a cell line.  The value is the log-2 expression associated with that probe
 #' for the cell line.
 #' 
-#' \code{\link{Cancer}} gives information about each cell line.
+#' \describe{
+#' \item{Probe}{the name of the Agilent microarray probe}
+#' }
 #' 
-#' @docType data
-#' @format See the description
+#' For \code{Cancer}:
+#' \describe{
+#' \item{otherCellLine}{a character vector giving the name of one cell line}
+#' \item{cellLine}{a character vector giving the name of another cell line}
+#' \item{correlation}{the correlation between the two cell lines. 
+#' See \code{\link{cor}}}
+#' }
+#' 
 #' @seealso \code{\link{Cancer}}
 #' @references Staunton et al. (\url{http://www.pnas.org/content/98/19/10787.full})
 #' 
@@ -462,4 +501,5 @@
 
 #' @rdname NCI60_tiny
 #' @docType data
+
 "Cancer"
