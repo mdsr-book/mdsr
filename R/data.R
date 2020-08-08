@@ -167,15 +167,16 @@
 
 #' Data Science Papers from arXiv.org
 #' 
-#' @description Papers matching the search string "Data Science" on arXiv.org in December,
-#' 2015
+#' @description Papers matching the search string "Data Science" on arXiv.org in August,
+#' 2020
 #' 
 #' @name DataSciencePapers
 #' @docType data
-#' @format A data frame with 95 observations on the following 15 variables.
+#' @format A data frame with 1089 observations on the following 15 variables.
 #' \describe{ \item{id}{unique arXiv.org identifier for the paper}
-#' \item{submitted}{date submitted} \item{updated}{date last
-#' updated} \item{title}{title of the paper}
+#' \item{submitted}{date submitted} 
+#' \item{updated}{date last updated} 
+#' \item{title}{title of the paper}
 #' \item{abstract}{contents of the abstract}
 #' \item{authors}{authors of the paper}
 #' \item{affiliations}{affiliations of the authors}
