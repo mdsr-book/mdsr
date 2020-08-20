@@ -503,3 +503,64 @@
 #' @docType data
 
 "Cancer"
+#' Headlines Train
+#'
+#' This data comes from Chakraborty et. al., which combines headlines from
+#' a variety of news and clickbait sources. Some headlines contain
+#' subject matter innapropriate for classroom use. Given the volume of headlines
+#' containing such language (especially for clickbait == TRUE), this filtering
+#' might not catch all problematic headlines. User discretion is advised.
+#' This dataset is a random sample of approximately 80% of the observations
+#' from the original dataset.
+#'
+#' @format A data frame with 18360 rows and 3 variables:
+#' \describe{
+#'   \item{title}{String}
+#'   \item{clickbait}{Boolean}
+#'   \item{ids}{Integer}
+#' }
+#' @source \url{https://github.com/bhargaviparanjape/clickbait}
+"Headlines_train"
+
+#' Headlines Test
+#'
+#' This dataset is a random sample of the remaining 20% of the observations
+#' not found in the training set.
+#'
+#' @format A data frame with 4589 rows and 3 variables:
+#' \describe{
+#'   \item{title}{String}
+#'   \item{clickbait}{Boolean}
+#'   \item{ids}{Integer}
+#' }
+#' @source \url{https://github.com/bhargaviparanjape/clickbait}
+"Headlines_test"
+#' Email Train
+#'
+#' This dataset includes a set of email subject lines used for classification
+#' of whether the message is spam (unsolicited commercial content) or not.
+#' Many subject lines include  subject matter innapropriate for classroom use. 
+#' Given the volume of headlines containing such language 
+#' (especially for spam == TRUE), user discretion is advised.
+#' This dataset is a random sample of 80% of the emails data.
+#'
+#' @format A data frame with 5,526 rows and 3 variables:
+#' \describe{
+#'   \item{subjectline}{String}
+#'   \item{type}{Boolean}
+#'   \item{ids}{Integer}
+#' }
+#' @source \url{http://www.rdatasciencecases.org/Spam}
+"Emails_train"
+#' Email Test
+#'
+#' This dataset is a random sample of 20% of the emails data.
+#'
+#' @format A data frame with 1,382 rows and 3 variables:
+#' \describe{
+#'   \item{subjectline}{String}
+#'   \item{type}{Boolean}
+#'   \item{ids}{Integer}
+#' }
+#' @source \url{http://www.rdatasciencecases.org/Spam}
+"Emails_test"
