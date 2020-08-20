@@ -503,6 +503,7 @@
 #' @docType data
 
 "Cancer"
+
 #' Headlines Train
 #'
 #' This data comes from Chakraborty et. al., which combines headlines from
@@ -513,6 +514,7 @@
 #' This dataset is a random sample of approximately 80% of the observations
 #' from the original dataset.
 #'
+#' @docType data
 #' @format A data frame with 18360 rows and 3 variables:
 #' \describe{
 #'   \item{title}{String}
@@ -526,7 +528,7 @@
 #'
 #' This dataset is a random sample of the remaining 20% of the observations
 #' not found in the training set.
-#'
+#' @docType data
 #' @format A data frame with 4589 rows and 3 variables:
 #' \describe{
 #'   \item{title}{String}
@@ -543,7 +545,7 @@
 #' Given the volume of headlines containing such language 
 #' (especially for spam == TRUE), user discretion is advised.
 #' This dataset is a random sample of 80% of the emails data.
-#'
+#' @docType data
 #' @format A data frame with 5,526 rows and 3 variables:
 #' \describe{
 #'   \item{subjectline}{String}
@@ -556,6 +558,7 @@
 #'
 #' This dataset is a random sample of 20% of the emails data.
 #'
+#' @docType data
 #' @format A data frame with 1,382 rows and 3 variables:
 #' \describe{
 #'   \item{subjectline}{String}

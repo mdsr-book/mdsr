@@ -20,3 +20,7 @@ Load the package (like any other) with
 ```{r, message=FALSE}
 library(mdsr)
 ```
+
+```{r}
+data(packages = "mdsr")
+```
