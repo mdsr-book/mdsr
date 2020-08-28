@@ -1,9 +1,7 @@
 
 # mdsr <img src='man/figures/logo.png' align="right" height="139" />
 
-[![Travis-CI Build
-Status](https://travis-ci.org/beanumber/mdsr.svg?branch=master)](https://travis-ci.org/beanumber/mdsr)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/mdsr)](https://cran.r-project.org/package=mdsr)
+![R-CMD-check](https://github.com/beanumber/mdsr/workflows/R-CMD-check/badge.svg)[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/mdsr)](https://cran.r-project.org/package=mdsr)
 [![CRAN RStudio mirror
 downloads](http://cranlogs.r-pkg.org/badges/mdsr)](http://www.r-pkg.org/pkg/mdsr)
 
