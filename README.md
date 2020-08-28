@@ -1,5 +1,5 @@
-Modern Data Science with R
-================
+
+# mdsr <img src='man/figures/logo.png' align="right" height="139" />
 
 [![Travis-CI Build
 Status](https://travis-ci.org/beanumber/mdsr.svg?branch=master)](https://travis-ci.org/beanumber/mdsr)
@@ -21,9 +21,3 @@ Load the package (like any other) with
 ``` r
 library(mdsr)
 ```
-
-``` r
-data(packages = "mdsr")
-```
-
-    ## Warning in data(packages = "mdsr"): data set 'mdsr' not found
