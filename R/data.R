@@ -302,7 +302,7 @@
 #' @docType data
 #' @format A data frame with 4,428 observations on the following 10 variables.
 #' \describe{ 
-#' \item{geonameid}{integer id of record in geonames database}
+#' \item{geoname_id}{integer id of record in geonames database}
 #' \item{name}{name of geographical point in plain ascii characters} 
 #' \item{latitude}{latitude in decimal degrees (wgs84)} 
 #' \item{longitude}{longitude in decimal degrees (wgs84)}
@@ -396,7 +396,7 @@
 #' There are many extraneous levels of variables such as species.  Part of the
 #' purpose of this data set is to teach about data cleaning.
 #' 
-#' @name OrdwayBirds
+#' @name ordway_birds
 #' @docType data
 #' @format A data frame with 15,829 observations on the bird's species, size,
 #' date found, and band number.
@@ -437,9 +437,9 @@
 #' @keywords datasets
 #' @examples
 #' 
-#' data(OrdwayBirds)
+#' ordway_birds
 #' 
-"OrdwayBirds"
+"ordway_birds"
 
 #' Deaths and Pumps from 1854 London cholera outbreak
 #' @docType data

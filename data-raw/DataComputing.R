@@ -21,7 +21,9 @@ cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/D
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/OrdwayBirds.rda", "data/OrdwayBirds.rda")
 cat(create_roxygen(parse_file("https://raw.githubusercontent.com/DataComputing/DataComputing/master/man/OrdwayBirds.Rd")), sep = "\n")
 load("data/OrdwayBirds.rda")
-save(OrdwayBirds, file = "data/OrdwayBirds.rda", compress = "xz")
+ordway_birds <- OrdwayBirds %>%
+  as_tibble()
+usethis::use_data(ordway_birds, overwrite = TRUE)
 
 # Minneapolis2013
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/Minneapolis2013.rda", "data/Minneapolis2013.rda")

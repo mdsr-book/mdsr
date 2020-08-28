@@ -9,3 +9,5 @@
 ^.*\.RData
 ^cran-comments\.md$
 ^CRAN-RELEASE$
+^\.github
+
