@@ -41,7 +41,7 @@ mdsr_data <- function(x) {
 #' @export
 person <- function(x) {
   index_entry('subject', x)
-  x
+  paste0("[", x, "](https://en.wikipedia.org/w/index.php?search=", x, ")")
 }
 
 #' @rdname macros
