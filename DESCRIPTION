@@ -20,7 +20,7 @@ Description: A complement to *Modern Data
     reproduce examples from the text. It also facilitates connections 
     to the SQL database server used in the book.
 Depends:
-    R (>= 3.2.0)
+    R (>= 3.5.0)
 License: CC0
 LazyData: true
 Imports:
