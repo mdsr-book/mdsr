@@ -41,7 +41,8 @@ showNonASCII(y)
 # z <- stringi::stri_trans_general(WorldCities$name, "latin-ascii")
 # showNonASCII(z)
 WorldCities$name <- y
-save(WorldCities, file = "data/WorldCities.rda", compress = "xz")
+WorldCities <- as_tibble(WorldCities)
+usethis::use_data(WorldCities, overwrite = TRUE)
 
 # NCI60 -- 5 MB file so put it in a different place
 download.file("https://github.com/DataComputing/DataComputing/raw/master/data/NCI60.rda", "data-raw/NCI60.rda")

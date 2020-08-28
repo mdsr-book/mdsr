@@ -298,28 +298,26 @@
 #' A list of cities
 #' 
 #' 
-#' @name WorldCities
+#' @name world_cities
 #' @docType data
-#' @format A data frame with 23,018 observations on the following 10 variables.
+#' @format A data frame with 4,428 observations on the following 10 variables.
 #' \describe{ 
-#' \item{code}{The ISO (?) city code}
-#' \item{name}{Name of the city} 
-#' \item{latitude}{location in degrees} 
-#' \item{longitude}{location in degrees}
-#' \item{country}{Two letter country code}
-#' \item{countryRegion}{A numerical region}
+#' \item{geonameid}{integer id of record in geonames database}
+#' \item{name}{name of geographical point in plain ascii characters} 
+#' \item{latitude}{latitude in decimal degrees (wgs84)} 
+#' \item{longitude}{longitude in decimal degrees (wgs84)}
+#' \item{country}{ISO-3166 2-letter country code}
+#' \item{country_region}{fipscode}
 #' \item{population}{Population} 
-#' \item{regionCode}{ISO (?) Code} 
-#' \item{region}{Name of the region} 
-#' \item{date}{Date estimate made} }
-#' @references In Draft: We need a proper reference
-#' @source In Draft: Somewhere on the Internet.  We need a proper source.
+#' \item{timezone}{the iana timezone id} 
+#' \item{modification_date}{date of last modification} }
+#' @source GeoNames: \url{https://download.geonames.org/export/dump/}
 #' @keywords datasets
 #' @examples
 #' 
-#' data(WorldCities)
+#' world_cities
 #' 
-"WorldCities"
+"world_cities"
 
 #' Votes from Scottish Parliament
 #' @docType data
