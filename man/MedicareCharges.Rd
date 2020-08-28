@@ -7,7 +7,7 @@
 \format{
 A data frame with 5,025 observations on the following 4 variables.
 \describe{ 
- \item{drg}{Code for the Direct Recovery Group: a
+ \item{drg}{Code for the Diagnosis Related Group: a
 character string that looks like a number.} 
  \item{stateProvider}{the state providing the care.} 
  \item{num_charges}{the total number of charges.}
@@ -27,7 +27,7 @@ charged Medicare for various inpatient procedures, how many were performed,
 and how much Medicare actually paid.
 }
 \details{
-These data are part of a set with \code{DirectRecoveryGroups}, which gives a
+These data are part of a set with \code{DiagnosisRelatedGroup}, which gives a
 description of the medical procedure associated with each DRG, and
 \code{MedicareProviders}, which translates \code{idProvider} into a name,
 address, state, Zip, etc..
@@ -38,6 +38,9 @@ These data have been pre-aggregated by state.
 
 data(MedicareCharges)
 
+}
+\references{
+https://hmsa.com/portal/provider/zav_pel.fh.DIA.650.htm
 }
 \seealso{
 \code{\link{MedicareProviders}}
