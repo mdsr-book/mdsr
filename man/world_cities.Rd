@@ -7,7 +7,7 @@
 \format{
 A data frame with 4,428 observations on the following 10 variables.
 \describe{ 
-\item{geonameid}{integer id of record in geonames database}
+\item{geoname_id}{integer id of record in geonames database}
 \item{name}{name of geographical point in plain ascii characters} 
 \item{latitude}{latitude in decimal degrees (wgs84)} 
 \item{longitude}{longitude in decimal degrees (wgs84)}
