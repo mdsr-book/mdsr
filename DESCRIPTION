@@ -32,14 +32,9 @@ Imports:
     fs,
     ggplot2,
     htmlwidgets,
-    mosaic,
-    purrr,
-    rlang,
     RMySQL,
     skimr,
     tibble,
-    tidyr,
-    tidyselect,
     webshot
 Suggests:
     knitr,

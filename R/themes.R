@@ -14,7 +14,6 @@
 #'  }
 
 theme_mdsr <- function(base_size = 12, base_family = "Bookman") {
-  m <- mosaic::theme_map()
   ggplot2::theme_grey(base_size = base_size, base_family = base_family) %+replace%
     ggplot2::theme(
       axis.text        = ggplot2::element_text(size = ggplot2::rel(0.8)),
