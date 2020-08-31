@@ -13,8 +13,13 @@
   sub-directories of 1Mb or more:
     data   6.2Mb
 * We plead for mercy with respect to the package size. The data sets included
-are used in the corresponding book, and are necessary for reproducibility. 
+  are used in the corresponding book, and are necessary for reproducibility. 
 
+* checking for future file timestamps ... NOTE
+* I don't know what this is about but I think it is spurious.
+
+* There is an error on Win-devel based on the unavailability of the `utf8` package, 
+  but I don't think that anything I can fix. 
 
 ## Reverse dependencies
 
