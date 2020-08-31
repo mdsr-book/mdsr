@@ -1,10 +1,10 @@
 #' src_scidb
 #' @description Connect to the scidb server at Smith College.
 #' @param dbname the name of the database to which you want to connect
-#' @param ... arguments passed to \code{\link[dplyr]{src_mysql}} or \code{\link[DBI]{dbConnect}}
+#' @param ... arguments passed to \code{\link[dbplyr]{src_dbi}} or \code{\link[DBI]{dbConnect}}
 #' @details This is a public, read-only account. Any abuse will be considered a 
 #' hostile act. 
-#' @return For \code{\link{src_scidb}}, a \code{\link[dplyr]{src_dbi}} object
+#' @return For \code{\link{src_scidb}}, a \code{\link[dbplyr]{src_dbi}} object
 #' @seealso \code{\link[dbplyr]{src_dbi}}
 #' @export
 #' 

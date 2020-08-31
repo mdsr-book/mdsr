@@ -15,10 +15,10 @@ mysql_scidb(dbname, ...)
 \arguments{
 \item{dbname}{the name of the database to which you want to connect}
 
-\item{...}{arguments passed to \code{\link[dplyr]{src_mysql}} or \code{\link[DBI]{dbConnect}}}
+\item{...}{arguments passed to \code{\link[dbplyr]{src_dbi}} or \code{\link[DBI]{dbConnect}}}
 }
 \value{
-For \code{\link{src_scidb}}, a \code{\link[dplyr]{src_dbi}} object
+For \code{\link{src_scidb}}, a \code{\link[dbplyr]{src_dbi}} object
 
 For \code{\link{dbConnect_scidb}}, a \code{\link[DBI]{DBIConnection-class}} object
 

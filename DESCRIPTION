@@ -47,7 +47,8 @@ Suggests:
     mosaicData,
     lubridate,
     sf,
-    testthat
+    testthat,
+    utf8
 RoxygenNote: 7.1.1
 Encoding: UTF-8
 URL: http://github.com/beanumber/mdsr
