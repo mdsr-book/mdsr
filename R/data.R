@@ -503,14 +503,13 @@
 
 "Cancer"
 
-#' Headlines Train
-#'
-#' This data comes from Chakraborty et. al., which combines headlines from
+#' Headlines_train
+#' @description This data comes from Chakraborty et. al., which combines headlines from
 #' a variety of news and clickbait sources. Some headlines contain
-#' subject matter innapropriate for classroom use. Given the volume of headlines
-#' containing such language (especially for clickbait == TRUE), this filtering
+#' subject matter inappropriate for classroom use. Given the volume of headlines
+#' containing such language (especially for \code{clickbait == TRUE}), this filtering
 #' might not catch all problematic headlines. User discretion is advised.
-#' This dataset is a random sample of approximately 80\% of the observations
+#' The training dataset is a random sample of approximately 80\% of the observations
 #' from the original dataset.
 #'
 #' @docType data
@@ -521,21 +520,19 @@
 #'   \item{ids}{Integer}
 #' }
 #' @source \url{https://github.com/bhargaviparanjape/clickbait}
+#' @references \url{https://doi.org/10.1109/ASONAM.2016.7752207}
 "Headlines_train"
 
-#' Headlines Test
-#'
-#' This dataset is a random sample of the remaining 20\% of the observations
+#' @rdname Headlines_train
+#' @description The testing dataset is a random sample of the remaining 20\% of the observations
 #' not found in the training set.
 #' @docType data
 #' @format A data frame with 4589 rows and 3 variables:
-#' \describe{
-#'   \item{title}{String}
-#'   \item{clickbait}{Boolean}
-#'   \item{ids}{Integer}
-#' }
-#' @source \url{https://github.com/bhargaviparanjape/clickbait}
+#' @examples 
+#' nrow(Headlines_train)
+#' nrow(Headlines_test)
 "Headlines_test"
+
 #' Email Train
 #'
 #' This dataset includes a set of email subject lines used for classification

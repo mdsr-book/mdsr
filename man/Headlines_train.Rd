@@ -3,7 +3,8 @@
 \docType{data}
 \name{Headlines_train}
 \alias{Headlines_train}
-\title{Headlines Train}
+\alias{Headlines_test}
+\title{Headlines_train}
 \format{
 A data frame with 18360 rows and 3 variables:
 \describe{
@@ -11,20 +12,34 @@ A data frame with 18360 rows and 3 variables:
   \item{clickbait}{Boolean}
   \item{ids}{Integer}
 }
+
+A data frame with 4589 rows and 3 variables:
 }
 \source{
 \url{https://github.com/bhargaviparanjape/clickbait}
 }
 \usage{
 Headlines_train
+
+Headlines_test
 }
 \description{
 This data comes from Chakraborty et. al., which combines headlines from
 a variety of news and clickbait sources. Some headlines contain
-subject matter innapropriate for classroom use. Given the volume of headlines
-containing such language (especially for clickbait == TRUE), this filtering
+subject matter inappropriate for classroom use. Given the volume of headlines
+containing such language (especially for \code{clickbait == TRUE}), this filtering
 might not catch all problematic headlines. User discretion is advised.
-This dataset is a random sample of approximately 80\% of the observations
+The training dataset is a random sample of approximately 80\% of the observations
 from the original dataset.
+
+The testing dataset is a random sample of the remaining 20\% of the observations
+not found in the training set.
+}
+\examples{
+nrow(Headlines_train)
+nrow(Headlines_test)
+}
+\references{
+\url{https://doi.org/10.1109/ASONAM.2016.7752207}
 }
 \keyword{datasets}
