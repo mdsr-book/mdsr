@@ -6,14 +6,14 @@
 \alias{Headlines_test}
 \title{Headlines_train}
 \format{
-A data frame with 18360 rows and 3 variables:
+A data frame with 18,360 rows and 3 variables:
 \describe{
-  \item{title}{String}
-  \item{clickbait}{Boolean}
-  \item{ids}{Integer}
+  \item{title}{a character vector}
+  \item{clickbait}{a logical vector}
+  \item{ids}{an integer vector}
 }
 
-A data frame with 4589 rows and 3 variables:
+A data frame with 4,589 rows and 3 variables:
 }
 \source{
 \url{https://github.com/bhargaviparanjape/clickbait}
