@@ -45,5 +45,11 @@ skim <- function(data, ...) {
     )
   )
   my_skim(data, ...) %>%
-    skimr::yank("numeric")
+    skimr::yank("numeric") %>%
+    dplyr::rename(
+      var = skim_variable,
+      na = missing
+    )
 }
+
+globalVariables("skim_variable")
