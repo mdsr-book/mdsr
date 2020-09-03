@@ -26,7 +26,7 @@
 #' @seealso \code{\link[Lahman]{Teams}}
 #' 
 #' @source The \code{\link[Lahman]{Teams}} table from \code{\link[Lahman]{Lahman-package}} 
-#' and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas/}
+#' and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
 #' 
 "MLB_teams" 
 
@@ -99,7 +99,7 @@
 #' @details The Cherry Blossom 10 Mile Run is a road race held in Washington,
 #' D.C. in April each year.  (The name comes from the famous cherry trees
 #' that are in bloom in April in Washington.)  The results of this race
-#' are published at \url{https://www.cherryblossom.org/aboutus/results_list.php}.
+#' are published at \url{http://www.cherryblossom.org/aboutus/results_list.php}.
 #' @examples
 #' with(Cherry, table(table(name.yob)))
 "Cherry"
@@ -184,7 +184,7 @@
 #' the journal (if published)} \item{doi}{digital object identifier}
 #' \item{primary_category}{arXiv.org primary category}
 #' \item{categories}{arXiv.org categories} }
-#' @source \url{https://www.arxiv.org}
+#' @source \url{https://arxiv.org/}
 #' @keywords datasets
 #' @examples
 #' 
@@ -220,7 +220,7 @@
 #' @source Extracted from the highly repetitive table provided by the Centers
 #' for Medicare and Medicaid Services.
 #' See
-#' \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}
+#' \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient}
 #' @keywords datasets
 #' @seealso \code{\link{MedicareCharges}}
 #' @examples
@@ -253,10 +253,10 @@
 #'  \item{mean_charge}{the average charge for each \code{drg} across each state}
 #'  }
 #' @source Data from the Centers for Medicare and Medicaid Services.
-#' See \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}.
+#' See \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient}.
 #' @keywords datasets
 #' @seealso \code{\link{MedicareProviders}}
-#' @references https://hmsa.com/portal/provider/zav_pel.fh.DIA.650.htm
+#' @references \url{https://hmsa.com/portal/provider/zav_pel.fh.DIA.650.htm}
 #' @examples
 #' 
 #' data(MedicareCharges)
@@ -448,7 +448,7 @@
 #' whose data attribute has 250 rows and 2 columns.
 #' @details Both spatial objects are projected in EPSG:27700, aka the British
 #' National Grid.
-#' @source \url{https://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
+#' @source \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
 #' @examples 
 #' if (require(sf)) {
 #'   plot(st_geometry(CholeraDeaths))

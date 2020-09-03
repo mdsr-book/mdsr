@@ -15,7 +15,7 @@ Authors@R: c(
     person("Daniel", "Kaplan", email = "kaplan@macalester.edu", role = "aut"))
 Description: A complement to *Modern Data
     Science with R* (ISBN: 978-1498724487, publisher URL: 
-    <https://www.crcpress.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9781498724487>). 
+    <https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9781498724487>). 
     This package contains data and code to complete exercises and 
     reproduce examples from the text. It also facilitates connections 
     to the SQL database server used in the book. Both version of the book are 
@@ -51,5 +51,5 @@ Suggests:
     utf8
 RoxygenNote: 7.1.1
 Encoding: UTF-8
-URL: http://github.com/beanumber/mdsr
+URL: https://github.com/beanumber/mdsr
 BugReports: https://github.com/beanumber/mdsr/issues
