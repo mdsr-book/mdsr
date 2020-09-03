@@ -26,7 +26,7 @@ A \code{\link{tbl_df}} object.
 }
 \source{
 The \code{\link[Lahman]{Teams}} table from \code{\link[Lahman]{Lahman-package}} 
-and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
+and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas/}
 }
 \usage{
 MLB_teams

@@ -61,4 +61,7 @@ purpose of this data set is to teach about data cleaning.
 ordway_birds
 
 }
+\references{
+\url{https://www.macalester.edu/ordway/}
+}
 \keyword{datasets}

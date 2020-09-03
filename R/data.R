@@ -26,7 +26,7 @@
 #' @seealso \code{\link[Lahman]{Teams}}
 #' 
 #' @source The \code{\link[Lahman]{Teams}} table from \code{\link[Lahman]{Lahman-package}} 
-#' and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
+#' and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas/}
 #' 
 "MLB_teams" 
 
@@ -99,7 +99,7 @@
 #' @details The Cherry Blossom 10 Mile Run is a road race held in Washington,
 #' D.C. in April each year.  (The name comes from the famous cherry trees
 #' that are in bloom in April in Washington.)  The results of this race
-#' are published at \url{http://www.cherryblossom.org/aboutus/results_list.php}.
+#' are published at \url{https://www.cherryblossom.org/aboutus/results_list.php}.
 #' @examples
 #' with(Cherry, table(table(name.yob)))
 "Cherry"
@@ -128,7 +128,7 @@
 #' }
 #' }
 #' @seealso \code{\link{ViolationCodes}}, \code{\link{Cuisines}}
-#' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j}
+#' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/}
 #' @examples 
 #' data(Violations)
 #' if (require(dplyr)) {
@@ -184,7 +184,7 @@
 #' the journal (if published)} \item{doi}{digital object identifier}
 #' \item{primary_category}{arXiv.org primary category}
 #' \item{categories}{arXiv.org categories} }
-#' @source \url{arxiv.org}
+#' @source \url{https://www.arxiv.org}
 #' @keywords datasets
 #' @examples
 #' 
@@ -220,7 +220,7 @@
 #' @source Extracted from the highly repetitive table provided by the Centers
 #' for Medicare and Medicaid Services.
 #' See
-#' \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}
+#' \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}
 #' @keywords datasets
 #' @seealso \code{\link{MedicareCharges}}
 #' @examples
@@ -253,7 +253,7 @@
 #'  \item{mean_charge}{the average charge for each \code{drg} across each state}
 #'  }
 #' @source Data from the Centers for Medicare and Medicaid Services.
-#' See \url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}.
+#' See \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}.
 #' @keywords datasets
 #' @seealso \code{\link{MedicareProviders}}
 #' @references https://hmsa.com/portal/provider/zav_pel.fh.DIA.650.htm
@@ -269,7 +269,7 @@
 #' 
 #' @docType data
 #' @format A character vector of length 1
-#' @source Project Gutenberg, \url{http://www.gutenberg.org/ebooks/1129}
+#' @source Project Gutenberg, \url{https://www.gutenberg.org/ebooks/1129/}
 "Macbeth_raw"
 
 #' State SAT scores from 2010
@@ -372,15 +372,15 @@
 #' These are further subdivided into precincts. } 
 #' }
 #' @references Description of ranked-choice voting:
-#' \url{http://vote.minneapolismn.gov/rcv/index.htm}
+#' \url{https://vote.minneapolismn.gov/rcv/index.htm}
 #' 
 #' A Minnesota Public Radio story about the election ballot tallying process:
-#' \url{http://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers}
+#' \url{https://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers/}
 #' 
 #' The Wikipedia article about the election:
-#' \url{http://en.wikipedia.org/wiki/Minneapolis_mayoral_election,_2013}
+#' \url{https://en.wikipedia.org/wiki/2013_Minneapolis_mayoral_election}
 #' @source Ballot data from the Minneapolis city government:
-#' \url{http://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx}
+#' \url{https://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx}
 #' @keywords datasets
 #' @examples
 #' 
@@ -434,6 +434,7 @@
 #' not anything about the bird being described.
 #' @source Jerald Dosch, Dept. of Biology, Macalester College: the manager of
 #' the Study Area.
+#' @references \url{https://www.macalester.edu/ordway/}
 #' @keywords datasets
 #' @examples
 #' 
@@ -447,7 +448,7 @@
 #' whose data attribute has 250 rows and 2 columns.
 #' @details Both spatial objects are projected in EPSG:27700, aka the British
 #' National Grid.
-#' @source \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
+#' @source \url{https://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
 #' @examples 
 #' if (require(sf)) {
 #'   plot(st_geometry(CholeraDeaths))
@@ -488,10 +489,10 @@
 #' }
 #' 
 #' @seealso \code{\link{Cancer}}
-#' @references Staunton et al. (\url{http://www.pnas.org/content/98/19/10787.full})
+#' @references Staunton et al. (\url{https://www.pnas.org/content/98/19/10787.full})
 #' 
 #' D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
-#' (\url{http://discover.nci.nih.gov/host/2000_systematic_abstract.jsp})
+#' (\url{https://discover.nci.nih.gov/host/2000_systematic_abstract.jsp})
 #' @examples
 #' 
 #' data(NCI60_tiny) 
@@ -519,7 +520,7 @@
 #'   \item{clickbait}{a logical vector}
 #'   \item{ids}{an integer vector}
 #' }
-#' @source \url{https://github.com/bhargaviparanjape/clickbait}
+#' @source \url{https://github.com/bhargaviparanjape/clickbait/}
 #' @references \url{https://doi.org/10.1109/ASONAM.2016.7752207}
 "Headlines_train"
 
@@ -548,7 +549,7 @@
 #'   \item{subjectline}{a character vector}
 #'   \item{type}{a character vector}
 #' }
-#' @source \url{http://www.rdatasciencecases.org/Spam}
+#' @source \url{http://www.rdatasciencecases.org/Spam/}
 "Emails_train"
 #' @rdname Emails_train
 #' @description The testing dataset is a random sample of 20\% of the emails data.

@@ -8,7 +8,7 @@
 A character vector of length 1
 }
 \source{
-Project Gutenberg, \url{http://www.gutenberg.org/ebooks/1129}
+Project Gutenberg, \url{https://www.gutenberg.org/ebooks/1129/}
 }
 \usage{
 Macbeth_raw

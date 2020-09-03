@@ -1,5 +1,5 @@
-# http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/
-src <- "http://rtwilson.com/downloads/SnowGIS_SHP.zip"
+# https://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/
+src <- "https://rtwilson.com/downloads/SnowGIS_SHP.zip"
 dsn <- usethis::use_course(src, destdir = tempdir())
 
 list.files(dsn)

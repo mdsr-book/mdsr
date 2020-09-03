@@ -45,7 +45,7 @@ A data frame with 84 observations on the following 2 variables.
 }
 }
 \source{
-NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j}
+NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/}
 }
 \usage{
 Violations

@@ -18,7 +18,7 @@ These are further subdivided into precincts. }
 }
 \source{
 Ballot data from the Minneapolis city government:
-\url{http://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx}
+\url{https://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx}
 }
 \usage{
 Minneapolis2013
@@ -42,12 +42,12 @@ data(Minneapolis2013)
 }
 \references{
 Description of ranked-choice voting:
-\url{http://vote.minneapolismn.gov/rcv/index.htm}
+\url{https://vote.minneapolismn.gov/rcv/index.htm}
 
 A Minnesota Public Radio story about the election ballot tallying process:
-\url{http://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers}
+\url{https://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers/}
 
 The Wikipedia article about the election:
-\url{http://en.wikipedia.org/wiki/Minneapolis_mayoral_election,_2013}
+\url{https://en.wikipedia.org/wiki/2013_Minneapolis_mayoral_election}
 }
 \keyword{datasets}

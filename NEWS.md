@@ -9,6 +9,7 @@ mdsr 0.2.0
 * renamed `ordway_birds`
 * converted spatial objects to `sf`
 * added `save_webshot()` function
+* fixed URLs with trailing slashes and https
 
 mdsr 0.1.8
 

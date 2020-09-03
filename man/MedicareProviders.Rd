@@ -25,7 +25,7 @@ provider.}
 Extracted from the highly repetitive table provided by the Centers
 for Medicare and Medicaid Services.
 See
-\url{http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}
+\url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html}
 }
 \usage{
 MedicareProviders

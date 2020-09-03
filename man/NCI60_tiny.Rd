@@ -44,10 +44,10 @@ data(NCI60_tiny)
 
 }
 \references{
-Staunton et al. (\url{http://www.pnas.org/content/98/19/10787.full})
+Staunton et al. (\url{https://www.pnas.org/content/98/19/10787.full})
 
 D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
-(\url{http://discover.nci.nih.gov/host/2000_systematic_abstract.jsp})
+(\url{https://discover.nci.nih.gov/host/2000_systematic_abstract.jsp})
 }
 \seealso{
 \code{\link{Cancer}}

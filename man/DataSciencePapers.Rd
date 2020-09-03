@@ -22,7 +22,7 @@ the journal (if published)} \item{doi}{digital object identifier}
 \item{categories}{arXiv.org categories} }
 }
 \source{
-\url{arxiv.org}
+\url{https://www.arxiv.org}
 }
 \usage{
 DataSciencePapers

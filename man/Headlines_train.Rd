@@ -16,7 +16,7 @@ A data frame with 18,360 rows and 3 variables:
 A data frame with 4,589 rows and 3 variables:
 }
 \source{
-\url{https://github.com/bhargaviparanjape/clickbait}
+\url{https://github.com/bhargaviparanjape/clickbait/}
 }
 \usage{
 Headlines_train
