@@ -21,6 +21,9 @@
 * There is an error on Win-devel based on the unavailability of the `utf8` package, 
   but I don't think that anything I can fix. 
 
+* There are three URLs that are only available via `http`. All others
+  have been changed to `https`
+
 ## Reverse dependencies
 
 There are no reverse dependencies.
