@@ -3,6 +3,8 @@
 \name{macros}
 \alias{macros}
 \alias{func}
+\alias{sql_func}
+\alias{sql_word}
 \alias{argument}
 \alias{variable}
 \alias{pkg}
@@ -13,6 +15,10 @@
 \title{Replacements for LaTeX macros}
 \usage{
 func(x)
+
+sql_func(x)
+
+sql_word(x)
 
 argument(x)
 

@@ -8,6 +8,21 @@ func <- function(x) {
   paste0("`", x, "()`")
 }
 
+
+#' @rdname macros
+#' @export
+sql_func <- function(x) {
+  index_entry('SQL functions', x)
+  paste0("`", toupper(x), "()`")
+}
+
+#' @rdname macros
+#' @export
+sql_word <- function(x) {
+  index_entry('SQL keywords', x)
+  paste0("`", toupper(x), "`")
+}
+
 #' @rdname macros
 #' @export
 argument <- function(x) {
