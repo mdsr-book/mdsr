@@ -87,4 +87,4 @@ mdsr_sql_keys_table <- function(x, ...) {
     mdsr_table(...)
 }
 
-globalVariables("skim_variable")
+globalVariables(c("skim_variable", "select_type", "Extra", "Collation"))
