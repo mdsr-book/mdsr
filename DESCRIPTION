@@ -33,6 +33,7 @@ Imports:
     fs,
     ggplot2,
     htmlwidgets,
+    kableExtra,
     RMySQL,
     skimr,
     tibble,

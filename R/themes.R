@@ -51,5 +51,40 @@ skim <- function(data, ...) {
       na = missing
     )
 }
+ 
+#' Custom table output
+#' @export
+#' @param x A data.frame
+#' @param ... arguments passed to \code{\link[kableExtra]{kbl}}
+#' @examples 
+#' mdsr_table(faithful)
+
+mdsr_table <- function(x, ...) {
+  x %>%
+    kableExtra::kbl(booktabs = TRUE, linesep = "", ...) %>%
+    kableExtra::kable_styling(
+      bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+      latex_options = "striped",
+      full_width = TRUE
+    )
+}
+
+#' @rdname mdsr_table
+#' @export
+
+mdsr_sql_explain_table <- function(x, ...) {
+  x %>%
+    dplyr::select(-id, -select_type, -Extra) %>%
+    mdsr_table(...)
+}
+
+#' @rdname mdsr_table
+#' @export
+
+mdsr_sql_keys_table <- function(x, ...) {
+  x %>%
+    dplyr::select(1:7, -Collation) %>%
+    mdsr_table(...)
+}
 
 globalVariables("skim_variable")
