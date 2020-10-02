@@ -15,7 +15,7 @@ test_that("scidb works", {
       1
     )
   )
-  expect_length(dplyr::db_list_tables(x$con), 4)
+  expect_length(DBI::dbListTables(x$con), 4)
 })
 
 test_that("download functions work", {
