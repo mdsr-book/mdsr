@@ -40,7 +40,7 @@ variable <- function(x) {
 #' @rdname macros
 #' @export
 pkg <- function(x) {
-  index_entry('R', paste("library(", x, ")", sep = "")
+  index_entry('R', paste0("library(", x, ")", sep = ""))
   paste0("**", x, "**")
 }
 
