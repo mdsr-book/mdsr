@@ -1,11 +1,13 @@
+n
 #' Replacements for LaTeX macros
 #' @name macros
 #' @export
 #' @param x text to wrap in macro
 #'
 func <- function(x) {
-  index_entry('R functions', x)
-  paste0("`", x, "()`")
+  part1 <- index_entry('R', paste0(x, "()"))
+  part2 <- paste0("`", x, "()`")
+  return(paste(part1, part2, sep = ""))
 }
 
 
@@ -40,8 +42,9 @@ variable <- function(x) {
 #' @rdname macros
 #' @export
 pkg <- function(x) {
-  index_entry('R', paste0("library(", x, ")", sep = ""))
-  paste0("**", x, "**")
+  part1 <- index_entry(index_label = 'R', paste0("library(", x, ")", sep = ""))
+  part2 <- paste0("**", x, "**")
+  return(paste(part1, part2, sep = ""))
 }
 
 #' @rdname macros
@@ -51,18 +54,20 @@ mdsr_data <- function(x) {
   paste0("`", x, "`")
 }
 
-#' @rdname macros
+#' @rdname macrosun
 #' @export
 person <- function(x) {
-  index_entry('subject', x)
+  # index_entry('subject', x)   # this just gets thrown away!
+  # people need to be manually indexed, or function written to turn Ben Baumer into Baumer, Ben
   paste0("[", x, "](https://en.wikipedia.org/w/index.php?search=", x, ")")
 }
 
 #' @rdname macros
 #' @export
 vocab <- function(x) {
-  index_entry(index_label = 'subject', x)
-  paste0("[*", x, "*](https://en.wikipedia.org/w/index.php?search=", x, ")")
+  part1 <- index_entry(index_label = 'subject', x)
+  part2 <- paste0("[*", x, "*](https://en.wikipedia.org/w/index.php?search=", x, ")")
+  return(paste(part1, part2, sep = ""))
 }
 
 #' @rdname macros

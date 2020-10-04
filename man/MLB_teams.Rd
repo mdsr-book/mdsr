@@ -33,7 +33,7 @@ MLB_teams
 }
 \description{
 A dataset containing information about Major League Baseball teams 
-from 2008-2013.
+from 2008-2014.
 }
 \seealso{
 \code{\link[Lahman]{Teams}}
