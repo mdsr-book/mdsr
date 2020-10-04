@@ -40,7 +40,7 @@ variable <- function(x) {
 #' @rdname macros
 #' @export
 pkg <- function(x) {
-  index_entry('R', x)
+  index_entry('R', paste("library(", x, ")", sep = "")
   paste0("**", x, "**")
 }
 
@@ -61,7 +61,7 @@ person <- function(x) {
 #' @rdname macros
 #' @export
 vocab <- function(x) {
-  index_entry('subject', x)
+  index_entry(index_label = 'subject', x)
   paste0("[*", x, "*](https://en.wikipedia.org/w/index.php?search=", x, ")")
 }
 
