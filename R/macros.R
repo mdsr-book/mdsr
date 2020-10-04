@@ -40,9 +40,8 @@ variable <- function(x) {
 #' @rdname macros
 #' @export
 pkg <- function(x) {
-  index_entry('R packages', x)
+  index_entry('R', x)
   paste0("**", x, "**")
-  # add citation?
 }
 
 #' @rdname macros
