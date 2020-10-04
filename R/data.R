@@ -1,7 +1,7 @@
 #' Data about recent major league baseball teams
 #' 
 #' A dataset containing information about Major League Baseball teams 
-#' from 2008-2013. 
+#' from 2008-2014. 
 #' 
 #' @docType data
 #' @format A \code{\link{tbl_df}} object. 
