@@ -4,10 +4,14 @@ n
 #' @export
 #' @param x text to wrap in macro
 #'
-func <- function(x) {
-  part1 <- index_entry('R', paste0(x, "()"))
-  part2 <- paste0("`", x, "()`")
-  return(paste0(part1, part2))
+func <- function(x, index = TRUE) {
+  word <- paste0(x, "()")
+  md <- paste0("`", word, "`")
+  if (index) {
+    return(paste0(index_entry('R', word), md))
+  } else {
+    return(md)
+  }
 }
 
 
@@ -47,10 +51,14 @@ variable <- function(x) {
 
 #' @rdname macros
 #' @export
-pkg <- function(x) {
-  part1 <- index_entry(index_label = 'R', paste0("library(", x, ")", sep = ""))
-  part2 <- paste0("**", x, "**")
-  return(paste0(part1, part2))
+pkg <- function(x, index = TRUE) {
+  word <- paste0("library(", x, ")")
+  md <- paste0("**", x, "**")
+  if (index) {
+    return(paste0(index_entry('R', word), md))
+  } else {
+    return(md)
+  }
 }
 
 #' @rdname macros

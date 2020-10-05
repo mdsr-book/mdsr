@@ -9,11 +9,12 @@
 \alias{variable}
 \alias{pkg}
 \alias{mdsr_data}
+\alias{person}
 \alias{vocab}
 \alias{index_entry}
 \title{Replacements for LaTeX macros}
 \usage{
-func(x)
+func(x, index = TRUE)
 
 sql_func(x)
 
@@ -23,9 +24,11 @@ argument(x)
 
 variable(x)
 
-pkg(x)
+pkg(x, index = TRUE)
 
 mdsr_data(x)
+
+person(x)
 
 vocab(x)
 
