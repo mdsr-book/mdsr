@@ -14,15 +14,21 @@ func <- function(x) {
 #' @rdname macros
 #' @export
 sql_func <- function(x) {
-  index_entry('SQL functions', x)
-  paste0("`", toupper(x), "()`")
+  word <- paste0(toupper(x), "()")
+  paste0(
+    index_entry('subject', paste0('SQL!', word)),
+    paste0("`", word, "`")
+  )
 }
 
 #' @rdname macros
 #' @export
 sql_word <- function(x) {
-  index_entry('SQL keywords', x)
-  paste0("`", toupper(x), "`")
+  word <- toupper(x)
+  paste0(
+    index_entry('subject', paste0('SQL!', word)),
+    paste0("`", word, "`")
+  )
 }
 
 #' @rdname macros
