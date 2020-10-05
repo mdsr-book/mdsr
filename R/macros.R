@@ -7,7 +7,7 @@ n
 func <- function(x) {
   part1 <- index_entry('R', paste0(x, "()"))
   part2 <- paste0("`", x, "()`")
-  return(paste(part1, part2, sep = ""))
+  return(paste0(part1, part2))
 }
 
 
@@ -44,7 +44,7 @@ variable <- function(x) {
 pkg <- function(x) {
   part1 <- index_entry(index_label = 'R', paste0("library(", x, ")", sep = ""))
   part2 <- paste0("**", x, "**")
-  return(paste(part1, part2, sep = ""))
+  return(paste0(part1, part2))
 }
 
 #' @rdname macros
@@ -54,12 +54,24 @@ mdsr_data <- function(x) {
   paste0("`", x, "`")
 }
 
-#' @rdname macrosun
+#' @rdname macros
 #' @export
 person <- function(x) {
-  # index_entry('subject', x)   # this just gets thrown away!
   # people need to be manually indexed, or function written to turn Ben Baumer into Baumer, Ben
-  paste0("[", x, "](https://en.wikipedia.org/w/index.php?search=", x, ")")
+  y <- stringr::str_split(x, " ")[[1]]
+  if (length(y) == 2) {
+    x2 <- paste0(rev(y), collapse = ", ")
+    index <- paste0(
+      index_entry(index_label = 'subject', x),
+      index_entry(index_label = 'subject', x2)
+    )
+  } else {
+    index <- paste0(
+      index_entry(index_label = 'subject', x)
+    )
+  }
+  part3 <- paste0("[", x, "](https://en.wikipedia.org/w/index.php?search=", x, ")")
+  return(paste0(index, part3))
 }
 
 #' @rdname macros
@@ -67,7 +79,7 @@ person <- function(x) {
 vocab <- function(x) {
   part1 <- index_entry(index_label = 'subject', x)
   part2 <- paste0("[*", x, "*](https://en.wikipedia.org/w/index.php?search=", x, ")")
-  return(paste(part1, part2, sep = ""))
+  return(paste0(part1, part2))
 }
 
 #' @rdname macros

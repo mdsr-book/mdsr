@@ -36,6 +36,7 @@ Imports:
     kableExtra,
     RMySQL,
     skimr,
+    stringr,
     tibble,
     webshot
 Suggests:
