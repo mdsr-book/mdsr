@@ -75,10 +75,7 @@ person <- function(x) {
   y <- stringr::str_split(x, " ")[[1]]
   if (length(y) == 2) {
     x2 <- paste0(rev(y), collapse = ", ")
-    index <- paste0(
-      index_entry(index_label = 'subject', x),
-      index_entry(index_label = 'subject', x2)
-    )
+    index <- index_entry(index_label = 'subject', x2)
   } else {
     index <- paste0(
       index_entry(index_label = 'subject', x)
