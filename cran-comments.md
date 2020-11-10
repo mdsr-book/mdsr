@@ -15,16 +15,13 @@
 * We plead for mercy with respect to the package size. The data sets included
   are used in the corresponding book, and are necessary for reproducibility. 
 
-* checking for future file timestamps ... NOTE
-* I don't know what this is about but I think it is spurious.
-
 * There is an error on Win-devel based on the unavailability of the `utf8` package, 
   but I don't think that anything I can fix. 
 
 * There are three URLs that are only available via `http`. All others
   have been changed to `https`
 
-* Fixed ERRORs on CRAN checks
+* Fixed ERRORs on CRAN checks and updated two broken URLs
 
 ## Reverse dependencies
 

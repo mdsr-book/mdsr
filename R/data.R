@@ -372,7 +372,7 @@
 #' These are further subdivided into precincts. } 
 #' }
 #' @references Description of ranked-choice voting:
-#' \url{https://vote.minneapolismn.gov/rcv/index.htm}
+#' \url{https://vote.minneapolismn.gov/ranked-choice-voting/}
 #' 
 #' A Minnesota Public Radio story about the election ballot tallying process:
 #' \url{https://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers/}
@@ -380,7 +380,7 @@
 #' The Wikipedia article about the election:
 #' \url{https://en.wikipedia.org/wiki/2013_Minneapolis_mayoral_election}
 #' @source Ballot data from the Minneapolis city government:
-#' \url{https://vote.minneapolismn.gov/www/groups/public/@clerk/documents/webcontent/2013-mayor-cvr.xlsx}
+#' \url{https://vote.minneapolismn.gov/results-data/election-results/2013/mayor/}
 #' @keywords datasets
 #' @examples
 #' 
@@ -549,7 +549,7 @@
 #'   \item{subjectline}{a character vector}
 #'   \item{type}{a character vector}
 #' }
-#' @source \url{http://www.rdatasciencecases.org/Spam/}
+#' @source \url{http://www.rdatasciencecases.org/Data.html}
 "Emails_train"
 #' @rdname Emails_train
 #' @description The testing dataset is a random sample of 20\% of the emails data.
