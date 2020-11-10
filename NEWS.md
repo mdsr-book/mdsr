@@ -1,3 +1,7 @@
+mdsr 0.2.3
+
+* Fixed CRAN errors about `db_list_tables()` [#54](https://github.com/beanumber/mdsr/issues/54)
+
 mdsr 0.2.0
 
 * Update for 2nd edition of the book

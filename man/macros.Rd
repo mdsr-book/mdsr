@@ -37,6 +37,8 @@ index_entry(index_label = "subject", x)
 \arguments{
 \item{x}{text to wrap in macro}
 
+\item{index}{add LaTeX indexing?}
+
 \item{index_label}{the name of the index}
 }
 \description{

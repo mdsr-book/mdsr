@@ -1,6 +1,6 @@
 ## Test environments
 
-* local ubuntu 18.04.5 install, R 4.0.2
+* local ubuntu 18.04.5 install, R 4.0.3
 * macOS-latest (on github actions)
 * win-builder (devel and release)
 
@@ -23,6 +23,8 @@
 
 * There are three URLs that are only available via `http`. All others
   have been changed to `https`
+
+* Fixed ERRORs on CRAN checks
 
 ## Reverse dependencies
 

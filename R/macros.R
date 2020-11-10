@@ -1,8 +1,8 @@
-n
 #' Replacements for LaTeX macros
 #' @name macros
 #' @export
 #' @param x text to wrap in macro
+#' @param index add LaTeX indexing?
 #'
 func <- function(x, index = TRUE) {
   word <- paste0(x, "()")

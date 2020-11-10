@@ -1,21 +1,24 @@
 context("mdsr")
 
 test_that("scidb works", {
-  x <- src_scidb("airlines")
-  expect_s3_class(x, "src_sql")
-  expect_output(print(x), "mdsr_public")
-  expect_output(print(x), "rds.amazonaws.com")
+  x <- dbConnect_scidb("airlines")
+  expect_s4_class(x, "DBIObject")
+  expect_output(print(x), "MySQLConnection")
+  
+  y <- tbl(x, "airports")
+  expect_s3_class(y, c("tbl_dbi", "tbl_sql", "tbl"))
+  expect_output(print(y), "mdsr_public")
+  expect_output(print(y), "rds.amazonaws.com")
   suppressWarnings(
     expect_equal(
-      x %>% 
-        tbl("airports") %>% 
+      y %>% 
         head(1) %>%
         collect() %>%
         nrow(), 
       1
     )
   )
-  expect_length(DBI::dbListTables(x$con), 4)
+  expect_length(DBI::dbListTables(x), 4)
 })
 
 test_that("download functions work", {
