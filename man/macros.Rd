@@ -9,7 +9,7 @@
 \alias{variable}
 \alias{pkg}
 \alias{mdsr_data}
-\alias{person}
+\alias{mdsr_person}
 \alias{vocab}
 \alias{index_entry}
 \title{Replacements for LaTeX macros}
@@ -28,7 +28,7 @@ pkg(x, index = TRUE)
 
 mdsr_data(x)
 
-person(x)
+mdsr_person(x)
 
 vocab(x)
 

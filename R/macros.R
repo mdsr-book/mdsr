@@ -70,7 +70,7 @@ mdsr_data <- function(x) {
 
 #' @rdname macros
 #' @export
-person <- function(x) {
+mdsr_person <- function(x) {
   # people need to be manually indexed, or function written to turn Ben Baumer into Baumer, Ben
   y <- stringr::str_split(x, " ")[[1]]
   if (length(y) == 2) {

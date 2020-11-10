@@ -1,6 +1,7 @@
 mdsr 0.2.3
 
 * Fixed CRAN errors about `db_list_tables()` [#54](https://github.com/beanumber/mdsr/issues/54)
+* `person()` -> `mdsr_person()` [#55](https://github.com/beanumber/mdsr/issues/55)
 
 mdsr 0.2.0
 
