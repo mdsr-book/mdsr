@@ -559,3 +559,32 @@
 #' nrow(Emails_train)
 #' nrow(Emails_test)
 "Emails_test"
+
+#' Saratoga Houses
+#' @docType data
+#' @format A tibble with 1728 rows and 16 variables:
+#' \describe{
+#'  \item{price}{},
+#'  \item{lot_size}{},
+#'  \item{waterfront}{},
+#'  \item{age}{},
+#'  \item{land_value}{},
+#'  \item{construction}{},
+#'  \item{air_cond}{},
+#'  \item{fuel}{},
+#'  \item{heat}{},
+#'  \item{sewer}{},
+#'  \item{living_area}{},
+#'  \item{pct_college}{},
+#'  \item{bedrooms}{},
+#'  \item{fireplaces}{},
+#'  \item{bathrooms}{},
+#'  \item{rooms}{}
+#'  }
+#'  @examples 
+#'  saratoga_houses
+"saratoga_houses"
+
+#' @rdname saratoga_houses
+#' @docType data
+"saratoga_codes"

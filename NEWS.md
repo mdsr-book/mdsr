@@ -1,3 +1,7 @@
+mdsr 0.2.4
+
+* Added Saratoga houses datasets
+
 mdsr 0.2.3
 
 * Fixed CRAN errors about `db_list_tables()` [#54](https://github.com/beanumber/mdsr/issues/54)
