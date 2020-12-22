@@ -87,23 +87,30 @@ mdsr_person <- function(x) {
 
 #' @rdname macros
 #' @export
-vocab <- function(x) {
-  part1 <- index_entry(index_label = 'subject', x)
+#' @param ... arguments passed to \code{\link{index_entry}}
+vocab <- function(x, ...) {
+  part1 <- index_entry(index_label = 'subject', x, ...)
   part2 <- paste0("[*", x, "*](https://en.wikipedia.org/w/index.php?search=", x, ")")
   return(paste0(part1, part2))
 }
 
 #' @rdname macros
 #' @param index_label the name of the index
+#' @param emph Display the LaTeX entry in italics
 #' @export
-index_entry <- function(index_label = "subject", x) {
+#' @examples 
+#' index_entry(x = "Barack Obama")
+#' index_entry(x = "Twilight", emph = TRUE)
+index_entry <- function(index_label = "subject", x, emph = FALSE) {
+  tex <- gsub("_", "\\\\_", x)
   paste0(
     "\\", "index{",
     index_label,
     "}{",
     # need to escape backlashes in LaTeX
     # https://stackoverflow.com/questions/41446525/insert-backslashes-with-gsub
-    gsub("_", "\\\\_", x),
+    tex,
+    if (emph) { paste0("@\\emph{", tex, "}") },
     "}"
   )
 }

@@ -30,17 +30,25 @@ mdsr_data(x)
 
 mdsr_person(x)
 
-vocab(x)
+vocab(x, ...)
 
-index_entry(index_label = "subject", x)
+index_entry(index_label = "subject", x, emph = FALSE)
 }
 \arguments{
 \item{x}{text to wrap in macro}
 
 \item{index}{add LaTeX indexing?}
 
+\item{...}{arguments passed to \code{\link{index_entry}}}
+
 \item{index_label}{the name of the index}
+
+\item{emph}{Display the LaTeX entry in italics}
 }
 \description{
 Replacements for LaTeX macros
+}
+\examples{
+index_entry(x = "Barack Obama")
+index_entry(x = "Twilight", emph = TRUE)
 }
