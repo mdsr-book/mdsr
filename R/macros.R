@@ -6,10 +6,11 @@
 #' @examples 
 #' func("mutate")
 #' func("mutate", index = FALSE)
+#' func("left_join")
 func <- function(x, ...) {
   word <- paste0(x, "()")
   md <- paste0("`", word, "`")
-  index_entry('R', word, ...)
+  paste0(index_entry('R', word, ...), md)
 }
 
 
@@ -49,10 +50,12 @@ variable <- function(x) {
 
 #' @rdname macros
 #' @export
+#' @examples 
+#' pkg("dplyr")
 pkg <- function(x, ...) {
   word <- paste0("library(", x, ")")
   md <- paste0("**", x, "**")
-  index_entry('R', word, ...)
+  paste0(index_entry('R', word, ...), md)
 }
 
 #' @rdname macros
@@ -68,6 +71,7 @@ mdsr_data <- function(x) {
 #' mdsr_person("Ben Baumer")
 #' mdsr_person("Ben Baumer", emph = TRUE)
 #' mdsr_person("Richard De Veaux")
+#' mdsr_person("Richard De Veaux", alt = "De Veaux, Richard")
 mdsr_person <- function(x, ...) {
   # people need to be manually indexed, or function written to turn Ben Baumer into Baumer, Ben
   y <- stringr::str_split(x, " ")[[1]]
@@ -104,10 +108,15 @@ vocab <- function(x, ...) {
 #' index_entry(x = "Barack Obama", index = FALSE)
 #' index_entry(x = "Big data", .f = tolower)
 #' index_entry(x = "Twilight", emph = TRUE)
-index_entry <- function(index_label = "subject", x, emph = FALSE, index = TRUE, .f = NULL) {
+#' index_entry(x = "Richard De Veaux", alt = "De Veaux, Richard")
+#' index_entry(x = "left_join")
+index_entry <- function(index_label = "subject", x, emph = FALSE, index = TRUE, .f = NULL, alt = NULL) {
   tex <- gsub("_", "\\\\_", x)
   if (!is.null(.f)) {
     tex <- .f(tex)
+  }
+  if (is.null(alt)) {
+    alt <- tex
   }
   if (index) {
     paste0(
@@ -116,11 +125,10 @@ index_entry <- function(index_label = "subject", x, emph = FALSE, index = TRUE, 
       "}{",
       # need to escape backlashes in LaTeX
       # https://stackoverflow.com/questions/41446525/insert-backslashes-with-gsub
-      tex,
-      if (emph) { paste0("@\\emph{", tex, "}") },
+      alt,
+      if (emph) { paste0("@\\emph{", alt, "}") },
       "}"
     )
-  } else {
-    x
   }
 }
+
