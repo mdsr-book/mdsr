@@ -53,6 +53,8 @@ index_entry(
 \item{index}{add LaTeX indexing?}
 
 \item{.f}{function to apply to \code{\link{x}} during indexing}
+
+\item{alt}{alternate character string to use for indexing}
 }
 \description{
 Replacements for LaTeX macros

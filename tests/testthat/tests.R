@@ -5,18 +5,17 @@ test_that("scidb works", {
   expect_s4_class(x, "DBIObject")
   expect_output(print(x), "MySQLConnection")
   
-  y <- tbl(x, "airports")
+  suppressWarnings(y <- tbl(x, "airports"))
   expect_s3_class(y, c("tbl_dbi", "tbl_sql", "tbl"))
-  expect_output(print(y), "mdsr_public")
-  expect_output(print(y), "rds.amazonaws.com")
-  suppressWarnings(
-    expect_equal(
-      y %>% 
-        head(1) %>%
-        collect() %>%
-        nrow(), 
-      1
-    )
+  expect_match(DBI::dbGetInfo(x)$host, "^mdsr.+rds\\.amazonaws\\.com$")
+  expect_equal(DBI::dbGetInfo(x)$user, "mdsr_public")
+  expect_equal(
+    y %>% 
+      head(1) %>%
+      collect() %>%
+      nrow() %>%
+      suppressWarnings(), 
+    1
   )
   expect_length(DBI::dbListTables(x), 4)
 })

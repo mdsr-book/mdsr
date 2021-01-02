@@ -20,13 +20,13 @@ mysql_scidb(dbname, ...)
 \value{
 For \code{\link{src_scidb}}, a \code{\link[dbplyr]{src_dbi}} object
 
-For \code{\link{dbConnect_scidb}}, a \code{\link[DBI]{DBIConnection-class}} object
+For \code{\link{dbConnect_scidb}}, a \code{\link[RMySQL]{MySQLConnection-class}} object
 
 For \code{\link{mysql_scidb}}, a character vector of length 1 to be used
 as an \code{engine.ops} argument, or on the command line.
 }
 \description{
-Connect to the scidb server at Smith College.
+Connect to the scidb server on Amazon Web Services.
 }
 \details{
 This is a public, read-only account. Any abuse will be considered a 
@@ -34,10 +34,13 @@ hostile act.
 }
 \examples{
 
-dbAir <- src_scidb("airlines")
-dbAir
-dbAir <- dbConnect_scidb("airlines")
-dbAir
+db_air <- src_scidb("airlines")
+db_air
+db_air <- dbConnect_scidb("airlines")
+db_air
+if (require(DBI)) {
+  dbListTables(db_air)
+}
 
 if (require(knitr)) {
   opts_chunk$set(engine.opts = mysql_scidb("airlines"))
@@ -46,7 +49,7 @@ if (require(knitr)) {
 \seealso{
 \code{\link[dbplyr]{src_dbi}}
 
-\code{\link[DBI]{DBIConnection-class}}
+\code{\link[RMySQL]{MySQLConnection-class}}
 
 \code{\link[knitr]{opts_chunk}}
 }
