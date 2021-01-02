@@ -28,7 +28,7 @@ citation("mdsr")
 ```
 
     ## 
-    ## To cite lubridate in publications use:
+    ## To cite mdsr in publications use:
     ## 
     ##   Benjamin S. Baumer, Daniel T. Kaplan, Nicholas J. Horton (2021).
     ##   Modern Data Science with R. 2nd edition, Chapman and Hall/CRC Press:
