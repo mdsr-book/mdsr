@@ -9,7 +9,7 @@
 0 errors | 0 warnings | 1 note
 
 * checking installed package size ... NOTE
-  installed size is  6.4Mb
+  installed size is  6.5Mb
   sub-directories of 1Mb or more:
     data   6.2Mb
 * We plead for mercy with respect to the package size. The data sets included
@@ -21,7 +21,7 @@
 * There are three URLs that are only available via `http`. All others
   have been changed to `https`
 
-* Fixed ERRORs on CRAN checks and updated two broken URLs
+* Note the new GitHub URL.
 
 ## Reverse dependencies
 
