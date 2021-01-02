@@ -1,6 +1,6 @@
 Package: mdsr
 Title: Complement to 'Modern Data Science with R'
-Version: 0.2.3.9003
+Version: 0.2.4
 Authors@R: c(
     person("Benjamin S.", "Baumer", 
       email = "ben.baumer@gmail.com",
@@ -14,11 +14,13 @@ Authors@R: c(
     ),
     person("Daniel", "Kaplan", email = "kaplan@macalester.edu", role = "aut"))
 Description: A complement to *Modern Data
-    Science with R* (ISBN: 978-1498724487, publisher URL: 
-    <https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9781498724487>). 
+    Science with R*, both the 1st (ISBN: 978-1498724487, publisher URL: 
+    <https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9781498724487>)
+    and 2nd editions (ISBN: 978-0367191498, publisher URL: 
+    <https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9780367191498>).
     This package contains data and code to complete exercises and 
     reproduce examples from the text. It also facilitates connections 
-    to the SQL database server used in the book. Both version of the book are 
+    to the SQL database server used in the book. Both editions of the book are 
     supported by this package.
 Depends:
     R (>= 3.5.0)
@@ -53,5 +55,5 @@ Suggests:
     utf8
 RoxygenNote: 7.1.1
 Encoding: UTF-8
-URL: https://github.com/beanumber/mdsr
-BugReports: https://github.com/beanumber/mdsr/issues
+URL: https://github.com/mdsr-book/mdsr
+BugReports: https://github.com/mdsr-book/mdsr/issues

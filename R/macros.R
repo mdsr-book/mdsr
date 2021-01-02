@@ -102,6 +102,7 @@ vocab <- function(x, ...) {
 #' @param index_label the name of the index
 #' @param emph Display the LaTeX entry in italics
 #' @param .f function to apply to \code{\link{x}} during indexing
+#' @param alt alternate character string to use for indexing
 #' @export
 #' @examples 
 #' index_entry(x = "Barack Obama")

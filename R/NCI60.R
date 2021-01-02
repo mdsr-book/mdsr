@@ -11,7 +11,7 @@ etl_NCI60 <- function() {
   dir <- tempdir()
   lcl <- file.path(dir, "NCI60.rda")
   downloader::download(
-    "https://github.com/beanumber/mdsr/blob/master/data-raw/NCI60.rda?raw=true", 
+    "https://github.com/mdsr-book/mdsr/blob/master/data-raw/NCI60.rda?raw=true", 
     destfile = lcl
   )
   load(lcl)
