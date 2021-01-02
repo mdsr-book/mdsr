@@ -55,7 +55,7 @@
 #' @source From the CIA World Factbook,
 #' \url{https://www.cia.gov/library/publications/the-world-factbook/}
 #' @seealso \code{\link[mosaic]{CIAdata}}
-#' @references \url{https://github.com/factbook/factbook/blob/master/data/categories.csv}
+#' @references \url{https://github.com/factbook/factbook/blob/master/CATEGORIES.md}
 #' @keywords datasets
 #' @examples
 #' str(CIACountries)
@@ -549,7 +549,7 @@
 #'   \item{subjectline}{a character vector}
 #'   \item{type}{a character vector}
 #' }
-#' @source \url{http://www.rdatasciencecases.org/Data.html}
+#' @source Originally retrieved from http://www.rdatasciencecases.org/Data.html
 "Emails_train"
 #' @rdname Emails_train
 #' @description The testing dataset is a random sample of 20\% of the emails data.
