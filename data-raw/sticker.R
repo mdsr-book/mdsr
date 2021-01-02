@@ -11,7 +11,7 @@ sticker(
   s_x = 1, s_y = 0.95, 
   s_width = 2, s_height = 2,
   white_around_sticker = TRUE,
-  url = "beanumber.github.io/mdsr2e", u_color = "white", u_size = 5, u_angle = 90, u_x = 1.8, u_y = 0.57
+  url = "mdsr-book.github.io/mdsr2e", u_color = "white", u_size = 5, u_angle = 90, u_x = 1.8, u_y = 0.57
 )
 
 
