@@ -37,7 +37,7 @@ str(CIACountries)
 
 }
 \references{
-\url{https://github.com/factbook/factbook/blob/master/data/categories.csv}
+\url{https://github.com/factbook/factbook/blob/master/CATEGORIES.md}
 }
 \seealso{
 \code{\link[mosaic]{CIAdata}}
