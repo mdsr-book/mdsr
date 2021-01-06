@@ -2,6 +2,7 @@ mdsr 0.2.4
 
 * Added Saratoga houses datasets
 * Moved repository to https://www.github.com/mdsr-book/mdsr
+* Fixed broken URLs
 
 mdsr 0.2.3
 

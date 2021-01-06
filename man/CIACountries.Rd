@@ -20,7 +20,7 @@ in the World. (236 countries are given.)
 }
 \source{
 From the CIA World Factbook,
-\url{https://www.cia.gov/library/publications/the-world-factbook/}
+\url{https://www.cia.gov/the-world-factbook/}
 }
 \usage{
 CIACountries

@@ -40,6 +40,6 @@ nrow(Headlines_train)
 nrow(Headlines_test)
 }
 \references{
-\url{https://doi.org/10.1109/ASONAM.2016.7752207}
+\doi{10.1109/ASONAM.2016.7752207}
 }
 \keyword{datasets}

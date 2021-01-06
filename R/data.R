@@ -53,7 +53,7 @@
 #' \item{net_users}{Fraction of Internet users (\% of population), 2153}
 #' }
 #' @source From the CIA World Factbook,
-#' \url{https://www.cia.gov/library/publications/the-world-factbook/}
+#' \url{https://www.cia.gov/the-world-factbook/}
 #' @seealso \code{\link[mosaic]{CIAdata}}
 #' @references \url{https://github.com/factbook/factbook/blob/master/CATEGORIES.md}
 #' @keywords datasets
@@ -521,7 +521,7 @@
 #'   \item{ids}{an integer vector}
 #' }
 #' @source \url{https://github.com/bhargaviparanjape/clickbait/}
-#' @references \url{https://doi.org/10.1109/ASONAM.2016.7752207}
+#' @references \doi{10.1109/ASONAM.2016.7752207}
 "Headlines_train"
 
 #' @rdname Headlines_train

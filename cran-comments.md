@@ -19,7 +19,9 @@
   but I don't think that anything I can fix. 
 
 * There are three URLs that are only available via `http`. All others
-  have been changed to `https`
+  have been changed to `https`.
+
+* Broken URLs have been corrected, and \doi was inserted.
 
 * Note the new GitHub URL.
 
