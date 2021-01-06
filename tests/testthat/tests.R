@@ -32,11 +32,12 @@ test_that("download functions work", {
 
 
 test_that("save_webshot works", {
+  skip_on_cran()
   if (require(leaflet)) {
-    map <- leaflet() %>%
+    x <- leaflet() %>%
       addTiles() %>%
       addMarkers(lng = 174.768, lat = -36.852, popup = "The birthplace of R")
-    png <- save_webshot(map, tempfile())
+    png <- save_webshot(x, tempfile())
     expect_is(png, "fs_path")
 #    expect_true(file.exists(png))
   }
