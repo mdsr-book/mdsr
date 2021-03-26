@@ -1,6 +1,6 @@
 Package: mdsr
 Title: Complement to 'Modern Data Science with R'
-Version: 0.2.4
+Version: 0.2.5
 Authors@R: c(
     person("Benjamin S.", "Baumer", 
       email = "ben.baumer@gmail.com",
@@ -26,6 +26,7 @@ Depends:
     R (>= 3.5.0)
 License: CC0
 LazyData: true
+LazyDataCompression: xz
 Imports:
     babynames,
     DBI,

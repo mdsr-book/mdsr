@@ -1,3 +1,7 @@
+mdsr 0.2.5
+
+* Added LazyDataCompression
+
 mdsr 0.2.4
 
 * Added Saratoga houses datasets
