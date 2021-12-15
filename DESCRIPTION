@@ -1,6 +1,6 @@
 Package: mdsr
 Title: Complement to 'Modern Data Science with R'
-Version: 0.2.5
+Version: 0.2.5.1
 Authors@R: c(
     person("Benjamin S.", "Baumer", 
       email = "ben.baumer@gmail.com",
@@ -37,7 +37,7 @@ Imports:
     ggplot2,
     htmlwidgets,
     kableExtra,
-    RMySQL,
+    RMariaDB,
     skimr,
     stringr,
     tibble,
@@ -54,7 +54,7 @@ Suggests:
     sf,
     testthat,
     utf8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Encoding: UTF-8
 URL: https://github.com/mdsr-book/mdsr
 BugReports: https://github.com/mdsr-book/mdsr/issues
