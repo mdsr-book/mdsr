@@ -1,6 +1,7 @@
 context("mdsr")
 
 test_that("scidb works", {
+  skip_on_cran()
   x <- dbConnect_scidb("airlines")
   expect_s4_class(x, "DBIObject")
   expect_output(print(x), "MySQLConnection")
@@ -38,7 +39,7 @@ test_that("save_webshot works", {
       addTiles() %>%
       addMarkers(lng = 174.768, lat = -36.852, popup = "The birthplace of R")
     png <- save_webshot(x, tempfile())
-    expect_is(png, "fs_path")
+    expect_s3_class(png, "fs_path")
 #    expect_true(file.exists(png))
   }
 })

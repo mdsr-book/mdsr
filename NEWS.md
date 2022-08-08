@@ -1,3 +1,7 @@
+mdsr 0.2.6
+
+* Skip all Internet tests on CRAN
+
 mdsr 0.2.5
 
 * Added LazyDataCompression
