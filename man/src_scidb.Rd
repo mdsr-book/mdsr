@@ -20,7 +20,7 @@ mysql_scidb(dbname, ...)
 \value{
 For \code{\link{src_scidb}}, a \code{\link[dbplyr]{src_dbi}} object
 
-For \code{\link{dbConnect_scidb}}, a \code{\link[RMySQL]{MySQLConnection-class}} object
+For \code{\link{dbConnect_scidb}}, a \code{\link[RMariaDB]{MariaDBConnection-class}} object
 
 For \code{\link{mysql_scidb}}, a character vector of length 1 to be used
 as an \code{engine.ops} argument, or on the command line.
@@ -49,7 +49,7 @@ if (require(knitr)) {
 \seealso{
 \code{\link[dbplyr]{src_dbi}}
 
-\code{\link[RMySQL]{MySQLConnection-class}}
+\code{\link[RMariaDB]{MariaDBConnection-class}}
 
 \code{\link[knitr]{opts_chunk}}
 }

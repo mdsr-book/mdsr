@@ -18,8 +18,8 @@ src_scidb <- function(dbname, ...) {
 
 #' @rdname src_scidb
 #' @export
-#' @return For \code{\link{dbConnect_scidb}}, a \code{\link[RMySQL]{MySQLConnection-class}} object
-#' @seealso \code{\link[RMySQL]{MySQLConnection-class}}
+#' @return For \code{\link{dbConnect_scidb}}, a \code{\link[RMariaDB]{MariaDBConnection-class}} object
+#' @seealso \code{\link[RMariaDB]{MariaDBConnection-class}}
 #' @examples 
 #' db_air <- dbConnect_scidb("airlines")
 #' db_air
@@ -29,7 +29,7 @@ src_scidb <- function(dbname, ...) {
 
 dbConnect_scidb <- function(dbname, ...) {
   DBI::dbConnect(
-    RMySQL::MySQL(), 
+    RMariaDB::MariaDB(), 
     dbname = dbname, 
     host = "mdsr.cdc7tgkkqd0n.us-east-1.rds.amazonaws.com", 
     user = "mdsr_public", 

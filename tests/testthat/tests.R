@@ -3,7 +3,7 @@ context("mdsr")
 test_that("scidb works", {
   x <- dbConnect_scidb("airlines")
   expect_s4_class(x, "DBIObject")
-  expect_output(print(x), "MySQLConnection")
+  expect_output(print(x), "MariaDBConnection")
   
   suppressWarnings(y <- tbl(x, "airports"))
   expect_s3_class(y, c("tbl_dbi", "tbl_sql", "tbl"))
@@ -18,6 +18,7 @@ test_that("scidb works", {
     1
   )
   expect_length(DBI::dbListTables(x), 4)
+  DBI::dbDisconnect(x)
 })
 
 test_that("download functions work", {
