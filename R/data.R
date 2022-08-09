@@ -226,7 +226,7 @@
 #' @source Extracted from the highly repetitive table provided by the Centers
 #' for Medicare and Medicaid Services.
 #' See
-#' \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient}
+#' \url{https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/}
 #' @keywords datasets
 #' @seealso \code{\link{MedicareCharges}}
 #' @examples
@@ -259,10 +259,10 @@
 #'  \item{mean_charge}{the average charge for each \code{drg} across each state}
 #'  }
 #' @source Data from the Centers for Medicare and Medicaid Services.
-#' See \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient}.
+#' See 
+#' \url{https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/}
 #' @keywords datasets
 #' @seealso \code{\link{MedicareProviders}}
-#' @references \url{https://hmsa.com/portal/provider/zav_pel.fh.DIA.650.htm}
 #' @examples
 #' 
 #' data(MedicareCharges)
@@ -381,7 +381,7 @@
 #' \url{https://vote.minneapolismn.gov/ranked-choice-voting/}
 #' 
 #' A Minnesota Public Radio story about the election ballot tallying process:
-#' \url{https://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers/}
+#' \url{https://www.mprnews.org/2013/11/22/politics/ranked-choice-vote-count-programmers/}
 #' 
 #' The Wikipedia article about the election:
 #' \url{https://en.wikipedia.org/wiki/2013_Minneapolis_mayoral_election}
@@ -454,7 +454,7 @@
 #' whose data attribute has 250 rows and 2 columns.
 #' @details Both spatial objects are projected in EPSG:27700, aka the British
 #' National Grid.
-#' @source \url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
+#' @source \url{https://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
 #' @examples 
 #' if (require(sf)) {
 #'   plot(st_geometry(CholeraDeaths))
@@ -495,10 +495,12 @@
 #' }
 #' 
 #' @seealso \code{\link{Cancer}}
-#' @references Staunton et al. (\url{https://www.pnas.org/content/98/19/10787.full})
+#' @references Staunton et al. (2001), \emph{PNAS} (\doi{https://doi.org/10.1073/pnas.191368598})
 #' 
-#' D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
-#' (\url{https://discover.nci.nih.gov/host/2000_systematic_abstract.jsp})
+#' D.T. Ross et al. (2000) \emph{Nature Genetics}, 24(3):227-234
+#' (\doi{https://doi.org/10.1038/73432})
+#' 
+#' \href{https://discover.nci.nih.gov/cellminer/}{CellMiner}
 #' @examples
 #' 
 #' data(NCI60_tiny) 

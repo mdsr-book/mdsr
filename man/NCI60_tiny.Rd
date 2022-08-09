@@ -44,10 +44,12 @@ data(NCI60_tiny)
 
 }
 \references{
-Staunton et al. (\url{https://www.pnas.org/content/98/19/10787.full})
+Staunton et al. (2001), \emph{PNAS} (\doi{https://doi.org/10.1073/pnas.191368598})
 
-D.T. Ross et al. (2000) Nature Genetics, 24(3):227-234
-(\url{https://discover.nci.nih.gov/host/2000_systematic_abstract.jsp})
+D.T. Ross et al. (2000) \emph{Nature Genetics}, 24(3):227-234
+(\doi{https://doi.org/10.1038/73432})
+
+\href{https://discover.nci.nih.gov/cellminer/}{CellMiner}
 }
 \seealso{
 \code{\link{Cancer}}

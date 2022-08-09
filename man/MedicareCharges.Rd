@@ -16,7 +16,8 @@ character string that looks like a number.}
 }
 \source{
 Data from the Centers for Medicare and Medicaid Services.
-See \url{https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient}.
+See 
+\url{https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/}
 }
 \usage{
 MedicareCharges
@@ -38,9 +39,6 @@ These data have been pre-aggregated by state.
 
 data(MedicareCharges)
 
-}
-\references{
-\url{https://hmsa.com/portal/provider/zav_pel.fh.DIA.650.htm}
 }
 \seealso{
 \code{\link{MedicareProviders}}

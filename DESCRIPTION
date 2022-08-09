@@ -14,8 +14,7 @@ Authors@R: c(
     ),
     person("Daniel", "Kaplan", email = "kaplan@macalester.edu", role = "aut"))
 Description: A complement to *Modern Data
-    Science with R*, both the first (ISBN: 978-1498724487, publisher URL: 
-    <https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9781498724487>)
+    Science with R*, both the first 
     and second editions (ISBN: 978-0367191498, publisher URL: 
     <https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9780367191498>).
     This package contains data and code to complete exercises and 

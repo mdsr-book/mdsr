@@ -12,7 +12,7 @@ whose data attribute has 250 rows and 2 columns.
 An object of class \code{\link[sf]{sf}}.
 }
 \source{
-\url{http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
+\url{https://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
 }
 \usage{
 CholeraDeaths

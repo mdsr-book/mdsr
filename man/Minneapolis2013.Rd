@@ -45,7 +45,7 @@ Description of ranked-choice voting:
 \url{https://vote.minneapolismn.gov/ranked-choice-voting/}
 
 A Minnesota Public Radio story about the election ballot tallying process:
-\url{https://minnesota.publicradio.org/display/web/2013/11/22/politics/ranked-choice-vote-count-programmers/}
+\url{https://www.mprnews.org/2013/11/22/politics/ranked-choice-vote-count-programmers/}
 
 The Wikipedia article about the election:
 \url{https://en.wikipedia.org/wiki/2013_Minneapolis_mayoral_election}
