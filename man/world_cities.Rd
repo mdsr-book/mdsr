@@ -18,7 +18,7 @@ A data frame with 4,428 observations on the following 10 variables.
 \item{modification_date}{date of last modification} }
 }
 \source{
-GeoNames: \url{https://download.geonames.org/export/dump/}
+GeoNames: \url{http://download.geonames.org/export/dump/}
 }
 \usage{
 world_cities

@@ -36,10 +36,13 @@ save_webshot <- function(map, path_to_img, overwrite = FALSE,
       file = tmp_file, 
       selfcontained = FALSE
     )
-  webshot::webshot(
-    tmp_file, 
-    file = out, 
-    vwidth = vwidth, vheight = vheight, cliprect = cliprect, ...
+  suppressWarnings(
+    # https://github.com/wch/webshot/issues/101
+    webshot::webshot(
+      tmp_file, 
+      file = out, 
+      vwidth = vwidth, vheight = vheight, cliprect = cliprect, ...
+    )
   )
   return(out)
 }

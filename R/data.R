@@ -317,7 +317,7 @@
 #' \item{population}{Population} 
 #' \item{timezone}{the iana timezone id} 
 #' \item{modification_date}{date of last modification} }
-#' @source GeoNames: \url{https://download.geonames.org/export/dump/}
+#' @source GeoNames: \url{http://download.geonames.org/export/dump/}
 #' @keywords datasets
 #' @examples
 #' 
