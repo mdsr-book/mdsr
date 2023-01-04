@@ -33,13 +33,16 @@ This is a public, read-only account. Any abuse will be considered a
 hostile act.
 }
 \examples{
-
+\dontrun{
 db_air <- src_scidb("airlines")
 db_air
+}
+\dontrun{
 db_air <- dbConnect_scidb("airlines")
 db_air
 if (require(DBI)) {
   dbListTables(db_air)
+}
 }
 
 if (require(knitr)) {

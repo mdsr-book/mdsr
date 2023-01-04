@@ -2,10 +2,10 @@
 #' @param map A leaflet map object
 #' @param path_to_img A path to the image file to save
 #' @param overwrite Do you want to clobber any existing file?
-#' @param vwidth see \code{\link[webshot]{webshot}}
-#' @param vheight see \code{\link[webshot]{webshot}}
-#' @param cliprect see \code{\link[webshot]{webshot}}
-#' @param ... arguments passed to \code{\link[webshot]{webshot}}
+#' @param vwidth see \code{\link[webshot2]{webshot}}
+#' @param vheight see \code{\link[webshot2]{webshot}}
+#' @param cliprect see \code{\link[webshot2]{webshot}}
+#' @param ... arguments passed to \code{\link[webshot2]{webshot}}
 #' @export
 #' @return a path to a PNG file
 #' @examples 
@@ -38,7 +38,7 @@ save_webshot <- function(map, path_to_img, overwrite = FALSE,
     )
   suppressWarnings(
     # https://github.com/wch/webshot/issues/101
-    webshot::webshot(
+    webshot2::webshot(
       tmp_file, 
       file = out, 
       vwidth = vwidth, vheight = vheight, cliprect = cliprect, ...

@@ -42,5 +42,10 @@ test_that("save_webshot works", {
     png <- save_webshot(x, tempfile())
     expect_s3_class(png, "fs_path")
 #    expect_true(file.exists(png))
+    # cleanup Crashpad
+    crashpad <- fs::path(fs::path_dir(tempdir()), "Crashpad")
+    if (fs::dir_exists(crashpad)) {
+      fs::dir_delete(crashpad)
+    }
   }
 })

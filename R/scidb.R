@@ -8,9 +8,10 @@
 #' @seealso \code{\link[dbplyr]{src_dbi}}
 #' @export
 #' @examples 
-#' 
+#' \dontrun{
 #' db_air <- src_scidb("airlines")
 #' db_air
+#' }
 
 src_scidb <- function(dbname, ...) {
   dbplyr::src_dbi(dbConnect_scidb(dbname, ...))
@@ -21,10 +22,12 @@ src_scidb <- function(dbname, ...) {
 #' @return For \code{\link{dbConnect_scidb}}, a \code{\link[RMariaDB]{MariaDBConnection-class}} object
 #' @seealso \code{\link[RMariaDB]{MariaDBConnection-class}}
 #' @examples 
+#' \dontrun{
 #' db_air <- dbConnect_scidb("airlines")
 #' db_air
 #' if (require(DBI)) {
 #'   dbListTables(db_air)
+#' }
 #' }
 
 dbConnect_scidb <- function(dbname, ...) {

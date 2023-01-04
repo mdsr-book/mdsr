@@ -11,3 +11,5 @@
 ^CRAN-RELEASE$
 ^\.github
 
+^CRAN-SUBMISSION$
+^\.github$

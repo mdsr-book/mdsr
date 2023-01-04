@@ -21,13 +21,13 @@ save_webshot(
 
 \item{overwrite}{Do you want to clobber any existing file?}
 
-\item{vwidth}{see \code{\link[webshot]{webshot}}}
+\item{vwidth}{see \code{\link[webshot2]{webshot}}}
 
-\item{vheight}{see \code{\link[webshot]{webshot}}}
+\item{vheight}{see \code{\link[webshot2]{webshot}}}
 
-\item{cliprect}{see \code{\link[webshot]{webshot}}}
+\item{cliprect}{see \code{\link[webshot2]{webshot}}}
 
-\item{...}{arguments passed to \code{\link[webshot]{webshot}}}
+\item{...}{arguments passed to \code{\link[webshot2]{webshot}}}
 }
 \value{
 a path to a PNG file
