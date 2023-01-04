@@ -9,7 +9,7 @@ on:
 name: R-CMD-check
 
 jobs:
-  R-CMD-check:
+  R-CMD-check-ubuntu:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -27,7 +27,7 @@ jobs:
           needs: check
 
       - uses: r-lib/actions/check-r-package@v2
-  R-CMD-check:
+  R-CMD-check-macOS:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
