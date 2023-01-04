@@ -2,7 +2,7 @@
 # mdsr <img src='man/figures/logo.png' align="right" height="139" />
 
 ![R-CMD-check](https://github.com/mdsr-book/mdsr/workflows/R-CMD-check/badge.svg)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/mdsr)](https://cran.r-project.org/package=mdsr)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/mdsr)](https://cran.r-project.org/package=mdsr)
 [![CRAN RStudio mirror
 downloads](https://cranlogs.r-pkg.org/badges/mdsr)](https://www.r-pkg.org/pkg/mdsr)
 
@@ -14,6 +14,15 @@ To install it, try:
 ``` r
 install.packages("mdsr")
 ```
+
+The most recent version can always be installed directly from GitHub:
+
+``` r
+devtools::install_github("mdsr-book/mdsr")
+```
+
+Older versions of the package can be downloaded and installed via the
+[CRAN archive](https://cran.r-project.org/src/contrib/Archive/mdsr/).
 
 Load the package (like any other) with
 

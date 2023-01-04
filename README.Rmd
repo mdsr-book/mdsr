@@ -18,6 +18,14 @@ To install it, try:
 install.packages("mdsr")
 ```
 
+The most recent version can always be installed directly from GitHub:
+
+```{r, eval=FALSE}
+devtools::install_github("mdsr-book/mdsr")
+```
+
+Older versions of the package can be downloaded and installed via the [CRAN archive](https://cran.r-project.org/src/contrib/Archive/mdsr/).
+
 Load the package (like any other) with 
 
 ```{r, message=FALSE}
