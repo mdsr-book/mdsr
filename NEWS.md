@@ -1,3 +1,8 @@
+mdsr 0.2.7
+
+* Don't run all Internet examples
+* Migrated from `webshot` to `webshot2`.
+
 mdsr 0.2.6
 
 * Skip all Internet tests on CRAN
