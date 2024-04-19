@@ -18,7 +18,7 @@ test_that("scidb works", {
       suppressWarnings(), 
     1
   )
-  expect_length(DBI::dbListTables(x), 4)
+  expect_length(DBI::dbListTables(x), 5)
   DBI::dbDisconnect(x)
 })
 

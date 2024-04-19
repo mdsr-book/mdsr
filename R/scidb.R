@@ -34,7 +34,7 @@ dbConnect_scidb <- function(dbname, ...) {
   DBI::dbConnect(
     RMariaDB::MariaDB(), 
     dbname = dbname, 
-    host = "mdsr.cdc7tgkkqd0n.us-east-1.rds.amazonaws.com", 
+    host = "mdsr.crcbo51tmesf.us-east-2.rds.amazonaws.com", 
     user = "mdsr_public", 
     password = "ImhsmflMDSwR",
     ...)
@@ -53,5 +53,20 @@ dbConnect_scidb <- function(dbname, ...) {
 #' }
 
 mysql_scidb <- function(dbname, ...) {
-  paste("-h mdsr.cdc7tgkkqd0n.us-east-1.rds.amazonaws.com -u mdsr_public -pImhsmflMDSwR -t", dbname)
+  paste("-h mdsr.crcbo51tmesf.us-east-2.rds.amazonaws.com -u mdsr_public -pImhsmflMDSwR -t", dbname)
+}
+
+summarize_scidb <- function() {
+  db <- dbConnect_scidb("airlines")
+  
+  db |>
+    DBI::dbGetQuery(
+      "SELECT year, COUNT(*) AS num_flights 
+       FROM airlines.flights GROUP BY year;"
+    )
+  db |>
+    DBI::dbGetQuery(
+      "SELECT production_year, COUNT(*) AS num_movies 
+      FROM imdb.title GROUP BY production_year;"
+    )
 }

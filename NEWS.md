@@ -1,3 +1,7 @@
+mdsr 0.2.8
+
+* Use the new URL for the MariaDB server hosted on AWS
+
 mdsr 0.2.7
 
 * Don't run all Internet examples
