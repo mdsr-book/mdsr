@@ -11,8 +11,8 @@
 #' @examples 
 #' \dontrun{
 #' if (require(leaflet)) {
-#'   map <- leaflet() %>%
-#'     addTiles() %>%
+#'   map <- leaflet() |>
+#'     addTiles() |>
 #'     addMarkers(lng = 174.768, lat = -36.852, popup = "The birthplace of R")
 #'   save_webshot(map, tempfile())
 #' }
@@ -27,22 +27,19 @@ save_webshot <- function(map, path_to_img, overwrite = FALSE,
     out <- fs::path_ext_set(out, ".png")
   }
   
-  if (fs::file_exists(out)) {
-    warning("file exists already")  
+  if (fs::file_exists(out) & !overwrite) {
+    stop("file exists already")  
   }
   tmp_file <- fs::file_temp(ext = ".html")
-  map %>%
+  map |>
     htmlwidgets::saveWidget(
       file = tmp_file, 
       selfcontained = FALSE
     )
-  suppressWarnings(
-    # https://github.com/wch/webshot/issues/101
     webshot2::webshot(
       tmp_file, 
       file = out, 
       vwidth = vwidth, vheight = vheight, cliprect = cliprect, ...
     )
-  )
   return(out)
 }

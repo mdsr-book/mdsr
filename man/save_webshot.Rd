@@ -38,8 +38,8 @@ Embedded webshot of leaflet map
 \examples{
 \dontrun{
 if (require(leaflet)) {
-  map <- leaflet() \%>\%
-    addTiles() \%>\%
+  map <- leaflet() |>
+    addTiles() |>
     addMarkers(lng = 174.768, lat = -36.852, popup = "The birthplace of R")
   save_webshot(map, tempfile())
 }
