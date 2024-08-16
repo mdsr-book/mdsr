@@ -10,16 +10,11 @@
 
 0 errors | 0 warnings | 2 notes
 
-* This is a resubmission. 
+* Documentation syntax errors have been fixed. 
 
 * Previously problematic tests using the Internet have been skipped. 
 
 * Previously problematic tests examples the Internet are not run. 
-
-* Checking failed on Solaris because two dependencies are not available:
-```
-ERROR: dependencies ‘kableExtra’, ‘webshot2’ are not available for package ‘mdsr’
-```
 
 * There are two URLs that are only available via `http`. All others
   have been changed to `https`.
@@ -27,9 +22,9 @@ ERROR: dependencies ‘kableExtra’, ‘webshot2’ are not available for packa
 
 ```
 ❯ checking installed package size ... NOTE
-    installed size is  5.2Mb
+    installed size is  5.4Mb
     sub-directories of 1Mb or more:
-      data   5.0Mb
+      data   5.1Mb
 ```
 ```
 ❯ checking data for non-ASCII characters ... NOTE

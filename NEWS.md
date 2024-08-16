@@ -1,6 +1,7 @@
 mdsr 0.2.8
 
 * Use the new URL for the MariaDB server hosted on AWS
+* Documentation updated to use Markdown
 
 mdsr 0.2.7
 

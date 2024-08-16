@@ -550,7 +550,7 @@
 #'   \item{subjectline}{a character vector}
 #'   \item{type}{a character vector}
 #' }
-#' @source Originally retrieved from http://www.rdatasciencecases.org/Data.html
+#' @source Originally retrieved from <http://www.rdatasciencecases.org/Data.html>
 "Emails_train"
 #' @rdname Emails_train
 #' @description The testing dataset is a random sample of 20% of the emails data.
