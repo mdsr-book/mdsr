@@ -34,12 +34,10 @@ A data frame with 174 observations on the following 3 variables.
 \item{violation_description}{violation description}
 }
 
-{
 A data frame with 84 observations on the following 2 variables.
 \describe{
 \item{cuisine_code}{a character vector}
 \item{cuisine_description}{a character vector}
-}
 }
 }
 \source{

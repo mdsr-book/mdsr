@@ -28,7 +28,7 @@ charged Medicare for various inpatient procedures, how many were performed,
 and how much Medicare actually paid.
 }
 \details{
-These data are part of a set with \link{DiagnosisRelatedGroup}, which gives a
+These data are part of a set with \code{DiagnosisRelatedGroup}, which gives a
 description of the medical procedure associated with each DRG, and
 \link{MedicareProviders}, which translates \code{idProvider} into a name,
 address, state, Zip, etc..

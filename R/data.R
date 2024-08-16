@@ -146,8 +146,8 @@
 "Violations"
 
 #' @rdname Violations
-#' @docType data
-#' @format A data frame with 174 observations on the following 3 variables.
+#' @format 
+#' A data frame with 174 observations on the following 3 variables.
 #' \describe{
 #'    \item{violation_code}{a factor with many levels}
 #'    \item{critical_flag}{is violation critical: a factor with levels `N`, `Y`}
@@ -156,13 +156,11 @@
 "ViolationCodes"
 
 #' @rdname Violations
-#' @docType data
-#' @format{
+#' @format
 #' A data frame with 84 observations on the following 2 variables.
 #' \describe{
 #'  \item{cuisine_code}{a character vector}
 #'  \item{cuisine_description}{a character vector}
-#' }
 #' }
 "Cuisines"
 
@@ -241,7 +239,7 @@
 #' charged Medicare for various inpatient procedures, how many were performed,
 #' and how much Medicare actually paid.
 #' 
-#' These data are part of a set with [DiagnosisRelatedGroup], which gives a
+#' These data are part of a set with `DiagnosisRelatedGroup`, which gives a
 #' description of the medical procedure associated with each DRG, and
 #' [MedicareProviders], which translates `idProvider` into a name,
 #' address, state, Zip, etc..
