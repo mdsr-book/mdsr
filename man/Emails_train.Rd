@@ -8,9 +8,9 @@
 \format{
 A data frame with 5,526 rows and 3 variables:
 \describe{
-  \item{ids}{an integer vector}
-  \item{subjectline}{a character vector}
-  \item{type}{a character vector}
+\item{ids}{an integer vector}
+\item{subjectline}{a character vector}
+\item{type}{a character vector}
 }
 
 A data frame with 1,382 rows and 3 variables:
@@ -26,8 +26,8 @@ Emails_test
 \description{
 The training dataset includes a set of email subject lines used for classification
 of whether the message is spam (unsolicited commercial content) or not.
-Many subject lines include subject matter inappropriate for classroom use. 
-Given the volume of headlines containing such language 
+Many subject lines include subject matter inappropriate for classroom use.
+Given the volume of headlines containing such language
 (especially for \code{spam == TRUE}), user discretion is advised.
 This dataset is a random sample of 80\% of the emails data.
 

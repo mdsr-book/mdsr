@@ -6,17 +6,17 @@
 \title{Charges to and Payments from Medicare}
 \format{
 A data frame with 5,025 observations on the following 4 variables.
-\describe{ 
- \item{drg}{Code for the Diagnosis Related Group: a
-character string that looks like a number.} 
- \item{stateProvider}{the state providing the care.} 
- \item{num_charges}{the total number of charges.}
- \item{mean_charge}{the average charge for each \code{drg} across each state}
- }
+\describe{
+\item{drg}{Code for the Diagnosis Related Group: a
+character string that looks like a number.}
+\item{stateProvider}{the state providing the care.}
+\item{num_charges}{the total number of charges.}
+\item{mean_charge}{the average charge for each \code{drg} across each state}
+}
 }
 \source{
 Data from the Centers for Medicare and Medicaid Services.
-See 
+See
 \url{https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/}
 }
 \usage{
@@ -28,9 +28,9 @@ charged Medicare for various inpatient procedures, how many were performed,
 and how much Medicare actually paid.
 }
 \details{
-These data are part of a set with \code{DiagnosisRelatedGroup}, which gives a
+These data are part of a set with \link{DiagnosisRelatedGroup}, which gives a
 description of the medical procedure associated with each DRG, and
-\code{MedicareProviders}, which translates \code{idProvider} into a name,
+\link{MedicareProviders}, which translates \code{idProvider} into a name,
 address, state, Zip, etc..
 
 These data have been pre-aggregated by state.
@@ -41,6 +41,6 @@ data(MedicareCharges)
 
 }
 \seealso{
-\code{\link{MedicareProviders}}
+\link{MedicareProviders}
 }
 \keyword{datasets}

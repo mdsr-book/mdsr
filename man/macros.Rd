@@ -44,7 +44,7 @@ index_entry(
 \arguments{
 \item{x}{text to wrap in macro}
 
-\item{...}{arguments passed to \code{\link{index_entry}}}
+\item{...}{arguments passed to \code{\link[=index_entry]{index_entry()}}}
 
 \item{index_label}{the name of the index}
 
@@ -52,12 +52,16 @@ index_entry(
 
 \item{index}{add LaTeX indexing?}
 
-\item{.f}{function to apply to \code{\link{x}} during indexing}
+\item{.f}{function to apply to \code{x} during indexing}
 
 \item{alt}{alternate character string to use for indexing}
 }
 \description{
 Replacements for LaTeX macros
+}
+\details{
+These functions are used by the authors to write the book, and are not
+intended for users.
 }
 \examples{
 func("mutate")
@@ -76,3 +80,4 @@ index_entry(x = "Twilight", emph = TRUE)
 index_entry(x = "Richard De Veaux", alt = "De Veaux, Richard")
 index_entry(x = "left_join")
 }
+\keyword{internal}

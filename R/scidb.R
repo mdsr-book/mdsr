@@ -1,11 +1,11 @@
 #' src_scidb
 #' @description Connect to the scidb server on Amazon Web Services.
 #' @param dbname the name of the database to which you want to connect
-#' @param ... arguments passed to \code{\link[dbplyr]{src_dbi}} or \code{\link[DBI]{dbConnect}}
+#' @param ... arguments passed to [dbplyr::src_dbi()] or [DBI::dbConnect()]
 #' @details This is a public, read-only account. Any abuse will be considered a 
 #' hostile act. 
-#' @return For \code{\link{src_scidb}}, a \code{\link[dbplyr]{src_dbi}} object
-#' @seealso \code{\link[dbplyr]{src_dbi}}
+#' @return For [src_scidb()], a [dbplyr::src_dbi] object
+#' @seealso [dbplyr::src_dbi()]
 #' @export
 #' @examples 
 #' \dontrun{
@@ -19,8 +19,8 @@ src_scidb <- function(dbname, ...) {
 
 #' @rdname src_scidb
 #' @export
-#' @return For \code{\link{dbConnect_scidb}}, a \code{\link[RMariaDB]{MariaDBConnection-class}} object
-#' @seealso \code{\link[RMariaDB]{MariaDBConnection-class}}
+#' @return For [dbConnect_scidb()], a [RMariaDB::MariaDBConnection-class] object
+#' @seealso [RMariaDB::MariaDBConnection-class]
 #' @examples 
 #' \dontrun{
 #' db_air <- dbConnect_scidb("airlines")
@@ -43,9 +43,9 @@ dbConnect_scidb <- function(dbname, ...) {
 #' @rdname src_scidb
 #' @export
 #' 
-#' @return For \code{\link{mysql_scidb}}, a character vector of length 1 to be used
-#' as an \code{engine.ops} argument, or on the command line. 
-#' @seealso \code{\link[knitr]{opts_chunk}}
+#' @return For [mysql_scidb()], a character vector of length 1 to be used
+#' as an `engine.ops` argument, or on the command line. 
+#' @seealso [knitr::opts_chunk()]
 #' @examples 
 #' 
 #' if (require(knitr)) {

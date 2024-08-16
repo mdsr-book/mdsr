@@ -6,19 +6,19 @@
 \title{Medicare Providers}
 \format{
 A data frame with 3337 observations on the following 7 variables.
-\describe{ 
- \item{idProvider}{a unique number assigned to each
-provider} 
- \item{nameProvider}{Name of the provider. (text string)}
- \item{addressProvider}{Street address of the provider. (text
-string)} 
- \item{cityProvider}{The name of the city in which the
-provider is located. (factor)} 
- \item{stateProvider}{The two-letter
+\describe{
+\item{idProvider}{a unique number assigned to each
+provider}
+\item{nameProvider}{Name of the provider. (text string)}
+\item{addressProvider}{Street address of the provider. (text
+string)}
+\item{cityProvider}{The name of the city in which the
+provider is located. (factor)}
+\item{stateProvider}{The two-letter
 postal code of the state in which the provider is located. (factor)}
- \item{zipProvider}{The provider's ZIP code. (factor)}
- \item{referralRegion}{An identifier for the region serviced by the
-provider.} 
+\item{zipProvider}{The provider's ZIP code. (factor)}
+\item{referralRegion}{An identifier for the region serviced by the
+provider.}
 }
 }
 \source{
@@ -32,10 +32,10 @@ MedicareProviders
 }
 \description{
 Name and location data for the medicare providers in the
-\code{MedicareCharges} data table.
+\link{MedicareCharges} data table.
 }
 \details{
-This data table is related to \code{MedicareCharges} data.
+This data table is related to \link{MedicareCharges} data.
 }
 \examples{
 
@@ -43,6 +43,6 @@ data(MedicareProviders)
 
 }
 \seealso{
-\code{\link{MedicareCharges}}
+\link{MedicareCharges}
 }
 \keyword{datasets}

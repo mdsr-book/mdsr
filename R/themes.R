@@ -55,7 +55,7 @@ skim <- function(data, ...) {
 #' Custom table output
 #' @export
 #' @param x A data.frame
-#' @param ... arguments passed to \code{\link[kableExtra]{kbl}}
+#' @param ... arguments passed to [kableExtra::kbl()]
 #' @examples 
 #' mdsr_table(faithful)
 

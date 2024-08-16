@@ -15,21 +15,21 @@ mysql_scidb(dbname, ...)
 \arguments{
 \item{dbname}{the name of the database to which you want to connect}
 
-\item{...}{arguments passed to \code{\link[dbplyr]{src_dbi}} or \code{\link[DBI]{dbConnect}}}
+\item{...}{arguments passed to \code{\link[dbplyr:src_dbi]{dbplyr::src_dbi()}} or \code{\link[DBI:dbConnect]{DBI::dbConnect()}}}
 }
 \value{
-For \code{\link{src_scidb}}, a \code{\link[dbplyr]{src_dbi}} object
+For \code{\link[=src_scidb]{src_scidb()}}, a \link[dbplyr:src_dbi]{dbplyr::src_dbi} object
 
-For \code{\link{dbConnect_scidb}}, a \code{\link[RMariaDB]{MariaDBConnection-class}} object
+For \code{\link[=dbConnect_scidb]{dbConnect_scidb()}}, a \link[RMariaDB:MariaDBConnection-class]{RMariaDB::MariaDBConnection} object
 
-For \code{\link{mysql_scidb}}, a character vector of length 1 to be used
+For \code{\link[=mysql_scidb]{mysql_scidb()}}, a character vector of length 1 to be used
 as an \code{engine.ops} argument, or on the command line.
 }
 \description{
 Connect to the scidb server on Amazon Web Services.
 }
 \details{
-This is a public, read-only account. Any abuse will be considered a 
+This is a public, read-only account. Any abuse will be considered a
 hostile act.
 }
 \examples{
@@ -50,9 +50,9 @@ if (require(knitr)) {
 }
 }
 \seealso{
-\code{\link[dbplyr]{src_dbi}}
+\code{\link[dbplyr:src_dbi]{dbplyr::src_dbi()}}
 
-\code{\link[RMariaDB]{MariaDBConnection-class}}
+\link[RMariaDB:MariaDBConnection-class]{RMariaDB::MariaDBConnection}
 
-\code{\link[knitr]{opts_chunk}}
+\code{\link[knitr:opts_chunk]{knitr::opts_chunk()}}
 }

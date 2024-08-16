@@ -8,34 +8,34 @@
 A data frame with 15,829 observations on the bird's species, size,
 date found, and band number.
 \describe{
-  \item{\code{bogus}}{a character vector}
-  \item{\code{Timestamp}}{Timestamp indicates when the data were entered into an electronic record,
+\item{bogus}{a character vector}
+\item{Timestamp}{Timestamp indicates when the data were entered into an electronic record,
 not anything about the bird being described}
-  \item{\code{Year}}{a character vector}
-  \item{\code{Day}}{a character vector}
-  \item{\code{Month}}{a character vector}
- \item{\code{CaptureTime}}{a character vector}
- \item{\code{SpeciesName}}{a character vector}
- \item{\code{Sex}}{a character vector}
- \item{\code{Age}}{a character vector}
- \item{\code{BandNumber}}{a character vector}
- \item{\code{TrapID}}{a character vector}
- \item{\code{Weather}}{a character vector}
- \item{\code{BandingReport}}{a character vector}
- \item{\code{RecaptureYN}}{a character vector}
- \item{\code{RecaptureMonth}}{a character vector}
- \item{\code{RecaptureDay}}{a character vector}
- \item{\code{Condition}}{a character vector}
- \item{\code{Release}}{a character vector}
- \item{\code{Comments}}{a character vector}
- \item{\code{DataEntryPerson}}{a character vector}
- \item{\code{Weight}}{a character vector}
- \item{\code{WingChord}}{a character vector}
- \item{\code{Temperature}}{a character vector}
- \item{\code{RecaptureOriginal}}{a character vector}
- \item{\code{RecapturePrevious}}{a character vector}
- \item{\code{TailLength}}{a character vector}
- }
+\item{Year}{a character vector}
+\item{Day}{a character vector}
+\item{Month}{a character vector}
+\item{CaptureTime}{a character vector}
+\item{SpeciesName}{a character vector}
+\item{Sex}{a character vector}
+\item{Age}{a character vector}
+\item{BandNumber}{a character vector}
+\item{TrapID}{a character vector}
+\item{Weather}{a character vector}
+\item{BandingReport}{a character vector}
+\item{RecaptureYN}{a character vector}
+\item{RecaptureMonth}{a character vector}
+\item{RecaptureDay}{a character vector}
+\item{Condition}{a character vector}
+\item{Release}{a character vector}
+\item{Comments}{a character vector}
+\item{DataEntryPerson}{a character vector}
+\item{Weight}{a character vector}
+\item{WingChord}{a character vector}
+\item{Temperature}{a character vector}
+\item{RecaptureOriginal}{a character vector}
+\item{RecapturePrevious}{a character vector}
+\item{TailLength}{a character vector}
+}
 
 Timestamp indicates when the data were entered into an electronic record,
 not anything about the bird being described.

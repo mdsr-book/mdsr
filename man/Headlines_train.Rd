@@ -8,9 +8,9 @@
 \format{
 A data frame with 18,360 rows and 3 variables:
 \describe{
-  \item{title}{a character vector}
-  \item{clickbait}{a logical vector}
-  \item{ids}{an integer vector}
+\item{title}{a character vector}
+\item{clickbait}{a logical vector}
+\item{ids}{an integer vector}
 }
 
 A data frame with 4,589 rows and 3 variables:

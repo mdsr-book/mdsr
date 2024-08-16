@@ -1,8 +1,10 @@
 #' Load the NCI60 data from GitHub
 #' @export
+#' @returns A [tibble::tbl_df]
 #' @examples 
 #' 
-#' \dontrun{
+#' \donttest{
+#' # The file is 5.0 MB
 #' NCI60 <- etl_NCI60()
 #' }
 

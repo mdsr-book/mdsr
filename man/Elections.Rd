@@ -5,12 +5,11 @@
 \alias{Elections}
 \title{Election Statistics}
 \format{
-An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) 
-with 117 rows and 13 columns.
+An object of class \link[tibble:tbl_df-class]{tibble::tbl_df} with 117 rows and 13 columns.
 \describe{
-\item{Ward}{Name of the country} 
+\item{Ward}{Name of the country}
 \item{Precinct}{number of people, 2119}
-\item{Registered.Voters.at.7am}{area (sq km), 2147} 
+\item{Registered.Voters.at.7am}{area (sq km), 2147}
 \item{Voters.Registering.at.Polls}{Crude oil - production (bbl/day), 2241}
 \item{gdp}{Gross Domestic Product per capita ($/person), 2001}
 \item{educ}{education spending (\% of GDP), 2206}

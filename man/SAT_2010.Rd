@@ -5,17 +5,17 @@
 \alias{SAT_2010}
 \title{State SAT scores from 2010}
 \format{
-A data.frame with 50 rows and 9 variables. 
- \describe{
- \item{\code{state}}{a factor with levels for each state}
- \item{\code{expenditure}}{average expenditure per student (in each state)}
- \item{\code{pupil_teacher_ratio}}{pupil to teacher ratio in that state}
- \item{\code{salary}}{teacher salary (in 2010 US $)}
- \item{\code{read}}{state average Reading SAT score}
- \item{\code{math}}{state average Math SAT score}
- \item{\code{write}}{state average Writing SAT score}
- \item{\code{total}}{state average Total SAT score}
- \item{\code{sat_pct}}{percent of students taking SAT in that state}
+A data.frame with 50 rows and 9 variables.
+\describe{
+\item{state}{a factor with levels for each state}
+\item{expenditure}{average expenditure per student (in each state)}
+\item{pupil_teacher_ratio}{pupil to teacher ratio in that state}
+\item{salary}{teacher salary (in 2010 US $)}
+\item{read}{state average Reading SAT score}
+\item{math}{state average Math SAT score}
+\item{write}{state average Writing SAT score}
+\item{total}{state average Total SAT score}
+\item{sat_pct}{percent of students taking SAT in that state}
 }
 }
 \usage{
@@ -25,9 +25,9 @@ SAT_2010
 SAT results by state for 2010
 }
 \details{
-See also the earlier \code{\link[mosaicData]{SAT}} dataset.
+See also the earlier \link[mosaicData:SAT]{mosaicData::SAT} dataset.
 }
 \seealso{
-\code{\link[mosaicData]{SAT}}
+\link[mosaicData:SAT]{mosaicData::SAT}
 }
 \keyword{datasets}

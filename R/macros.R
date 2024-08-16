@@ -1,6 +1,11 @@
 #' Replacements for LaTeX macros
 #' @name macros
+#' @details
+#' These functions are used by the authors to write the book, and are not
+#' intended for users. 
+#' 
 #' @export
+#' @keywords internal
 #' @param x text to wrap in macro
 #' @param index add LaTeX indexing?
 #' @examples 
@@ -89,7 +94,7 @@ mdsr_person <- function(x, ...) {
 
 #' @rdname macros
 #' @export
-#' @param ... arguments passed to \code{\link{index_entry}}
+#' @param ... arguments passed to [index_entry()]
 #' @examples 
 #' vocab(x = "Big data", .f = tolower)
 vocab <- function(x, ...) {
@@ -101,7 +106,7 @@ vocab <- function(x, ...) {
 #' @rdname macros
 #' @param index_label the name of the index
 #' @param emph Display the LaTeX entry in italics
-#' @param .f function to apply to \code{\link{x}} during indexing
+#' @param .f function to apply to `x` during indexing
 #' @param alt alternate character string to use for indexing
 #' @export
 #' @examples 

@@ -8,25 +8,25 @@
 \format{
 A tibble with 1728 rows and 16 variables:
 \describe{
- \item{price}{},
- \item{lot_size}{},
- \item{waterfront}{},
- \item{age}{},
- \item{land_value}{},
- \item{construction}{},
- \item{air_cond}{},
- \item{fuel}{},
- \item{heat}{},
- \item{sewer}{},
- \item{living_area}{},
- \item{pct_college}{},
- \item{bedrooms}{},
- \item{fireplaces}{},
- \item{bathrooms}{},
- \item{rooms}{}
- }
- @examples 
- saratoga_houses
+\item{price}{},
+\item{lot_size}{},
+\item{waterfront}{},
+\item{age}{},
+\item{land_value}{},
+\item{construction}{},
+\item{air_cond}{},
+\item{fuel}{},
+\item{heat}{},
+\item{sewer}{},
+\item{living_area}{},
+\item{pct_college}{},
+\item{bedrooms}{},
+\item{fireplaces}{},
+\item{bathrooms}{},
+\item{rooms}{}
+}
+@examples
+saratoga_houses
 
 An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 13 rows and 3 columns.
 }

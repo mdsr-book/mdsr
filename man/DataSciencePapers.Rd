@@ -7,8 +7,8 @@
 \format{
 A data frame with 1089 observations on the following 15 variables.
 \describe{ \item{id}{unique arXiv.org identifier for the paper}
-\item{submitted}{date submitted} 
-\item{updated}{date last updated} 
+\item{submitted}{date submitted}
+\item{updated}{date last updated}
 \item{title}{title of the paper}
 \item{abstract}{contents of the abstract}
 \item{authors}{authors of the paper}
@@ -16,8 +16,9 @@ A data frame with 1089 observations on the following 15 variables.
 \item{link_abstract}{direct link to the abstract}
 \item{link_pdf}{direct link to the pdf}
 \item{link_doi}{direct link to the digital object identifier (doi)}
-\item{comment}{commentary} \item{journal_ref}{reference to
-the journal (if published)} \item{doi}{digital object identifier}
+\item{comment}{commentary}
+\item{journal_ref}{reference to the journal (if published)}
+\item{doi}{digital object identifier}
 \item{primary_category}{arXiv.org primary category}
 \item{categories}{arXiv.org categories} }
 }

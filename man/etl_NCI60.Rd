@@ -6,12 +6,16 @@
 \usage{
 etl_NCI60()
 }
+\value{
+A \link[tibble:tbl_df-class]{tibble::tbl_df}
+}
 \description{
 Load the NCI60 data from GitHub
 }
 \examples{
 
-\dontrun{
+\donttest{
+# The file is 5.0 MB
 NCI60 <- etl_NCI60()
 }
 }

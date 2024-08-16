@@ -8,9 +8,9 @@
 A data frame with the following variables for each of the Countries
 in the World. (236 countries are given.)
 \describe{
-\item{country}{Name of the country} 
+\item{country}{Name of the country}
 \item{pop}{number of people, 2119}
-\item{area}{area (sq km), 2147} 
+\item{area}{area (sq km), 2147}
 \item{oil_prod}{Crude oil - production (bbl/day), 2241}
 \item{gdp}{Gross Domestic Product per capita ($/person), 2001}
 \item{educ}{education spending (\% of GDP), 2206}
@@ -40,6 +40,6 @@ str(CIACountries)
 \url{https://github.com/factbook/factbook/blob/master/CATEGORIES.md}
 }
 \seealso{
-\code{\link[mosaic]{CIAdata}}
+\link[mosaic:CIAdata]{mosaic::CIAdata}
 }
 \keyword{datasets}

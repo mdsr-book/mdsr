@@ -3,7 +3,7 @@ globalVariables(c("x", "lx", "ex", "year", "sex", "age_today", "alive_prob", "li
 #' Wrangle babynames data
 #' @import dplyr
 #' @export
-#' @return a \code{\link[dplyr]{tbl_df}} similar to \code{\link[babynames]{babynames}}
+#' @return a [tibble::tbl_df] similar to [babynames::babynames]
 #' with a column for the estimated number of people alive in 2014.
 #' @examples 
 #' 

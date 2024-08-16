@@ -6,15 +6,15 @@
 \title{Cities and their populations}
 \format{
 A data frame with 4,428 observations on the following 10 variables.
-\describe{ 
+\describe{
 \item{geoname_id}{integer id of record in geonames database}
-\item{name}{name of geographical point in plain ascii characters} 
-\item{latitude}{latitude in decimal degrees (wgs84)} 
+\item{name}{name of geographical point in plain ascii characters}
+\item{latitude}{latitude in decimal degrees (wgs84)}
 \item{longitude}{longitude in decimal degrees (wgs84)}
 \item{country}{ISO-3166 2-letter country code}
 \item{country_region}{fipscode}
-\item{population}{Population} 
-\item{timezone}{the iana timezone id} 
+\item{population}{Population}
+\item{timezone}{the iana timezone id}
 \item{modification_date}{date of last modification} }
 }
 \source{

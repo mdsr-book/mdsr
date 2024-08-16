@@ -4,7 +4,7 @@
 #' from 2008-2014. 
 #' 
 #' @docType data
-#' @format A \code{\link{tbl_df}} object. 
+#' @format A [tibble::tbl_df] object. 
 #' \describe{
 #'  \item{yearID}{season in which the team played}
 #'  \item{teamID}{the team's three character identifier}
@@ -17,16 +17,16 @@
 #'  the highest attendance in this sample (the 2008 New York Yankees)}
 #'  \item{payroll}{the sum of the salaries of the players on each team. Note
 #'  that this number is only an estimate of the actual team payroll -- and may
-#'  not even be a very good one. Salaries are accumulated from \code{\link[Lahman]{Salaries}}}
+#'  not even be a very good one. Salaries are accumulated from [Lahman::Salaries]}
 #'  \item{metroPop}{the size of the team's home city's metropolitan population, according
 #'  to Wikipedia and the 2010 US Census}
 #'  \item{name}{the full name of the team}
 #' }
 #' 
-#' @seealso \code{\link[Lahman]{Teams}}
+#' @seealso [Lahman::Teams]
 #' 
-#' @source The \code{\link[Lahman]{Teams}} table from \code{\link[Lahman]{Lahman-package}} 
-#' and \url{https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas}
+#' @source The [Lahman::Teams] table from [Lahman::Lahman-package] 
+#' and <https://en.wikipedia.org/wiki/List_of_Metropolitan_Statistical_Areas>
 #' 
 "MLB_teams" 
 
@@ -48,14 +48,14 @@
 #' \item{area}{area (sq km), 2147} 
 #' \item{oil_prod}{Crude oil - production (bbl/day), 2241}
 #' \item{gdp}{Gross Domestic Product per capita ($/person), 2001}
-#' \item{educ}{education spending (\% of GDP), 2206}
+#' \item{educ}{education spending (% of GDP), 2206}
 #' \item{roadways}{Roadways per unit area (km/sq km), 2085}
-#' \item{net_users}{Fraction of Internet users (\% of population), 2153}
+#' \item{net_users}{Fraction of Internet users (% of population), 2153}
 #' }
 #' @source From the CIA World Factbook,
-#' \url{https://www.cia.gov/the-world-factbook/}
-#' @seealso \code{\link[mosaic]{CIAdata}}
-#' @references \url{https://github.com/factbook/factbook/blob/master/CATEGORIES.md}
+#' <https://www.cia.gov/the-world-factbook/>
+#' @seealso [mosaic::CIAdata]
+#' @references <https://github.com/factbook/factbook/blob/master/CATEGORIES.md>
 #' @keywords datasets
 #' @examples
 #' str(CIACountries)
@@ -64,25 +64,25 @@
 
 #' Election Statistics
 #' @docType data
-#' @format An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) 
-#' with 117 rows and 13 columns.
+#' @format An object of class [tibble::tbl_df] with 117 rows and 13 columns.
 #' \describe{
-#' \item{Ward}{Name of the country} 
-#' \item{Precinct}{number of people, 2119}
-#' \item{Registered.Voters.at.7am}{area (sq km), 2147} 
-#' \item{Voters.Registering.at.Polls}{Crude oil - production (bbl/day), 2241}
-#' \item{gdp}{Gross Domestic Product per capita ($/person), 2001}
-#' \item{educ}{education spending (\% of GDP), 2206}
-#' \item{roadways}{Roadways per unit area (km/sq km), 2085}
-#' \item{net_users}{Fraction of Internet users (\% of population), 2153}
+#'   \item{Ward}{Name of the country} 
+#'   \item{Precinct}{number of people, 2119}
+#'   \item{Registered.Voters.at.7am}{area (sq km), 2147} 
+#'   \item{Voters.Registering.at.Polls}{Crude oil - production (bbl/day), 2241}
+#'   \item{gdp}{Gross Domestic Product per capita ($/person), 2001}
+#'   \item{educ}{education spending (% of GDP), 2206}
+#'   \item{roadways}{Roadways per unit area (km/sq km), 2085}
+#'   \item{net_users}{Fraction of Internet users (% of population), 2153}
 #' }
 "Elections"
 
 #' Cherry Blossom runs
 #' @docType data
-#' @format An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) 
-#' with 41,248 rows and 8 columns. Each row refers to an individual runner in one race of the 
-#' Cherry Blossom Ten Miler. The data cover the years 1999 to 2008. All of the runners listed ran
+#' @format An object of class [tibble::tbl_df] with 41,248 rows and 8 columns. 
+#' Each row refers to an individual runner in one race of the 
+#' Cherry Blossom Ten Miler. The data cover the years 1999 to 2008. 
+#' All of the runners listed ran
 #' at least two of the races in that period, some ran many more than that. 
 #' \describe{
 #'   \item{name.yob}{a unique identifier for each runner composed of the runner's full name and
@@ -99,7 +99,7 @@
 #' @details The Cherry Blossom 10 Mile Run is a road race held in Washington,
 #' D.C. in April each year.  (The name comes from the famous cherry trees
 #' that are in bloom in April in Washington.)  The results of this race
-#' are published at \url{https://www.cherryblossom.org/post-race/race-results/}.
+#' are published at <https://www.cherryblossom.org/post-race/race-results/>.
 #' @examples
 #' if (require(dplyr)) {
 #'   Cherry %>%
@@ -112,36 +112,35 @@
 
 #' NYC Restaurant Health Violations
 #' @docType data
-#' @format{
+#' @format
 #' A data frame with 480,621 observations on the following 16 variables.
 #' \describe{
-#'  \item{\code{camis}}{unique identifier}
-#'  \item{\code{dba}}{full name doing business as}
-#'  \item{\code{boro}}{borough of New York}
-#'  \item{\code{building}}{building name}
-#'  \item{\code{street}}{street address}
-#'  \item{\code{zipcode}}{zipcode}
-#'  \item{\code{phone}}{phone number}
-#'  \item{\code{inspection_date}}{inspection date}
-#'  \item{\code{action}}{action taken}
-#'  \item{\code{violation_code}}{violation code, see \code{\link{ViolationCodes}}}
-#'  \item{\code{score}}{inspection score}
-#'  \item{\code{grade}}{inspection grade}
-#'  \item{\code{grade_date}}{grade date}
-#'  \item{\code{record_date}}{recording date}
-#'  \item{\code{inspection_type}}{inspect type}
-#'  \item{\code{cuisine_code}}{cuisine code, see \code{\link{Cuisines}}}
+#'  \item{camis}{unique identifier}
+#'  \item{dba}{full name doing business as}
+#'  \item{boro}{borough of New York}
+#'  \item{building}{building name}
+#'  \item{street}{street address}
+#'  \item{zipcode}{zipcode}
+#'  \item{phone}{phone number}
+#'  \item{inspection_date}{inspection date}
+#'  \item{action}{action taken}
+#'  \item{violation_code}{violation code, see [ViolationCodes]}
+#'  \item{score}{inspection score}
+#'  \item{grade}{inspection grade}
+#'  \item{grade_date}{grade date}
+#'  \item{record_date}{recording date}
+#'  \item{inspection_type}{inspect type}
+#'  \item{cuisine_code}{cuisine code, see [Cuisines]}
 #' }
-#' }
-#' @seealso \code{\link{ViolationCodes}}, \code{\link{Cuisines}}
-#' @source NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/}
+#' @seealso [ViolationCodes], [Cuisines]
+#' @source [NYC Open Data](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/)
 #' @examples 
 #' data(Violations)
 #' if (require(dplyr)) {
-#'   Violations %>%
-#'     inner_join(Cuisines, by = "cuisine_code") %>%
-#'     filter(cuisine_description == "American") %>%
-#'     arrange(grade_date) %>%
+#'   Violations |>
+#'     inner_join(Cuisines, by = "cuisine_code") |>
+#'     filter(cuisine_description == "American") |>
+#'     arrange(grade_date) |>
 #'     head()
 #'  }
 "Violations"
@@ -150,9 +149,9 @@
 #' @docType data
 #' @format A data frame with 174 observations on the following 3 variables.
 #' \describe{
-#'    \item{\code{violation_code}}{a factor with many levels}
-#'    \item{\code{critical_flag}}{is violation critical: a factor with levels \code{N} \code{Y}}
-#'    \item{\code{violation_description}}{violation description}
+#'    \item{violation_code}{a factor with many levels}
+#'    \item{critical_flag}{is violation critical: a factor with levels `N`, `Y`}
+#'    \item{violation_description}{violation description}
 #'  }
 "ViolationCodes"
 
@@ -161,8 +160,8 @@
 #' @format{
 #' A data frame with 84 observations on the following 2 variables.
 #' \describe{
-#'  \item{\code{cuisine_code}}{a character vector}
-#'  \item{\code{cuisine_description}}{a character vector}
+#'  \item{cuisine_code}{a character vector}
+#'  \item{cuisine_description}{a character vector}
 #' }
 #' }
 "Cuisines"
@@ -186,11 +185,12 @@
 #' \item{link_abstract}{direct link to the abstract}
 #' \item{link_pdf}{direct link to the pdf}
 #' \item{link_doi}{direct link to the digital object identifier (doi)}
-#' \item{comment}{commentary} \item{journal_ref}{reference to
-#' the journal (if published)} \item{doi}{digital object identifier}
+#' \item{comment}{commentary} 
+#' \item{journal_ref}{reference to the journal (if published)} 
+#' \item{doi}{digital object identifier}
 #' \item{primary_category}{arXiv.org primary category}
 #' \item{categories}{arXiv.org categories} }
-#' @source \url{https://arxiv.org/}
+#' @source <https://arxiv.org/>
 #' @keywords datasets
 #' @examples
 #' 
@@ -202,9 +202,9 @@
 #' Medicare Providers
 #' 
 #' Name and location data for the medicare providers in the
-#' \code{MedicareCharges} data table.
+#' [MedicareCharges] data table.
 #' 
-#' This data table is related to \code{MedicareCharges} data.
+#' This data table is related to [MedicareCharges] data.
 #' 
 #' @name MedicareProviders
 #' @docType data
@@ -226,9 +226,9 @@
 #' @source Extracted from the highly repetitive table provided by the Centers
 #' for Medicare and Medicaid Services.
 #' See
-#' \url{https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/}
+#' <https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/>
 #' @keywords datasets
-#' @seealso \code{\link{MedicareCharges}}
+#' @seealso [MedicareCharges]
 #' @examples
 #' 
 #' data(MedicareProviders)
@@ -241,9 +241,9 @@
 #' charged Medicare for various inpatient procedures, how many were performed,
 #' and how much Medicare actually paid.
 #' 
-#' These data are part of a set with \code{DiagnosisRelatedGroup}, which gives a
+#' These data are part of a set with [DiagnosisRelatedGroup], which gives a
 #' description of the medical procedure associated with each DRG, and
-#' \code{MedicareProviders}, which translates \code{idProvider} into a name,
+#' [MedicareProviders], which translates `idProvider` into a name,
 #' address, state, Zip, etc..
 #' 
 #' These data have been pre-aggregated by state.
@@ -256,13 +256,13 @@
 #' character string that looks like a number.} 
 #'  \item{stateProvider}{the state providing the care.} 
 #'  \item{num_charges}{the total number of charges.}
-#'  \item{mean_charge}{the average charge for each \code{drg} across each state}
+#'  \item{mean_charge}{the average charge for each `drg` across each state}
 #'  }
 #' @source Data from the Centers for Medicare and Medicaid Services.
 #' See 
-#' \url{https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/}
+#' <https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/>
 #' @keywords datasets
-#' @seealso \code{\link{MedicareProviders}}
+#' @seealso [MedicareProviders]
 #' @examples
 #' 
 #' data(MedicareCharges)
@@ -275,7 +275,7 @@
 #' 
 #' @docType data
 #' @format A character vector of length 1
-#' @source Project Gutenberg, \url{https://www.gutenberg.org/ebooks/1129/}
+#' @source Project Gutenberg, <https://www.gutenberg.org/ebooks/1129/>
 "Macbeth_raw"
 
 #' State SAT scores from 2010
@@ -285,18 +285,18 @@
 #' @docType data
 #' @format A data.frame with 50 rows and 9 variables. 
 #'  \describe{
-#'  \item{\code{state}}{a factor with levels for each state}
-#'  \item{\code{expenditure}}{average expenditure per student (in each state)}
-#'  \item{\code{pupil_teacher_ratio}}{pupil to teacher ratio in that state}
-#'  \item{\code{salary}}{teacher salary (in 2010 US $)}
-#'  \item{\code{read}}{state average Reading SAT score}
-#'  \item{\code{math}}{state average Math SAT score}
-#'  \item{\code{write}}{state average Writing SAT score}
-#'  \item{\code{total}}{state average Total SAT score}
-#'  \item{\code{sat_pct}}{percent of students taking SAT in that state}
+#'  \item{state}{a factor with levels for each state}
+#'  \item{expenditure}{average expenditure per student (in each state)}
+#'  \item{pupil_teacher_ratio}{pupil to teacher ratio in that state}
+#'  \item{salary}{teacher salary (in 2010 US $)}
+#'  \item{read}{state average Reading SAT score}
+#'  \item{math}{state average Math SAT score}
+#'  \item{write}{state average Writing SAT score}
+#'  \item{total}{state average Total SAT score}
+#'  \item{sat_pct}{percent of students taking SAT in that state}
 #' }
-#' @details See also the earlier \code{\link[mosaicData]{SAT}} dataset.
-#' @seealso \code{\link[mosaicData]{SAT}}
+#' @details See also the earlier [mosaicData::SAT] dataset.
+#' @seealso [mosaicData::SAT]
 "SAT_2010"
 
 #' Cities and their populations
@@ -317,7 +317,7 @@
 #' \item{population}{Population} 
 #' \item{timezone}{the iana timezone id} 
 #' \item{modification_date}{date of last modification} }
-#' @source GeoNames: \url{http://download.geonames.org/export/dump/}
+#' @source GeoNames: <http://download.geonames.org/export/dump/>
 #' @keywords datasets
 #' @examples
 #' 
@@ -329,23 +329,23 @@
 #' @docType data
 #' @description Votes recorded on each ballot by each member of the Scottish Parliament in 
 #' 2008 along with information about party affiliation.
-#' @format \code{Votes} is a data.frame with 103582 rows and 3 variables. 
+#' @format [Votes] is a data.frame with 103582 rows and 3 variables. 
 #'  \describe{
-#'  \item{\code{bill}}{an identifier for the bill}
-#'  \item{\code{name}}{the name of the member of parliament}
-#'  \item{\code{vote}}{1 means a vote for, -1 a vote against. 0 is an abstention.}
+#'  \item{bill}{an identifier for the bill}
+#'  \item{name}{the name of the member of parliament}
+#'  \item{vote}{1 means a vote for, -1 a vote against. 0 is an abstention.}
 #'  }
-#'  \code{Parties} is a data.frame with 134 rows, one for each member of parliament, and 2 variables. 
+#'  [Parties] is a data.frame with 134 rows, one for each member of parliament, and 2 variables. 
 #'  \describe{
-#'  \item{\code{party}}{the name of the political party the member belongs to}
-#'  \item{\code{name}}{the name of the member of parliament}
+#'  \item{party}{the name of the political party the member belongs to}
+#'  \item{name}{the name of the member of parliament}
 #'  }
 #'  
 #' @details Almost all of the members of parliament belongs to a political party. This table
 #' identifies that party. These data were provided by Caroline Ettinger and form part of her
 #' senior honor's project at Macalester College. Prof. Andrew Beveridge supervised the
 #' thesis. Ms. Ettinger used the vote data to explore how to extract the party association
-#' of members purely from voting records. The \code{Parties} data was used to evaluate
+#' of members purely from voting records. The [Parties] data was used to evaluate
 #' the success of methods.
 "Votes"
 
@@ -378,15 +378,15 @@
 #' These are further subdivided into precincts. } 
 #' }
 #' @references Description of ranked-choice voting:
-#' \url{https://vote.minneapolismn.gov/ranked-choice-voting/}
+#' <https://vote.minneapolismn.gov/ranked-choice-voting/>
 #' 
 #' A Minnesota Public Radio story about the election ballot tallying process:
-#' \url{https://www.mprnews.org/2013/11/22/politics/ranked-choice-vote-count-programmers/}
+#' <https://www.mprnews.org/2013/11/22/politics/ranked-choice-vote-count-programmers/>
 #' 
 #' The Wikipedia article about the election:
-#' \url{https://en.wikipedia.org/wiki/2013_Minneapolis_mayoral_election}
+#' <https://en.wikipedia.org/wiki/2013_Minneapolis_mayoral_election>
 #' @source Ballot data from the Minneapolis city government:
-#' \url{https://vote.minneapolismn.gov/results-data/election-results/2013/mayor/}
+#' <https://vote.minneapolismn.gov/results-data/election-results/2013/mayor/>
 #' @keywords datasets
 #' @examples
 #' 
@@ -407,40 +407,40 @@
 #' @format A data frame with 15,829 observations on the bird's species, size,
 #' date found, and band number.
 #' \describe{
-#'   \item{\code{bogus}}{a character vector}
-#'   \item{\code{Timestamp}}{Timestamp indicates when the data were entered into an electronic record,
+#'   \item{bogus}{a character vector}
+#'   \item{Timestamp}{Timestamp indicates when the data were entered into an electronic record,
 #' not anything about the bird being described}
-#'   \item{\code{Year}}{a character vector}
-#'   \item{\code{Day}}{a character vector}
-#'   \item{\code{Month}}{a character vector}
-#'  \item{\code{CaptureTime}}{a character vector}
-#'  \item{\code{SpeciesName}}{a character vector}
-#'  \item{\code{Sex}}{a character vector}
-#'  \item{\code{Age}}{a character vector}
-#'  \item{\code{BandNumber}}{a character vector}
-#'  \item{\code{TrapID}}{a character vector}
-#'  \item{\code{Weather}}{a character vector}
-#'  \item{\code{BandingReport}}{a character vector}
-#'  \item{\code{RecaptureYN}}{a character vector}
-#'  \item{\code{RecaptureMonth}}{a character vector}
-#'  \item{\code{RecaptureDay}}{a character vector}
-#'  \item{\code{Condition}}{a character vector}
-#'  \item{\code{Release}}{a character vector}
-#'  \item{\code{Comments}}{a character vector}
-#'  \item{\code{DataEntryPerson}}{a character vector}
-#'  \item{\code{Weight}}{a character vector}
-#'  \item{\code{WingChord}}{a character vector}
-#'  \item{\code{Temperature}}{a character vector}
-#'  \item{\code{RecaptureOriginal}}{a character vector}
-#'  \item{\code{RecapturePrevious}}{a character vector}
-#'  \item{\code{TailLength}}{a character vector}
+#'   \item{Year}{a character vector}
+#'   \item{Day}{a character vector}
+#'   \item{Month}{a character vector}
+#'   \item{CaptureTime}{a character vector}
+#'   \item{SpeciesName}{a character vector}
+#'   \item{Sex}{a character vector}
+#'   \item{Age}{a character vector}
+#'   \item{BandNumber}{a character vector}
+#'   \item{TrapID}{a character vector}
+#'   \item{Weather}{a character vector}
+#'   \item{BandingReport}{a character vector}
+#'   \item{RecaptureYN}{a character vector}
+#'   \item{RecaptureMonth}{a character vector}
+#'   \item{RecaptureDay}{a character vector}
+#'   \item{Condition}{a character vector}
+#'   \item{Release}{a character vector}
+#'   \item{Comments}{a character vector}
+#'   \item{DataEntryPerson}{a character vector}
+#'   \item{Weight}{a character vector}
+#'   \item{WingChord}{a character vector}
+#'   \item{Temperature}{a character vector}
+#'   \item{RecaptureOriginal}{a character vector}
+#'   \item{RecapturePrevious}{a character vector}
+#'   \item{TailLength}{a character vector}
 #'  }
 #' 
 #' Timestamp indicates when the data were entered into an electronic record,
 #' not anything about the bird being described.
 #' @source Jerald Dosch, Dept. of Biology, Macalester College: the manager of
 #' the Study Area.
-#' @references \url{https://www.macalester.edu/ordway/}
+#' @references <https://www.macalester.edu/ordway/>
 #' @keywords datasets
 #' @examples
 #' 
@@ -450,11 +450,11 @@
 
 #' Deaths and Pumps from 1854 London cholera outbreak
 #' @docType data
-#' @format An object of class \code{\link[sf]{sf}} 
+#' @format An object of class [sf::sf()] 
 #' whose data attribute has 250 rows and 2 columns.
 #' @details Both spatial objects are projected in EPSG:27700, aka the British
 #' National Grid.
-#' @source \url{https://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/}
+#' @source <https://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/>
 #' @examples 
 #' if (require(sf)) {
 #'   plot(st_geometry(CholeraDeaths))
@@ -462,7 +462,7 @@
 "CholeraDeaths"
 
 #' @rdname CholeraDeaths
-#' @format An object of class \code{\link[sf]{sf}}.
+#' @format An object of class [sf::sf].
 #' @docType data
 "CholeraPumps"
 
@@ -473,52 +473,47 @@
 #' 
 #' 
 #' 
-#' \code{\link{Cancer}} gives information about each cell line.
+#' [Cancer] gives information about each cell line.
 #' 
 #' @docType data
-#' @format The expression data, \code{NCI60_tiny} is a dataframe of 41,078 gene probes (rows)
-#' and 60 cell lines (columns).  The first column, \code{Probe} gives the name
+#' @format The expression data, [NCI60_tiny] is a dataframe of 41,078 gene probes (rows)
+#' and 60 cell lines (columns).  The first column, `Probe` gives the name
 #' of the Agilent microarray probe.  Each of the remaining columns is named for
 #' a cell line.  The value is the log-2 expression associated with that probe
 #' for the cell line.
 #' 
 #' \describe{
-#' \item{Probe}{the name of the Agilent microarray probe}
+#'   \item{Probe}{the name of the Agilent microarray probe}
 #' }
 #' 
-#' For \code{Cancer}:
+#' For [Cancer]:
 #' \describe{
-#' \item{otherCellLine}{a character vector giving the name of one cell line}
-#' \item{cellLine}{a character vector giving the name of another cell line}
-#' \item{correlation}{the correlation between the two cell lines. 
-#' See \code{\link{cor}}}
+#'   \item{otherCellLine}{a character vector giving the name of one cell line}
+#'   \item{cellLine}{a character vector giving the name of another cell line}
+#'   \item{correlation}{the correlation between the two cell lines. See [stats::cor()]}
 #' }
 #' 
-#' @seealso \code{\link{Cancer}}
-#' @references Staunton et al. (2001), \emph{PNAS} (\doi{https://doi.org/10.1073/pnas.191368598})
+#' @seealso [Cancer]
+#' @references 
+#' - Staunton et al. (2001), *PNAS* (\doi{10.1073/pnas.191368598})
+#' - D.T. Ross et al. (2000) *Nature Genetics*, 24(3):227-234 (\doi{10.1038/73432})
+#' - [CellMiner](https://discover.nci.nih.gov/cellminer/)
 #' 
-#' D.T. Ross et al. (2000) \emph{Nature Genetics}, 24(3):227-234
-#' (\doi{https://doi.org/10.1038/73432})
-#' 
-#' \href{https://discover.nci.nih.gov/cellminer/}{CellMiner}
 #' @examples
-#' 
 #' data(NCI60_tiny) 
 #' 
 "NCI60_tiny"
 
 #' @rdname NCI60_tiny
-#' @docType data
-
 "Cancer"
 
 #' Headlines_train
 #' @description This data comes from Chakraborty et. al., which combines headlines from
 #' a variety of news and clickbait sources. Some headlines contain
 #' subject matter inappropriate for classroom use. Given the volume of headlines
-#' containing such language (especially for \code{clickbait == TRUE}), this filtering
+#' containing such language (especially for `clickbait == TRUE`), this filtering
 #' might not catch all problematic headlines. User discretion is advised.
-#' The training dataset is a random sample of approximately 80\% of the observations
+#' The training dataset is a random sample of approximately 80% of the observations
 #' from the original dataset.
 #'
 #' @docType data
@@ -528,12 +523,12 @@
 #'   \item{clickbait}{a logical vector}
 #'   \item{ids}{an integer vector}
 #' }
-#' @source \url{https://github.com/bhargaviparanjape/clickbait/}
+#' @source <https://github.com/bhargaviparanjape/clickbait/>
 #' @references \doi{10.1109/ASONAM.2016.7752207}
 "Headlines_train"
 
 #' @rdname Headlines_train
-#' @description The testing dataset is a random sample of the remaining 20\% of the observations
+#' @description The testing dataset is a random sample of the remaining 20% of the observations
 #' not found in the training set.
 #' @docType data
 #' @format A data frame with 4,589 rows and 3 variables:
@@ -548,8 +543,8 @@
 #' of whether the message is spam (unsolicited commercial content) or not.
 #' Many subject lines include subject matter inappropriate for classroom use. 
 #' Given the volume of headlines containing such language 
-#' (especially for \code{spam == TRUE}), user discretion is advised.
-#' This dataset is a random sample of 80\% of the emails data.
+#' (especially for `spam == TRUE`), user discretion is advised.
+#' This dataset is a random sample of 80% of the emails data.
 #' @docType data
 #' @format A data frame with 5,526 rows and 3 variables:
 #' \describe{
@@ -560,7 +555,7 @@
 #' @source Originally retrieved from http://www.rdatasciencecases.org/Data.html
 "Emails_train"
 #' @rdname Emails_train
-#' @description The testing dataset is a random sample of 20\% of the emails data.
+#' @description The testing dataset is a random sample of 20% of the emails data.
 #' @docType data
 #' @format A data frame with 1,382 rows and 3 variables:
 #' @examples 

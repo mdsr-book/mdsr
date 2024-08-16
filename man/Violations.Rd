@@ -7,45 +7,43 @@
 \alias{Cuisines}
 \title{NYC Restaurant Health Violations}
 \format{
-{
 A data frame with 480,621 observations on the following 16 variables.
 \describe{
- \item{\code{camis}}{unique identifier}
- \item{\code{dba}}{full name doing business as}
- \item{\code{boro}}{borough of New York}
- \item{\code{building}}{building name}
- \item{\code{street}}{street address}
- \item{\code{zipcode}}{zipcode}
- \item{\code{phone}}{phone number}
- \item{\code{inspection_date}}{inspection date}
- \item{\code{action}}{action taken}
- \item{\code{violation_code}}{violation code, see \code{\link{ViolationCodes}}}
- \item{\code{score}}{inspection score}
- \item{\code{grade}}{inspection grade}
- \item{\code{grade_date}}{grade date}
- \item{\code{record_date}}{recording date}
- \item{\code{inspection_type}}{inspect type}
- \item{\code{cuisine_code}}{cuisine code, see \code{\link{Cuisines}}}
-}
+\item{camis}{unique identifier}
+\item{dba}{full name doing business as}
+\item{boro}{borough of New York}
+\item{building}{building name}
+\item{street}{street address}
+\item{zipcode}{zipcode}
+\item{phone}{phone number}
+\item{inspection_date}{inspection date}
+\item{action}{action taken}
+\item{violation_code}{violation code, see \link{ViolationCodes}}
+\item{score}{inspection score}
+\item{grade}{inspection grade}
+\item{grade_date}{grade date}
+\item{record_date}{recording date}
+\item{inspection_type}{inspect type}
+\item{cuisine_code}{cuisine code, see \link{Cuisines}}
 }
 
 A data frame with 174 observations on the following 3 variables.
 \describe{
-   \item{\code{violation_code}}{a factor with many levels}
-   \item{\code{critical_flag}}{is violation critical: a factor with levels \code{N} \code{Y}}
-   \item{\code{violation_description}}{violation description}
- }
+\item{violation_code}{a factor with many levels}
+\item{critical_flag}{is violation critical: a factor with levels \code{N}, \code{Y}}
+\item{violation_description}{violation description}
+}
 
 {
 A data frame with 84 observations on the following 2 variables.
 \describe{
- \item{\code{cuisine_code}}{a character vector}
- \item{\code{cuisine_description}}{a character vector}
+\item{cuisine_code}{a character vector}
+\item{cuisine_description}{a character vector}
 }
 }
 }
 \source{
-NYC Open Data, \url{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/}
+\href{https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/}{NYC Open Data}
 }
 \usage{
 Violations
@@ -60,14 +58,14 @@ NYC Restaurant Health Violations
 \examples{
 data(Violations)
 if (require(dplyr)) {
-  Violations \%>\%
-    inner_join(Cuisines, by = "cuisine_code") \%>\%
-    filter(cuisine_description == "American") \%>\%
-    arrange(grade_date) \%>\%
+  Violations |>
+    inner_join(Cuisines, by = "cuisine_code") |>
+    filter(cuisine_description == "American") |>
+    arrange(grade_date) |>
     head()
  }
 }
 \seealso{
-\code{\link{ViolationCodes}}, \code{\link{Cuisines}}
+\link{ViolationCodes}, \link{Cuisines}
 }
 \keyword{datasets}

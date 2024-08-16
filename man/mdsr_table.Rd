@@ -15,7 +15,7 @@ mdsr_sql_keys_table(x, ...)
 \arguments{
 \item{x}{A data.frame}
 
-\item{...}{arguments passed to \code{\link[kableExtra]{kbl}}}
+\item{...}{arguments passed to \code{\link[kableExtra:kbl]{kableExtra::kbl()}}}
 }
 \description{
 Custom table output
