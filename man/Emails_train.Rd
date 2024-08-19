@@ -16,7 +16,7 @@ A data frame with 5,526 rows and 3 variables:
 A data frame with 1,382 rows and 3 variables:
 }
 \source{
-Originally retrieved from \url{http://www.stat.berkeley.edu/~nolan/data/spam/SpamAssassinMessages.zip}
+Originally retrieved from \url{https://www.stat.berkeley.edu/~nolan/data/spam/SpamAssassinMessages.zip}
 }
 \usage{
 Emails_train

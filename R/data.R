@@ -558,7 +558,7 @@
 #'   \item{subjectline}{a character vector}
 #'   \item{type}{a character vector}
 #' }
-#' @source Originally retrieved from <http://www.stat.berkeley.edu/~nolan/data/spam/SpamAssassinMessages.zip>
+#' @source Originally retrieved from <https://www.stat.berkeley.edu/~nolan/data/spam/SpamAssassinMessages.zip>
 #' @seealso *Data Science in R*, Nolan and Temple Lang (ISBN 978-1482234817), Ch. 3 
 "Emails_train"
 #' @rdname Emails_train
