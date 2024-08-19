@@ -106,6 +106,8 @@
 #' D.C. in April each year.  (The name comes from the famous cherry trees
 #' that are in bloom in April in Washington.)  The results of this race
 #' are published at <https://www.cherryblossom.org/post-race/race-results/>.
+#' @source <https://www.cherryblossom.org/post-race/race-results/>.
+#' @seealso *Data Science in R*, Nolan and Temple Lang (ISBN 978-1482234817), Ch. 2 
 #' @examples
 #' if (require(dplyr)) {
 #'   Cherry |>
@@ -556,7 +558,8 @@
 #'   \item{subjectline}{a character vector}
 #'   \item{type}{a character vector}
 #' }
-#' @source Originally retrieved from <http://www.rdatasciencecases.org/Data.html>
+#' @source Originally retrieved from <http://www.stat.berkeley.edu/~nolan/data/spam/SpamAssassinMessages.zip>
+#' @seealso *Data Science in R*, Nolan and Temple Lang (ISBN 978-1482234817), Ch. 3 
 "Emails_train"
 #' @rdname Emails_train
 #' @description The testing dataset is a random sample of 20% of the emails data.

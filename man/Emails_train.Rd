@@ -16,7 +16,7 @@ A data frame with 5,526 rows and 3 variables:
 A data frame with 1,382 rows and 3 variables:
 }
 \source{
-Originally retrieved from \url{http://www.rdatasciencecases.org/Data.html}
+Originally retrieved from \url{http://www.stat.berkeley.edu/~nolan/data/spam/SpamAssassinMessages.zip}
 }
 \usage{
 Emails_train
@@ -36,5 +36,8 @@ The testing dataset is a random sample of 20\% of the emails data.
 \examples{
 nrow(Emails_train)
 nrow(Emails_test)
+}
+\seealso{
+\emph{Data Science in R}, Nolan and Temple Lang (ISBN 978-1482234817), Ch. 3
 }
 \keyword{datasets}

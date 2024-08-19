@@ -23,6 +23,9 @@ year of birth.}
 \item{nruns}{integer giving the total number of times that runner participated in the years from 1999 to 2008. The smallest is 2, the largest is 10.}
 }
 }
+\source{
+\url{https://www.cherryblossom.org/post-race/race-results/}.
+}
 \usage{
 Cherry
 }
@@ -43,5 +46,8 @@ if (require(dplyr)) {
     group_by(n) |>
     count(name = "appearances")
 }
+}
+\seealso{
+\emph{Data Science in R}, Nolan and Temple Lang (ISBN 978-1482234817), Ch. 2
 }
 \keyword{datasets}

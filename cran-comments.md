@@ -1,6 +1,6 @@
 ## Test environments
 
-* local ubuntu 22.04.1 LTS, R 4.2.2
+* local ubuntu 22.04.1 LTS, R 4.4.1
 * macOS-latest (on github actions)
 * ubuntu-latest (on github actions)
 * win-builder (devel and release)
@@ -12,13 +12,9 @@
 
 * Documentation syntax errors have been fixed. 
 
-* Previously problematic tests using the Internet have been skipped. 
-
-* Previously problematic tests examples the Internet are not run. 
-
 * There are two URLs that are only available via `http`. All others
   have been changed to `https`.
-* There are two NOTEs for which we plead for mercy:
+* There are two longstanding NOTEs for which we plead for mercy:
 
 ```
 ❯ checking installed package size ... NOTE
