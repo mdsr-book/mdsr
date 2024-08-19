@@ -62,19 +62,25 @@
 #' 
 "CIACountries"
 
-#' Election Statistics
+#' Election Statistics from the 2013 Minneapolis Mayoral Election
 #' @docType data
 #' @format An object of class [tibble::tbl_df] with 117 rows and 13 columns.
 #' \describe{
-#'   \item{Ward}{Name of the country} 
-#'   \item{Precinct}{number of people, 2119}
-#'   \item{Registered.Voters.at.7am}{area (sq km), 2147} 
-#'   \item{Voters.Registering.at.Polls}{Crude oil - production (bbl/day), 2241}
-#'   \item{gdp}{Gross Domestic Product per capita ($/person), 2001}
-#'   \item{educ}{education spending (% of GDP), 2206}
-#'   \item{roadways}{Roadways per unit area (km/sq km), 2085}
-#'   \item{net_users}{Fraction of Internet users (% of population), 2153}
+#'   \item{Ward}{Number of the ward} 
+#'   \item{Precinct}{Number of the precinct}
+#'   \item{Registered Voters at 7am}{Number of registered votes as of 7 am} 
+#'   \item{Voters Registering at Polls}{Number of voters registering at the polls}
+#'   \item{Voters Registering by Absentee}{Number of voters registering by absentee}
+#'   \item{Total Registrations}{Total number of registered voters}
+#'   \item{Voters at Polls}{Number of voters at the polls}
+#'   \item{Absentee Voters}{Number of absentee voters}
+#'   \item{Total Ballots Cast}{Number of total ballots cast}
+#'   \item{Total Turnout}{Total number of voters turning out}
+#'   \item{Percentage Absentee}{Percentage of absentee voters}
+#'   \item{% Registered to Total (Election Day)}{Percentage of voters relative to total number of people}
+#'   \item{Spoiled Ballots}{Number of spolied ballots}
 #' }
+#' @source <https://vote.minneapolismn.gov/results-data/election-results/2013/mayor/>
 "Elections"
 
 #' Cherry Blossom runs

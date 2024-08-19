@@ -16,7 +16,7 @@ A data frame with 5,526 rows and 3 variables:
 A data frame with 1,382 rows and 3 variables:
 }
 \source{
-Originally retrieved from http://www.rdatasciencecases.org/Data.html
+Originally retrieved from \url{http://www.rdatasciencecases.org/Data.html}
 }
 \usage{
 Emails_train
