@@ -5,6 +5,12 @@
 \alias{dbConnect_scidb}
 \alias{mysql_scidb}
 \title{src_scidb}
+\source{
+\itemize{
+\item \code{airlines}: \url{https://www.transtats.bts.gov/Fields.asp?gnoyr_VQ=FGJ}
+\item \code{imdb}: \url{https://developer.imdb.com/non-commercial-datasets/}
+}
+}
 \usage{
 src_scidb(dbname, ...)
 
@@ -31,17 +37,58 @@ Connect to the scidb server on Amazon Web Services.
 \details{
 This is a public, read-only account. Any abuse will be considered a
 hostile act.
+
+The MariaDB server accessible via these functions is a db.t3.micro RDS
+instance hosted by Amazon Web Services.
+It is NOT a powerful server, having only 2 CPUs, 1 GB of RAM, and 20 GB of
+disk space.
+It is useful for quick, efficient and no-stress setup, but not useful for any
+kind of serious computing.
+
+The \code{airlines} database on the server contains complete flight records for
+the three years between 2013 and 2015, which contains about 6 million rows
+annually.
+Thus, the \code{flights} table contains approximately 18 million rows.
+The \code{flights} table has several indexes, including an indices on \code{year},
+\code{origin}, \code{dest}, \code{carrier}, and \code{tailnum}.
+There is also a composite index on the date (across \code{year}, \code{month}, and \code{day}).
+Please use these indexes to improve query response times.
+
+There are two databases on this server:
+\itemize{
+\item \code{airlines}: The stricutre of the database is similar to what you find in
+the \code{nycflights13} and \code{nycflights23} packages. See their documentation at
+\link[nycflights13:flights]{nycflights13::flights} and \link[nycflights23:airports]{nycflights23::airports}, for example.
+\item \code{imdb}: These data were retrieved from an old dump of the Internet Movie
+Database, circa 2016. Please see this \href{https://i.sstatic.net/vJBfk.png}{ER diagram}
+for relationships between the tables.
+}
 }
 \examples{
-\dontrun{
+\donttest{
+# Connect to the database instance via `dplyr`
 db_air <- src_scidb("airlines")
 db_air
 }
-\dontrun{
+\donttest{
+# Connect to the database instance via `DBI` (recommended)
 db_air <- dbConnect_scidb("airlines")
 db_air
+
+# Get more information...
 if (require(DBI)) {
+
+  # About the database instance
+  dbGetInfo(db_air)
+  
+  # About the available tables
   dbListTables(db_air)
+  
+  # About the variables in a particular table
+  dbListFields(db_air, "flights")
+  
+  # About the indexes (using raw SQL)
+  dbGetQuery(db_air, "SHOW KEYS FROM flights")
 }
 }
 
@@ -50,7 +97,7 @@ if (require(knitr)) {
 }
 }
 \seealso{
-\code{\link[dbplyr:src_dbi]{dbplyr::src_dbi()}}
+\code{\link[dbplyr:src_dbi]{dbplyr::src_dbi()}}, \link[nycflights13:flights]{nycflights13::flights}, \link[nycflights23:airlines]{nycflights23::airlines}
 
 \link[RMariaDB:MariaDBConnection-class]{RMariaDB::MariaDBConnection}
 

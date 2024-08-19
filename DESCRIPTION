@@ -42,14 +42,16 @@ Imports:
     tibble,
     webshot2
 Suggests:
+    etl,
     knitr,
     Lahman,
     leaflet,
-    etl,
+    lubridate,
     macleish,
     mosaic,
     mosaicData,
-    lubridate,
+    nycflights13,
+    nycflights23,
     sf,
     testthat,
     utf8
