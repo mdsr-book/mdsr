@@ -56,7 +56,7 @@ Please use these indexes to improve query response times.
 
 There are two databases on this server:
 \itemize{
-\item \code{airlines}: The stricutre of the database is similar to what you find in
+\item \code{airlines}: The structure of the database is similar to what you find in
 the \code{nycflights13} and \code{nycflights23} packages. See their documentation at
 \link[nycflights13:flights]{nycflights13::flights} and \link[nycflights23:airports]{nycflights23::airports}, for example.
 \item \code{imdb}: These data were retrieved from an old dump of the Internet Movie

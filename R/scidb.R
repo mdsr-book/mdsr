@@ -23,7 +23,7 @@
 #' 
 #' There are two databases on this server:
 #' 
-#' - `airlines`: The stricutre of the database is similar to what you find in 
+#' - `airlines`: The structure of the database is similar to what you find in 
 #' the `nycflights13` and `nycflights23` packages. See their documentation at
 #' [nycflights13::flights] and [nycflights23::airports], for example. 
 #' - `imdb`: These data were retrieved from an old dump of the Internet Movie
