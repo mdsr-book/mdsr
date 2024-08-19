@@ -22,7 +22,7 @@ Description: A complement to all editions of *Modern Data
     to the SQL database server used in the book. All editions of the book are 
     supported by this package.
 Depends:
-    R (>= 3.5.0)
+    R (>= 4.1.0)
 License: CC0
 LazyData: true
 LazyDataCompression: xz

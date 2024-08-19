@@ -10,9 +10,9 @@ globalVariables(c("."))
 
 Rnw2Rmd <- function(path, new_path = NULL) {
   if (is.null(new_path)) {
-    new_path <- path %>%
-      gsub(".Rnw", ".Rmd", .) %>%
-      gsub(".tex", ".Rmd", .) %>%
+    new_path <- path |>
+      gsub(".Rnw", ".Rmd", .) |>
+      gsub(".tex", ".Rmd", .) |>
       fs::fs_path()
   }
   x <- readLines(path)

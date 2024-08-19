@@ -44,8 +44,8 @@ skim <- function(data, ...) {
       hist = NULL
     )
   )
-  my_skim(data, ...) %>%
-    skimr::yank("numeric") %>%
+  my_skim(data, ...) |>
+    skimr::yank("numeric") |>
     dplyr::rename(
       var = skim_variable,
       na = missing
@@ -60,8 +60,8 @@ skim <- function(data, ...) {
 #' mdsr_table(faithful)
 
 mdsr_table <- function(x, ...) {
-  x %>%
-    kableExtra::kbl(booktabs = TRUE, linesep = "", ...) %>%
+  x |>
+    kableExtra::kbl(booktabs = TRUE, linesep = "", ...) |>
     kableExtra::kable_styling(
       bootstrap_options = c("striped", "hover", "condensed", "responsive"),
       latex_options = "striped",
@@ -73,8 +73,8 @@ mdsr_table <- function(x, ...) {
 #' @export
 
 mdsr_sql_explain_table <- function(x, ...) {
-  x %>%
-    dplyr::select(-id, -select_type, -Extra) %>%
+  x |>
+    dplyr::select(-id, -select_type, -Extra) |>
     mdsr_table(...)
 }
 
@@ -82,8 +82,8 @@ mdsr_sql_explain_table <- function(x, ...) {
 #' @export
 
 mdsr_sql_keys_table <- function(x, ...) {
-  x %>%
-    dplyr::select(1:7, -Collation) %>%
+  x |>
+    dplyr::select(1:7, -Collation) |>
     mdsr_table(...)
 }
 

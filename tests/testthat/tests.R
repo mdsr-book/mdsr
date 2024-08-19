@@ -11,10 +11,10 @@ test_that("scidb works", {
   expect_match(DBI::dbGetInfo(x)$host, "^mdsr.+rds\\.amazonaws\\.com$")
   expect_equal(DBI::dbGetInfo(x)$user, "mdsr_public")
   expect_equal(
-    y %>% 
-      head(1) %>%
-      collect() %>%
-      nrow() %>%
+    y |> 
+      head(1) |>
+      collect() |>
+      nrow() |>
       suppressWarnings(), 
     1
   )
@@ -36,8 +36,8 @@ test_that("download functions work", {
 test_that("save_webshot works", {
   skip_on_cran()
   if (require(leaflet)) {
-    x <- leaflet() %>%
-      addTiles() %>%
+    x <- leaflet() |>
+      addTiles() |>
       addMarkers(lng = 174.768, lat = -36.852, popup = "The birthplace of R")
     png <- save_webshot(x, tempfile())
     expect_s3_class(png, "fs_path")

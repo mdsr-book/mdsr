@@ -21,8 +21,7 @@ trimAll <- function(s){
   trim( trimQuotes( trim(s)))
 }
 
-Restaurants <- 
-  Restaurants  %>%
+Restaurants <- Restaurants |>
   mutate( CAMIS=trimAll(CAMIS),
           BUILDING=trimAll(BUILDING),
           STREET=trimAll(STREET),

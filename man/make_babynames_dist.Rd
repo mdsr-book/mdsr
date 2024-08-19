@@ -17,7 +17,7 @@ Wrangle babynames data
 
 BabynameDist <- make_babynames_dist()
 if (require(dplyr)) {
-  BabynameDist \%>\%
+  BabynameDist |>
     filter(name == "Benjamin")
 }
 }

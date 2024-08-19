@@ -108,10 +108,10 @@
 #' are published at <https://www.cherryblossom.org/post-race/race-results/>.
 #' @examples
 #' if (require(dplyr)) {
-#'   Cherry %>%
-#'     group_by(name.yob) %>%
-#'     count() %>%
-#'     group_by(n) %>%
+#'   Cherry |>
+#'     group_by(name.yob) |>
+#'     count() |>
+#'     group_by(n) |>
 #'     count(name = "appearances")
 #' }
 "Cherry"
