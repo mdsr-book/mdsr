@@ -1,23 +1,12 @@
-citHeader("To cite mdsr in publications use:")
-
-citEntry(entry = "Book",
+bibentry(
+  bibtype = "Book",
   title        = "Modern Data Science with {R}",
-  author       = personList(
-                   as.person("Benjamin S. Baumer"),
-                   as.person("Daniel T. Kaplan"),
-                   as.person("Nicholas J. Horton")
-                  ),
+  author       = "Benjamin S. Baumer, Daniel T. Kaplan, Nicholas J. Horton",
   publisher    = "Boca Raton: Chapman and Hall/CRC Press",
   year         = "2021",
   month        = "3",
   edition      = "2nd",
   pages        = "1--673",
   isbn         = "9780367191498",
-  url          = "https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9780367191498",
-
-  textVersion  =
-  paste("Benjamin S. Baumer, Daniel T. Kaplan, Nicholas J. Horton (2021).",
-        "Modern Data Science with R.",
-        "2nd edition, Boca Raton: Chapman and Hall/CRC Press, 1--673.",
-        "URL https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9780367191498.")
+  url          = "https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9780367191498"
 )

@@ -4,7 +4,6 @@
 * macOS-latest (on github actions)
 * ubuntu-latest (on github actions)
 * win-builder (devel and release)
-* rhub (win, fedora, solaris, ubuntu)
 
 ## R CMD check results
 
@@ -12,7 +11,7 @@
 
 * Documentation syntax errors have been fixed. 
 
-* There are two URLs that are only available via `http`. All others
+* There is one URL that is only available via `http`. All others
   have been changed to `https`.
 * There are two longstanding NOTEs for which we plead for mercy:
 
