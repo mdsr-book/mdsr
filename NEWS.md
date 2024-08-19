@@ -2,6 +2,9 @@ mdsr 0.2.8
 
 * Use the new URL for the MariaDB server hosted on AWS
 * Documentation updated to use Markdown
+* Documentation added to `src_scidb()` about databases [#71](https://github.com/mdsr-book/mdsr/issues/71)
+* Migrated the package to the native pipe
+* Fixed erroneous `Elections` documentation [#73](https://github.com/mdsr-book/mdsr/issues/73)
 
 mdsr 0.2.7
 

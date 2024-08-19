@@ -36,12 +36,11 @@ library(mdsr)
 citation("mdsr")
 ```
 
-    ## 
     ## To cite mdsr in publications use:
     ## 
     ##   Benjamin S. Baumer, Daniel T. Kaplan, Nicholas J. Horton (2021).
-    ##   Modern Data Science with R. 2nd edition, Chapman and Hall/CRC Press:
-    ##   Boca Raton, 1--673. URL
+    ##   Modern Data Science with R. 2nd edition, Boca Raton: Chapman and
+    ##   Hall/CRC Press, 1--673. URL
     ##   https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9780367191498.
     ## 
     ## A BibTeX entry for LaTeX users is
@@ -49,7 +48,7 @@ citation("mdsr")
     ##   @Book{,
     ##     title = {Modern Data Science with {R}},
     ##     author = {Benjamin S. Baumer and Daniel T. Kaplan and Nicholas J. Horton},
-    ##     publisher = {Chapman and Hall/CRC Press: Boca Raton},
+    ##     publisher = {Boca Raton: Chapman and Hall/CRC Press},
     ##     year = {2021},
     ##     month = {3},
     ##     edition = {2nd},
