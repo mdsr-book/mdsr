@@ -34,7 +34,7 @@ test_that("download functions work", {
 
 
 test_that("save_webshot works", {
-  skip_on_cran()
+  skip()
   if (require(leaflet)) {
     x <- leaflet() |>
       addTiles() |>

@@ -598,3 +598,13 @@
 #' @rdname saratoga_houses
 #' @docType data
 "saratoga_codes"
+
+#' Blood pressure readings
+#' Wide and narrow representations of blood pressure data.
+#' @docType data
+"BP_narrow"
+
+#' @rdname BP_narrow
+#' @docType data
+"BP_wide"
+
