@@ -1,4 +1,8 @@
-mdsr 0.2.8
+## mdsr 0.2.9
+
+* Added `BP_narrow` and `BP_wide`
+
+## mdsr 0.2.8
 
 * Use the new URL for the MariaDB server hosted on AWS
 * Documentation updated to use Markdown
@@ -6,31 +10,31 @@ mdsr 0.2.8
 * Migrated the package to the native pipe
 * Fixed erroneous `Elections` documentation [#73](https://github.com/mdsr-book/mdsr/issues/73)
 
-mdsr 0.2.7
+## mdsr 0.2.7
 
 * Don't run all Internet examples
 * Migrated from `webshot` to `webshot2`.
 
-mdsr 0.2.6
+## mdsr 0.2.6
 
 * Skip all Internet tests on CRAN
 
-mdsr 0.2.5
+## mdsr 0.2.5
 
 * Added LazyDataCompression
 
-mdsr 0.2.4
+## mdsr 0.2.4
 
 * Added Saratoga houses datasets
 * Moved repository to https://www.github.com/mdsr-book/mdsr
 * Fixed broken URLs
 
-mdsr 0.2.3
+## mdsr 0.2.3
 
 * Fixed CRAN errors about `db_list_tables()` [#54](https://github.com/mdsr-book/mdsr/issues/54)
 * `person()` -> `mdsr_person()` [#55](https://github.com/mdsr-book/mdsr/issues/55)
 
-mdsr 0.2.0
+## mdsr 0.2.0
 
 * Update for 2nd edition of the book
 * LaTeX macros added
@@ -43,38 +47,36 @@ mdsr 0.2.0
 * added `save_webshot()` function
 * fixed URLs with trailing slashes and https
 
-mdsr 0.1.8
+## mdsr 0.1.8
 
 * Removed deprecated versions of `dplyr` functions.
 * Added `skim()`
 
-mdsr 0.1.7
+## mdsr 0.1.7
 
 * added Connections pane interface to DB Server [#35](https://github.com/mdsr-book/mdsr/issues/35)
 * removed superfluous extdata [#37](https://github.com/mdsr-book/mdsr/issues/37)
 * removed broken link in CIA documentation [#38](https://github.com/mdsr-book/mdsr/issues/38)
 
-mdsr 0.1.6
+## mdsr 0.1.6
 
 * improved documentation [#18](https://github.com/mdsr-book/mdsr/issues/18)
 * `scidb` functions now point to AWS RDS instance
 * Added tests
 * Removed `tidyverse` dependency [#31](https://github.com/mdsr-book/mdsr/issues/31)
 
-mdsr 0.1.5
+## mdsr 0.1.5
 
 * Fixed [#27](https://github.com/mdsr-book/mdsr/issues/27): non-ASCII characters
 * Fixed [#26](https://github.com/mdsr-book/mdsr/issues/26): Namespace import from `tidyverse` not imported from
 
-mdsr 0.1.4
+## mdsr 0.1.4
 
 * Added CRAN badge after release.
 * Added `etl_NCI60()` function
 * Migrated to `dbplyr`
 
-# mdsr 0.1.3
+## mdsr 0.1.3
 
 * Added a `NEWS.md` file to track changes to the package.
-
-
 
