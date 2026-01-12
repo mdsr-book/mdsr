@@ -1,4 +1,4 @@
-globalVariables(c("x", "lx", "ex", "year", "sex", "age_today", "alive_prob", "life_exp", "y"))
+globalVariables(c("x", "lx", "ex", "year", "sex", "age_today", "alive_prob", "life_exp", "y", "id"))
 
 #' Wrangle babynames data
 #' @import dplyr
