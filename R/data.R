@@ -600,7 +600,7 @@
 "saratoga_codes"
 
 #' Blood pressure readings
-#' Wide and narrow representations of blood pressure data.
+#' @details Wide and narrow representations of blood pressure data.
 #' @docType data
 "BP_narrow"
 

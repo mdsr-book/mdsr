@@ -4,8 +4,7 @@
 \name{BP_narrow}
 \alias{BP_narrow}
 \alias{BP_wide}
-\title{Blood pressure readings
-Wide and narrow representations of blood pressure data.}
+\title{Blood pressure readings}
 \format{
 An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 6 rows and 3 columns.
 
@@ -18,6 +17,8 @@ BP_wide
 }
 \description{
 Blood pressure readings
+}
+\details{
 Wide and narrow representations of blood pressure data.
 }
 \keyword{datasets}
